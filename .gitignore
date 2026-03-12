@@ -1,0 +1,12 @@
+node_modules/
+package.json
+package-lock.json
+migrate.js
+
+# Old numeric directory structure (kept locally for rollback)
+442257519/
+442278363/
+442284017/
+452154340/
+452154387/
+452156861/
