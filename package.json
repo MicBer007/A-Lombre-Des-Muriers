@@ -1,0 +1,23 @@
+{
+  "name": "alombredesmuriers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicBer007/A-Lombre-Des-Muriers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MicBer007/A-Lombre-Des-Muriers/issues"
+  },
+  "homepage": "https://github.com/MicBer007/A-Lombre-Des-Muriers#readme",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
