@@ -221,7 +221,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522316014.jpg"
+                                                                src="/assets/i284571214522316014.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522316014.jpg
                                                                   /assets/i284571214522316014.jpg 2x,
@@ -342,7 +342,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522315945.jpg"
+                                                      src="/assets/i284571214522315945.jpg"
                                                       srcSet="
                                                         /assets/i284571214522315945.jpg
                                                         /assets/i284571214522315945.jpg 2x,
@@ -454,7 +454,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522316112.jpg"
+                                                                src="/assets/i284571214522316112.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522316112.jpg
                                                                   /assets/i284571214522316112.jpg 2x,
@@ -617,7 +617,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522315935.jpg"
+                                                                src="/assets/i284571214522315935.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522315935.jpg
                                                                   /assets/i284571214522315935.jpg 2x,
@@ -779,7 +779,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522613543.jpg"
+                                                                src="/assets/i284571214522613543.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522613543.jpg
                                                                   /assets/i284571214522613543.jpg 2x,
@@ -941,7 +941,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522315927.jpg"
+                                                                src="/assets/i284571214522315927.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522315927.jpg
                                                                   /assets/i284571214522315927.jpg 2x,
@@ -1103,7 +1103,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522214522.jpg"
+                                                                src="/assets/i284571214522214522.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522214522.jpg
                                                                   /assets/i284571214522214522.jpg 2x,
@@ -1267,7 +1267,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522136847.jpg"
+                                                                src="/assets/i284571214522136847.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522136847.jpg
                                                                   /assets/i284571214522136847.jpg 2x,
@@ -1386,7 +1386,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522316125.jpg"
+                                                      src="/assets/i284571214522316125.jpg"
                                                       srcSet="
                                                         /assets/i284571214522316125.jpg
                                                         /assets/i284571214522316125.jpg 2x,
@@ -1456,7 +1456,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522316137.jpg"
+                                                      src="/assets/i284571214522316137.jpg"
                                                       srcSet="
                                                         /assets/i284571214522316137.jpg
                                                         /assets/i284571214522316137.jpg 2x,
@@ -1517,7 +1517,7 @@ export default function Terrasse() {
       display: "block",
       margin: 0
     }}
-                                                    src="../assets/photo_de_la_terrasse.jpeg"
+                                                    src="/assets/photo_de_la_terrasse.jpeg"
                                                     height="510"
                                                     width="680"
                                                     alt="Photo de la terrasse"

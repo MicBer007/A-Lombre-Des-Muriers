@@ -158,7 +158,7 @@ export default function Home() {
                                                   role="presentation"
                                                   data-scalestrategy="crop"
                                                   style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                  src="./assets/i284571214498116028.jpg"
+                                                  src="/assets/i284571214498116028.jpg"
                                                   srcSet="
                                                     /assets/i284571214498116028.jpg
                                                     /assets/i284571214498116028.jpg 2x,
@@ -406,7 +406,7 @@ export default function Home() {
                                                           allowFullScreen={true}
                                                           scrolling="no"
                                                           allow="encrypted-media"
-                                                          src="./assets/share_button.html"
+                                                          src="/assets/share_button.html"
                                                           style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                         ></iframe>
                                                       </span>
@@ -421,7 +421,7 @@ export default function Home() {
                                                       allowFullScreen={true}
                                                       className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                       title="X Post Button"
-                                                      src="./assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                      src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                       style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                     ></iframe>
                                                   </li>
@@ -531,7 +531,7 @@ export default function Home() {
                                             preload="metadata"
                                             controls
                                             playsInline
-                                            src="./assets/vid--442257519-85d50000-2892-445f-bb11-75d0ce180821-640x360.mp4#t=0.001"
+                                            src="/assets/vid--442257519-85d50000-2892-445f-bb11-75d0ce180821-640x360.mp4#t=0.001"
                                             width="640"
                                             height="360"
                                             controlsList="nodownload"
@@ -567,7 +567,7 @@ export default function Home() {
                                               role="presentation"
                                               data-scalestrategy="crop"
                                               style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                              src="./assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG"
+                                              src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG"
                                               srcSet="
                                                 /assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG
                                                 /assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG 2x,
@@ -669,7 +669,7 @@ export default function Home() {
                                                         role="presentation"
                                                         data-scalestrategy="crop"
                                                         style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                        src="./assets/Capture d’écran 2023-04-08 à 18.59.01.png"
+                                                        src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png"
                                                         srcSet="
                                                           /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png
                                                           /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png  2x,
@@ -714,7 +714,7 @@ export default function Home() {
                                                         role="presentation"
                                                         data-scalestrategy="crop"
                                                         style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                        src="./assets/Capture d’écran 2023-04-28 à 17.06.37.png"
+                                                        src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png"
                                                         srcSet="
                                                           /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png
                                                           /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png  2x,
@@ -767,7 +767,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/chaises_longues.jpeg"
+                                                src="/assets/chaises_longues.jpeg"
                                                 height="510"
                                                 width="680"
                                                 alt="Chaises longues"
@@ -843,7 +843,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214498992102.jpg"
+                                                src="/assets/i284571214498992102.jpg"
                                                 srcSet="
                                                   /assets/i284571214498992102.jpg
                                                   /assets/i284571214498992102.jpg 2x,
@@ -897,7 +897,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214522141193.jpg"
+                                                src="/assets/i284571214522141193.jpg"
                                                 srcSet="
                                                   /assets/i284571214522141193.jpg
                                                   /assets/i284571214522141193.jpg 2x,
@@ -2088,7 +2088,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214498515291.jpg"
+                                                src="/assets/i284571214498515291.jpg"
                                                 srcSet="
                                                   /assets/i284571214498515291.jpg
                                                   /assets/i284571214498515291.jpg 2x,
@@ -2324,7 +2324,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214522180079.jpg"
+                                                src="/assets/i284571214522180079.jpg"
                                                 srcSet="
                                                   /assets/i284571214522180079.jpg
                                                   /assets/i284571214522180079.jpg 2x,
@@ -2384,7 +2384,7 @@ export default function Home() {
                                                   role="presentation"
                                                   data-scalestrategy="crop"
                                                   style={{ marginTop: 0, marginLeft: "1.1368683772161603e-13px", display: "block", margin: 0 }}
-                                                  src="./assets/i284571214498260070.jpg"
+                                                  src="/assets/i284571214498260070.jpg"
                                                   srcSet="
                                                     /assets/i284571214498260070.jpg
                                                     /assets/i284571214498260070.jpg 2x,
@@ -2462,7 +2462,7 @@ export default function Home() {
                                                           role="presentation"
                                                           data-scalestrategy="crop"
                                                           style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                          src="./assets/i284571214498180473.jpg"
+                                                          src="/assets/i284571214498180473.jpg"
                                                           srcSet="
                                                             /assets/i284571214498180473.jpg
                                                             /assets/i284571214498180473.jpg 2x,
@@ -3158,7 +3158,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214522335201.jpg"
+                                                src="/assets/i284571214522335201.jpg"
                                                 srcSet="
                                                   /assets/i284571214522335201.jpg
                                                   /assets/i284571214522335201.jpg 2x,
@@ -3215,7 +3215,7 @@ export default function Home() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="./assets/i284571214516621731.jpg"
+                                                src="/assets/i284571214516621731.jpg"
                                                 srcSet="
                                                   /assets/i284571214516621731.jpg
                                                   /assets/i284571214516621731.jpg 2x,
@@ -3312,7 +3312,7 @@ export default function Home() {
                                         role="presentation"
                                         data-scalestrategy="crop"
                                         style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                        src="./assets/i284571214498528937.jpg"
+                                        src="/assets/i284571214498528937.jpg"
                                         srcSet="
                                           /assets/i284571214498528937.jpg
                                           /assets/i284571214498528937.jpg 2x,
@@ -3405,7 +3405,7 @@ export default function Home() {
                               role="presentation"
                               data-scalestrategy="crop"
                               style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                              src="./assets/i284571214498540023.jpg"
+                              src="/assets/i284571214498540023.jpg"
                               srcSet="
                                 /assets/i284571214498540023.jpg
                                 /assets/i284571214498540023.jpg 2x,
@@ -3539,7 +3539,7 @@ export default function Home() {
                                       role="presentation"
                                       data-scalestrategy="crop"
                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                      src="./assets/i284571214502644149.jpg"
+                                      src="/assets/i284571214502644149.jpg"
                                       srcSet="
                                         /assets/i284571214502644149.jpg
                                         /assets/i284571214502644149.jpg 2x,

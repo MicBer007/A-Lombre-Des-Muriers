@@ -179,7 +179,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522136966.jpg"
+                                                      src="/assets/i284571214522136966.jpg"
                                                       srcSet="
                                                         /assets/i284571214522136966.jpg
                                                         /assets/i284571214522136966.jpg 2x,
@@ -250,7 +250,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137042.jpg"
+                                                      src="/assets/i284571214522137042.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137042.jpg
                                                         /assets/i284571214522137042.jpg 2x,
@@ -321,7 +321,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137066.jpg"
+                                                      src="/assets/i284571214522137066.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137066.jpg
                                                         /assets/i284571214522137066.jpg 2x,
@@ -392,7 +392,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137096.jpg"
+                                                      src="/assets/i284571214522137096.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137096.jpg
                                                         /assets/i284571214522137096.jpg 2x,
@@ -463,7 +463,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140600.jpg"
+                                                      src="/assets/i284571214522140600.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140600.jpg
                                                         /assets/i284571214522140600.jpg 2x,
@@ -534,7 +534,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140641.jpg"
+                                                      src="/assets/i284571214522140641.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140641.jpg
                                                         /assets/i284571214522140641.jpg 2x,
@@ -605,7 +605,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140653.jpg"
+                                                      src="/assets/i284571214522140653.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140653.jpg
                                                         /assets/i284571214522140653.jpg 2x,
@@ -676,7 +676,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140656.jpg"
+                                                      src="/assets/i284571214522140656.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140656.jpg
                                                         /assets/i284571214522140656.jpg 2x,
@@ -747,7 +747,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140662.jpg"
+                                                      src="/assets/i284571214522140662.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140662.jpg
                                                         /assets/i284571214522140662.jpg 2x,
@@ -818,7 +818,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140672.jpg"
+                                                      src="/assets/i284571214522140672.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140672.jpg
                                                         /assets/i284571214522140672.jpg 2x,
@@ -889,7 +889,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137063.jpg"
+                                                      src="/assets/i284571214522137063.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137063.jpg
                                                         /assets/i284571214522137063.jpg 2x,
@@ -959,7 +959,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137024.jpg"
+                                                      src="/assets/i284571214522137024.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137024.jpg
                                                         /assets/i284571214522137024.jpg 2x,
@@ -1072,7 +1072,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522140591.jpg"
+                                                                src="/assets/i284571214522140591.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522140591.jpg
                                                                   /assets/i284571214522140591.jpg 2x,
@@ -1192,7 +1192,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140613.jpg"
+                                                      src="/assets/i284571214522140613.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140613.jpg
                                                         /assets/i284571214522140613.jpg 2x,
@@ -1263,7 +1263,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140626.jpg"
+                                                      src="/assets/i284571214522140626.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140626.jpg
                                                         /assets/i284571214522140626.jpg 2x,
@@ -1333,7 +1333,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140584.jpg"
+                                                      src="/assets/i284571214522140584.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140584.jpg
                                                         /assets/i284571214522140584.jpg 2x,
@@ -1404,7 +1404,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137069.jpg"
+                                                      src="/assets/i284571214522137069.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137069.jpg
                                                         /assets/i284571214522137069.jpg 2x,
@@ -1516,7 +1516,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522137073.jpg"
+                                                                src="/assets/i284571214522137073.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522137073.jpg
                                                                   /assets/i284571214522137073.jpg 2x,
@@ -1635,7 +1635,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522137026.jpg"
+                                                      src="/assets/i284571214522137026.jpg"
                                                       srcSet="
                                                         /assets/i284571214522137026.jpg
                                                         /assets/i284571214522137026.jpg 2x,
@@ -1748,7 +1748,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522140680.jpg"
+                                                                src="/assets/i284571214522140680.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522140680.jpg
                                                                   /assets/i284571214522140680.jpg 2x,
@@ -1867,7 +1867,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140683.jpg"
+                                                      src="/assets/i284571214522140683.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140683.jpg
                                                         /assets/i284571214522140683.jpg 2x,
@@ -1979,7 +1979,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522140688.jpg"
+                                                                src="/assets/i284571214522140688.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522140688.jpg
                                                                   /assets/i284571214522140688.jpg 2x,
@@ -2099,7 +2099,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140693.jpg"
+                                                      src="/assets/i284571214522140693.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140693.jpg
                                                         /assets/i284571214522140693.jpg 2x,
@@ -2169,7 +2169,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                      src="../assets/i284571214522140700.jpg"
+                                                      src="/assets/i284571214522140700.jpg"
                                                       srcSet="
                                                         /assets/i284571214522140700.jpg
                                                         /assets/i284571214522140700.jpg 2x,
@@ -2281,7 +2281,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522149870.jpg"
+                                                                src="/assets/i284571214522149870.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522149870.jpg
                                                                   /assets/i284571214522149870.jpg 2x,
@@ -2442,7 +2442,7 @@ export default function PhotosRegion() {
       display: "block",
       margin: 0
     }}
-                                                                src="../assets/i284571214522149876.jpg"
+                                                                src="/assets/i284571214522149876.jpg"
                                                                 srcSet="
                                                                   /assets/i284571214522149876.jpg
                                                                   /assets/i284571214522149876.jpg 2x,

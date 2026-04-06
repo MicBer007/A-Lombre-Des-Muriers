@@ -88,7 +88,7 @@ export default function Calendrier() {
                                           role="presentation"
                                           data-scalestrategy="fit"
                                           style={{ display: "block", margin: 0 }}
-                                          src="../../assets/New_Calendrier.png"
+                                          src="/assets/New_Calendrier.png"
                                           height="640"
                                           width="817"
                                           data-width="817"
@@ -207,7 +207,7 @@ export default function Calendrier() {
                                         role="presentation"
                                         data-scalestrategy="crop"
                                         style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                        src="../../assets/New_Calendrier.png"
+                                        src="/assets/New_Calendrier.png"
                                         height="345"
                                         width="817"
                                         data-width="817"
@@ -321,7 +321,7 @@ export default function Calendrier() {
                                                             allowFullScreen="true"
                                                             scrolling="no"
                                                             allow="encrypted-media"
-                                                            src="../../assets/share_button.html"
+                                                            src="/assets/share_button.html"
                                                             style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                           ></iframe>
                                                         </span>
@@ -336,7 +336,7 @@ export default function Calendrier() {
                                                         allowFullScreen="true"
                                                         className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                         title="X Post Button"
-                                                        src="../../assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                        src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                         style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                       ></iframe>
                                                     </li>

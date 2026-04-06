@@ -1427,7 +1427,7 @@ export default function Contrat() {
                                                                 allowFullScreen="true"
                                                                 scrolling="no"
                                                                 allow="encrypted-media"
-                                                                src="../../assets/share_button.html"
+                                                                src="/assets/share_button.html"
                                                                 style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                               ></iframe>
                                                             </span>
@@ -1442,7 +1442,7 @@ export default function Contrat() {
                                                             allowFullScreen="true"
                                                             className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                             title="X Post Button"
-                                                            src="../../assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                            src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                             style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                           ></iframe>
                                                         </li>

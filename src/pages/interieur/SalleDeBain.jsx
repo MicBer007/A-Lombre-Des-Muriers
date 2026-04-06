@@ -147,7 +147,7 @@ export default function SalleDeBain() {
                                                           role="presentation"
                                                           data-scalestrategy="crop"
                                                           style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                          src="../../assets/i284571214498194679.jpg"
+                                                          src="/assets/i284571214498194679.jpg"
                                                           srcSet="
                                                             /assets/i284571214498194679.jpg
                                                             /assets/i284571214498194679.jpg 2x,
@@ -268,7 +268,7 @@ export default function SalleDeBain() {
                                                           role="presentation"
                                                           data-scalestrategy="crop"
                                                           style={{ marginTop: 0.33333333333325754, marginLeft: 0, display: "block", margin: 0 }}
-                                                          src="../../assets/i284571214498194708.jpg"
+                                                          src="/assets/i284571214498194708.jpg"
                                                           srcSet="
                                                             /assets/i284571214498194708.jpg
                                                             /assets/i284571214498194708.jpg 2x,
@@ -360,7 +360,7 @@ export default function SalleDeBain() {
                                                 role="presentation"
                                                 data-scalestrategy="crop"
                                                 style={{ marginTop: 0.33333333333337123, marginLeft: 0, display: "block", margin: 0 }}
-                                                src="../../assets/i284571214498271061.jpg"
+                                                src="/assets/i284571214498271061.jpg"
                                                 srcSet="
                                                   /assets/i284571214498271061.jpg
                                                   /assets/i284571214498271061.jpg 2x,
@@ -441,7 +441,7 @@ export default function SalleDeBain() {
                                                           role="presentation"
                                                           data-scalestrategy="crop"
                                                           style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                          src="../../assets/i284571214498194760.jpg"
+                                                          src="/assets/i284571214498194760.jpg"
                                                           srcSet="
                                                             /assets/i284571214498194760.jpg
                                                             /assets/i284571214498194760.jpg 2x,
@@ -562,7 +562,7 @@ export default function SalleDeBain() {
                                                           role="presentation"
                                                           data-scalestrategy="crop"
                                                           style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                          src="../../assets/i284571214498194767.jpg"
+                                                          src="/assets/i284571214498194767.jpg"
                                                           srcSet="
                                                             /assets/i284571214498194767.jpg
                                                             /assets/i284571214498194767.jpg 2x,
@@ -952,7 +952,7 @@ export default function SalleDeBain() {
                                                           allowFullScreen="true"
                                                           scrolling="no"
                                                           allow="encrypted-media"
-                                                          src="../../assets/share_button.html"
+                                                          src="/assets/share_button.html"
                                                           style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                         ></iframe>
                                                       </span>
@@ -967,7 +967,7 @@ export default function SalleDeBain() {
                                                       allowFullScreen="true"
                                                       className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                       title="X Post Button"
-                                                      src="../../assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                      src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                       style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                     ></iframe>
                                                   </li>

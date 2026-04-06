@@ -119,7 +119,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214506718529.jpg"
+                                                      src="/assets/i284571214506718529.jpg"
                                                       srcSet="
                                                         /assets/i284571214506718529.jpg
                                                         /assets/i284571214506718529.jpg 2x,
@@ -173,7 +173,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214522386436.jpg"
+                                                      src="/assets/i284571214522386436.jpg"
                                                       srcSet="
                                                         /assets/i284571214522386436.jpg
                                                         /assets/i284571214522386436.jpg 2x,
@@ -227,7 +227,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214522386443.jpg"
+                                                      src="/assets/i284571214522386443.jpg"
                                                       srcSet="
                                                         /assets/i284571214522386443.jpg
                                                         /assets/i284571214522386443.jpg 2x,
@@ -281,7 +281,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: -1, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214522386400.jpg"
+                                                      src="/assets/i284571214522386400.jpg"
                                                       srcSet="
                                                         /assets/i284571214522386400.jpg
                                                         /assets/i284571214522386400.jpg 2x,
@@ -335,7 +335,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214522386390.jpg"
+                                                      src="/assets/i284571214522386390.jpg"
                                                       srcSet="
                                                         /assets/i284571214522386390.jpg
                                                         /assets/i284571214522386390.jpg 2x,
@@ -389,7 +389,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503925878.jpg"
+                                                      src="/assets/i284571214503925878.jpg"
                                                       srcSet="
                                                         /assets/i284571214503925878.jpg
                                                         /assets/i284571214503925878.jpg 2x,
@@ -443,7 +443,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503926045.jpg"
+                                                      src="/assets/i284571214503926045.jpg"
                                                       srcSet="
                                                         /assets/i284571214503926045.jpg
                                                         /assets/i284571214503926045.jpg 2x,
@@ -497,7 +497,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503924426.jpg"
+                                                      src="/assets/i284571214503924426.jpg"
                                                       srcSet="
                                                         /assets/i284571214503924426.jpg
                                                         /assets/i284571214503924426.jpg   2x,
@@ -551,7 +551,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503925204.jpg"
+                                                      src="/assets/i284571214503925204.jpg"
                                                       srcSet="
                                                         /assets/i284571214503925204.jpg
                                                         /assets/i284571214503925204.jpg 2x,
@@ -605,7 +605,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503925672.jpg"
+                                                      src="/assets/i284571214503925672.jpg"
                                                       srcSet="
                                                         /assets/i284571214503925672.jpg
                                                         /assets/i284571214503925672.jpg 2x,
@@ -659,7 +659,7 @@ export default function Commentaires() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214503925781.jpg"
+                                                      src="/assets/i284571214503925781.jpg"
                                                       srcSet="
                                                         /assets/i284571214503925781.jpg
                                                         /assets/i284571214503925781.jpg 2x,
@@ -822,7 +822,7 @@ export default function Commentaires() {
                                                                 allowFullScreen="true"
                                                                 scrolling="no"
                                                                 allow="encrypted-media"
-                                                                src="../../assets/share_button.html"
+                                                                src="/assets/share_button.html"
                                                                 style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                               ></iframe>
                                                             </span>
@@ -837,7 +837,7 @@ export default function Commentaires() {
                                                             allowFullScreen="true"
                                                             className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                             title="X Post Button"
-                                                            src="../../assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                            src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                             style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                           ></iframe>
                                                         </li>

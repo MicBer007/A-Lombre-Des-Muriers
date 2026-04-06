@@ -654,7 +654,7 @@ export default function Tarifs() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/i284571214521237393.jpg"
+                                                      src="/assets/i284571214521237393.jpg"
                                                       srcSet="
                                                         /assets/i284571214521237393.jpg
                                                         /assets/i284571214521237393.jpg 2x,
@@ -1831,7 +1831,7 @@ export default function Tarifs() {
                                                       role="presentation"
                                                       data-scalestrategy="crop"
                                                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                                      src="../../assets/Capture d’écran 2025-05-17 à 20.13.04.png"
+                                                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-05-17%20a%CC%80%2020.13.04.png"
                                                       srcSet="
                                                         /assets/Capture%20d%E2%80%99e%CC%81cran%202025-05-17%20a%CC%80%2020.13.04.png
                                                         /assets/Capture%20d%E2%80%99e%CC%81cran%202025-05-17%20a%CC%80%2020.13.04.png 2x,
@@ -1994,7 +1994,7 @@ export default function Tarifs() {
                                                                 allowFullScreen="true"
                                                                 scrolling="no"
                                                                 allow="encrypted-media"
-                                                                src="../../assets/share_button.html"
+                                                                src="/assets/share_button.html"
                                                                 style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
                                                               ></iframe>
                                                             </span>
@@ -2009,7 +2009,7 @@ export default function Tarifs() {
                                                             allowFullScreen="true"
                                                             className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
                                                             title="X Post Button"
-                                                            src="../../assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+                                                            src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
                                                             style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
                                                           ></iframe>
                                                         </li>

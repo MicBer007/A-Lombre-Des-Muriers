@@ -126,7 +126,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                              src="../assets/Capture d’écran 2023-04-08 à 18.59.01.png"
+                                              src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png"
                                               srcSet="
                                                 /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png
                                                 /assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png  2x,
@@ -231,7 +231,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522329899.jpg"
+                                                        src="/assets/i284571214522329899.jpg"
                                                         srcSet="
                                                           /assets/i284571214522329899.jpg
                                                           /assets/i284571214522329899.jpg 2x,
@@ -301,7 +301,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522315913.jpg"
+                                                        src="/assets/i284571214522315913.jpg"
                                                         srcSet="
                                                           /assets/i284571214522315913.jpg
                                                           /assets/i284571214522315913.jpg 2x,
@@ -414,7 +414,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                                  src="../assets/i284571214522136776.jpg"
+                                                                  src="/assets/i284571214522136776.jpg"
                                                                   srcSet="
                                                                     /assets/i284571214522136776.jpg
                                                                     /assets/i284571214522136776.jpg 2x,
@@ -536,7 +536,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522315918.jpg"
+                                                        src="/assets/i284571214522315918.jpg"
                                                         srcSet="
                                                           /assets/i284571214522315918.jpg
                                                           /assets/i284571214522315918.jpg 2x,
@@ -649,7 +649,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                                  src="../assets/i284571214522136707.jpg"
+                                                                  src="/assets/i284571214522136707.jpg"
                                                                   srcSet="
                                                                     /assets/i284571214522136707.jpg
                                                                     /assets/i284571214522136707.jpg 2x,
@@ -770,7 +770,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522136710.jpg"
+                                                        src="/assets/i284571214522136710.jpg"
                                                         srcSet="
                                                           /assets/i284571214522136710.jpg
                                                           /assets/i284571214522136710.jpg 2x,
@@ -883,7 +883,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                                  src="../assets/i284571214522136712.jpg"
+                                                                  src="/assets/i284571214522136712.jpg"
                                                                   srcSet="
                                                                     /assets/i284571214522136712.jpg
                                                                     /assets/i284571214522136712.jpg 2x,
@@ -1004,7 +1004,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522333137.jpg"
+                                                        src="/assets/i284571214522333137.jpg"
                                                         srcSet="
                                                           /assets/i284571214522333137.jpg
                                                           /assets/i284571214522333137.jpg 2x,
@@ -1074,7 +1074,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                        src="../assets/i284571214522613580.jpg"
+                                                        src="/assets/i284571214522613580.jpg"
                                                         srcSet="
                                                           /assets/i284571214522613580.jpg
                                                           /assets/i284571214522613580.jpg 2x,
@@ -1224,7 +1224,7 @@ export default function Jardin() {
       display: "block",
       margin: 0
     }}
-                                                                  src="../assets/Capture d’écran 2025-09-29 à 17.59.13.png"
+                                                                  src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-09-29%20a%CC%80%2017.59.13.png"
                                                                   srcSet="
                                                                     /assets/Capture%20d%E2%80%99e%CC%81cran%202025-09-29%20a%CC%80%2017.59.13.png
                                                                     /assets/Capture%20d%E2%80%99e%CC%81cran%202025-09-29%20a%CC%80%2017.59.13.png 2x,
