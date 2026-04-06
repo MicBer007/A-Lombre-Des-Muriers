@@ -1,4 +1,13 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function HeaderNav() {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    if (path === "/") return location.pathname === "/";
+    return location.pathname === path || location.pathname.startsWith(path + "/");
+  };
+
   return (
     <div
       data-id="EF4D0BDF-F200-4C15-B5C5-F17F1B079508"
@@ -96,8 +105,8 @@ export default function HeaderNav() {
                                 data-width="91"
                                 data-height="84"
                               >
-                                <a
-                                  href="/"
+                                <Link
+                                  to="/"
                                   target="_self"
                                   alt=""
                                   data-stop-propagation="true"
@@ -114,7 +123,7 @@ export default function HeaderNav() {
                                     data-width="91"
                                     data-height="84"
                                   />
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -148,9 +157,9 @@ export default function HeaderNav() {
                                   className="styles_contentContainer__lrPIa textnormal styles_text__3jGMu"
                                 >
                                   <p>
-                                    <a
+                                    <Link
                                       className="textnormal mobile-oversized"
-                                      href="/"
+                                      to="/"
                                       style={{
                                         textAlign: "left",
                                         paddingTop: 6,
@@ -168,7 +177,7 @@ export default function HeaderNav() {
                                       }}
                                     >
                                       A l'ombre des Muriers
-                                    </a>
+                                    </Link>
                                   </p>
                                 </div>
                               </div>
@@ -276,55 +285,55 @@ export default function HeaderNav() {
                                         style={{ width: 980, height: 51 }}
                                       >
                                         <ul className="menu1">
-                                          <li>
-                                            <a
-                                              className="expandable level-0"
-                                              href="/"
+                                          <li className={isActive("/") ? "selected" : undefined}>
+                                            <Link
+                                              className={`expandable level-0${isActive("/") ? " selected" : ""}`}
+                                              to="/"
                                               aria-haspopup="true"
                                               aria-expanded="false"
                                             >
                                               <span>Accueil</span>
-                                            </a>
+                                            </Link>
                                             <ul className="menu1">
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/terrasse/"
+                                              <li className={`menuhidden${isActive("/terrasse") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/terrasse") ? " selected" : ""}`}
+                                                  to="/terrasse"
                                                 >
                                                   <span>Terrasse</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/jardin/"
+                                              <li className={`menuhidden${isActive("/jardin") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/jardin") ? " selected" : ""}`}
+                                                  to="/jardin"
                                                 >
                                                   <span>Jardin</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/parking/"
+                                              <li className={`menuhidden${isActive("/parking") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/parking") ? " selected" : ""}`}
+                                                  to="/parking"
                                                 >
                                                   <span>Emplacement parking</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/photos-region/"
+                                              <li className={`menuhidden${isActive("/photos-region") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/photos-region") ? " selected" : ""}`}
+                                                  to="/photos-region"
                                                 >
                                                   <span>Photos de la région</span>
-                                                </a>
+                                                </Link>
                                               </li>
                                             </ul>
                                             <div className="divider"></div>
                                           </li>
-                                          <li>
+                                          <li className={isActive("/interieur") ? "selected" : undefined}>
                                             <a
                                               className="expandable level-0 dropdown-only"
                                               href="javascript:void(0)"
@@ -334,36 +343,36 @@ export default function HeaderNav() {
                                               <span>Intérieur du gîte</span>
                                             </a>
                                             <ul className="menu1">
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/interieur/piece-a-vivre/"
+                                              <li className={`menuhidden${isActive("/interieur/piece-a-vivre") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/interieur/piece-a-vivre") ? " selected" : ""}`}
+                                                  to="/interieur/piece-a-vivre"
                                                 >
                                                   <span>Pièce à vivre</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/interieur/chambre/"
+                                              <li className={`menuhidden${isActive("/interieur/chambre") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/interieur/chambre") ? " selected" : ""}`}
+                                                  to="/interieur/chambre"
                                                 >
                                                   <span>Chambre</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/interieur/salle-de-bain/"
+                                              <li className={`menuhidden${isActive("/interieur/salle-de-bain") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/interieur/salle-de-bain") ? " selected" : ""}`}
+                                                  to="/interieur/salle-de-bain"
                                                 >
                                                   <span>Salle de bain</span>
-                                                </a>
+                                                </Link>
                                               </li>
                                             </ul>
                                             <div className="divider"></div>
                                           </li>
-                                          <li>
+                                          <li className={isActive("/informations") ? "selected" : undefined}>
                                             <a
                                               className="expandable level-0 dropdown-only"
                                               href="javascript:void(0)"
@@ -373,63 +382,63 @@ export default function HeaderNav() {
                                               <span>Informations utiles</span>
                                             </a>
                                             <ul className="menu1">
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/informations/calendrier/"
+                                              <li className={`menuhidden${isActive("/informations/calendrier") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/informations/calendrier") ? " selected" : ""}`}
+                                                  to="/informations/calendrier"
                                                 >
                                                   <span>Calendrier</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/informations/tarifs/"
+                                              <li className={`menuhidden${isActive("/informations/tarifs") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/informations/tarifs") ? " selected" : ""}`}
+                                                  to="/informations/tarifs"
                                                 >
                                                   <span>Tarifs</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/informations/contrat/"
+                                              <li className={`menuhidden${isActive("/informations/contrat") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/informations/contrat") ? " selected" : ""}`}
+                                                  to="/informations/contrat"
                                                 >
                                                   <span>Contrat</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/informations/commentaires/"
+                                              <li className={`menuhidden${isActive("/informations/commentaires") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/informations/commentaires") ? " selected" : ""}`}
+                                                  to="/informations/commentaires"
                                                 >
                                                   <span>Commentaires</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/informations/producteurs/"
+                                              <li className={`menuhidden${isActive("/informations/producteurs") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/informations/producteurs") ? " selected" : ""}`}
+                                                  to="/informations/producteurs"
                                                 >
                                                   <span>Producteurs</span>
-                                                </a>
+                                                </Link>
                                               </li>
                                             </ul>
                                             <div className="divider"></div>
                                           </li>
-                                          <li>
-                                            <a
-                                              className="level-0"
-                                              href="/a-visiter/"
+                                          <li className={isActive("/a-visiter") ? "selected" : undefined}>
+                                            <Link
+                                              className={`level-0${isActive("/a-visiter") ? " selected" : ""}`}
+                                              to="/a-visiter"
                                             >
                                               <span>A visiter</span>
-                                            </a>
+                                            </Link>
                                             <div className="divider"></div>
                                           </li>
-                                          <li>
+                                          <li className={isActive("/traductions") ? "selected" : undefined}>
                                             <a
                                               className="expandable level-0 dropdown-only"
                                               href="javascript:void(0)"
@@ -439,33 +448,33 @@ export default function HeaderNav() {
                                               <span>Traductions</span>
                                             </a>
                                             <ul className="menu1">
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/traductions/english/"
+                                              <li className={`menuhidden${isActive("/traductions/english") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/traductions/english") ? " selected" : ""}`}
+                                                  to="/traductions/english"
                                                 >
                                                   <span>In English</span>
-                                                </a>
+                                                </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className="menuhidden">
-                                                <a
-                                                  className="level-1"
-                                                  href="/traductions/deutsch/"
+                                              <li className={`menuhidden${isActive("/traductions/deutsch") ? " selected" : ""}`}>
+                                                <Link
+                                                  className={`level-1${isActive("/traductions/deutsch") ? " selected" : ""}`}
+                                                  to="/traductions/deutsch"
                                                 >
                                                   <span>Auf Deutsch</span>
-                                                </a>
+                                                </Link>
                                               </li>
                                             </ul>
                                             <div className="divider"></div>
                                           </li>
-                                          <li>
-                                            <a
-                                              className="level-0"
-                                              href="/contact/"
+                                          <li className={isActive("/contact") ? "selected" : undefined}>
+                                            <Link
+                                              className={`level-0${isActive("/contact") ? " selected" : ""}`}
+                                              to="/contact"
                                             >
                                               <span>Contact</span>
-                                            </a>
+                                            </Link>
                                           </li>
                                         </ul>
                                       </div>

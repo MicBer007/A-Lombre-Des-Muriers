@@ -1,10 +1,24 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function MobileNav() {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    if (path === "/") return location.pathname === "/";
+    return location.pathname === path || location.pathname.startsWith(path + "/");
+  };
+
   const menuItemStyle = {
     backgroundColor: "rgba(223, 223, 223, 1)",
     color: "rgba(0, 0, 0, 1)",
     fontSize: 16,
     lineHeight: 3,
     fontFamily: "Roboto",
+  };
+
+  const activeMenuItemStyle = {
+    ...menuItemStyle,
+    fontWeight: "bold",
   };
 
   const expandCollapseContainerStyle = {
@@ -24,6 +38,8 @@ export default function MobileNav() {
     width: 8,
     marginTop: 4,
   };
+
+  const hasActiveChild = (paths) => paths.some((p) => isActive(p));
 
   return (
     <div>
@@ -59,15 +75,16 @@ export default function MobileNav() {
           inert=""
         >
           <ul>
-            <li>
+            <li className={hasActiveChild(["/", "/terrasse", "/jardin", "/parking", "/photos-region"]) && !isActive("/") ? "expanded" : undefined}>
               <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-                <a
-                  href="/"
-                  style={menuItemStyle}
+                <Link
+                  to="/"
+                  style={isActive("/") ? activeMenuItemStyle : menuItemStyle}
                   title="Accueil"
+                  className={isActive("/") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                 >
                   Accueil
-                </a>
+                </Link>
                 <div
                   className="MobileHeaderMenu_expandCollapseContainer__1rweD"
                   style={expandCollapseContainerStyle}
@@ -86,52 +103,57 @@ export default function MobileNav() {
               </div>
               <ul>
                 <li>
-                  <a
-                    href="/terrasse/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/terrasse"
+                    style={isActive("/terrasse") ? activeMenuItemStyle : menuItemStyle}
                     title="Terrasse"
+                    className={isActive("/terrasse") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Terrasse
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/jardin/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/jardin"
+                    style={isActive("/jardin") ? activeMenuItemStyle : menuItemStyle}
                     title="Jardin"
+                    className={isActive("/jardin") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Jardin
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/parking/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/parking"
+                    style={isActive("/parking") ? activeMenuItemStyle : menuItemStyle}
                     title="Emplacement parking"
+                    className={isActive("/parking") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Emplacement parking
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/photos-region/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/photos-region"
+                    style={isActive("/photos-region") ? activeMenuItemStyle : menuItemStyle}
                     title="Photos de la région"
+                    className={isActive("/photos-region") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Photos de la région
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
-            <li>
+            <li className={hasActiveChild(["/interieur/piece-a-vivre", "/interieur/chambre", "/interieur/salle-de-bain"]) ? "expanded" : undefined}>
               <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-                <a
-                  href="/interieur/"
-                  style={menuItemStyle}
+                <Link
+                  to="/interieur"
+                  style={isActive("/interieur") ? activeMenuItemStyle : menuItemStyle}
                   title="Intérieur du gîte"
+                  className={isActive("/interieur") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                 >
                   Intérieur du gîte
-                </a>
+                </Link>
                 <div
                   className="MobileHeaderMenu_expandCollapseContainer__1rweD"
                   style={expandCollapseContainerStyle}
@@ -150,43 +172,47 @@ export default function MobileNav() {
               </div>
               <ul>
                 <li>
-                  <a
-                    href="/interieur/piece-a-vivre/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/interieur/piece-a-vivre"
+                    style={isActive("/interieur/piece-a-vivre") ? activeMenuItemStyle : menuItemStyle}
                     title="Pièce à vivre"
+                    className={isActive("/interieur/piece-a-vivre") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Pièce à vivre
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/interieur/chambre/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/interieur/chambre"
+                    style={isActive("/interieur/chambre") ? activeMenuItemStyle : menuItemStyle}
                     title="Chambre"
+                    className={isActive("/interieur/chambre") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Chambre
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/interieur/salle-de-bain/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/interieur/salle-de-bain"
+                    style={isActive("/interieur/salle-de-bain") ? activeMenuItemStyle : menuItemStyle}
                     title="Salle de bain"
+                    className={isActive("/interieur/salle-de-bain") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Salle de bain
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
-            <li>
+            <li className={hasActiveChild(["/informations/calendrier", "/informations/tarifs", "/informations/contrat", "/informations/commentaires", "/informations/producteurs"]) ? "expanded" : undefined}>
               <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-                <a
-                  href="/informations/"
-                  style={menuItemStyle}
+                <Link
+                  to="/informations"
+                  style={isActive("/informations") ? activeMenuItemStyle : menuItemStyle}
                   title="Informations utiles"
+                  className={isActive("/informations") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                 >
                   Informations utiles
-                </a>
+                </Link>
                 <div
                   className="MobileHeaderMenu_expandCollapseContainer__1rweD"
                   style={expandCollapseContainerStyle}
@@ -205,70 +231,77 @@ export default function MobileNav() {
               </div>
               <ul>
                 <li>
-                  <a
-                    href="/informations/calendrier/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/informations/calendrier"
+                    style={isActive("/informations/calendrier") ? activeMenuItemStyle : menuItemStyle}
                     title="Calendrier"
+                    className={isActive("/informations/calendrier") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Calendrier
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/informations/tarifs/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/informations/tarifs"
+                    style={isActive("/informations/tarifs") ? activeMenuItemStyle : menuItemStyle}
                     title="Tarifs"
+                    className={isActive("/informations/tarifs") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Tarifs
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/informations/contrat/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/informations/contrat"
+                    style={isActive("/informations/contrat") ? activeMenuItemStyle : menuItemStyle}
                     title="Contrat"
+                    className={isActive("/informations/contrat") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Contrat
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/informations/commentaires/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/informations/commentaires"
+                    style={isActive("/informations/commentaires") ? activeMenuItemStyle : menuItemStyle}
                     title="Commentaires"
+                    className={isActive("/informations/commentaires") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Commentaires
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/informations/producteurs/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/informations/producteurs"
+                    style={isActive("/informations/producteurs") ? activeMenuItemStyle : menuItemStyle}
                     title="Producteurs "
+                    className={isActive("/informations/producteurs") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Producteurs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                href="/a-visiter/"
-                style={menuItemStyle}
+              <Link
+                to="/a-visiter"
+                style={isActive("/a-visiter") ? activeMenuItemStyle : menuItemStyle}
                 title="A visiter"
+                className={isActive("/a-visiter") ? "MobileHeaderMenu_current__2Nelz" : undefined}
               >
                 A visiter
-              </a>
+              </Link>
             </li>
-            <li>
+            <li className={hasActiveChild(["/traductions/english", "/traductions/deutsch"]) ? "expanded" : undefined}>
               <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-                <a
-                  href="/traductions/"
-                  style={menuItemStyle}
+                <Link
+                  to="/traductions"
+                  style={isActive("/traductions") ? activeMenuItemStyle : menuItemStyle}
                   title="Traductions"
+                  className={isActive("/traductions") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                 >
                   Traductions
-                </a>
+                </Link>
                 <div
                   className="MobileHeaderMenu_expandCollapseContainer__1rweD"
                   style={expandCollapseContainerStyle}
@@ -287,33 +320,36 @@ export default function MobileNav() {
               </div>
               <ul>
                 <li>
-                  <a
-                    href="/traductions/english/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/traductions/english"
+                    style={isActive("/traductions/english") ? activeMenuItemStyle : menuItemStyle}
                     title="In English"
+                    className={isActive("/traductions/english") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     In English
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/traductions/deutsch/"
-                    style={menuItemStyle}
+                  <Link
+                    to="/traductions/deutsch"
+                    style={isActive("/traductions/deutsch") ? activeMenuItemStyle : menuItemStyle}
                     title="Auf Deutsch"
+                    className={isActive("/traductions/deutsch") ? "MobileHeaderMenu_current__2Nelz" : undefined}
                   >
                     Auf Deutsch
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a
-                href="/contact/"
-                style={menuItemStyle}
+              <Link
+                to="/contact"
+                style={isActive("/contact") ? activeMenuItemStyle : menuItemStyle}
                 title="Contact"
+                className={isActive("/contact") ? "MobileHeaderMenu_current__2Nelz" : undefined}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
