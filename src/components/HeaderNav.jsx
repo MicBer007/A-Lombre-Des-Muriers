@@ -334,14 +334,14 @@ export default function HeaderNav() {
                                             <div className="divider"></div>
                                           </li>
                                           <li className={isActive("/interieur") ? "selected" : undefined}>
-                                            <a
+                                            <button
+                                              type="button"
                                               className="expandable level-0 dropdown-only"
-                                              href="javascript:void(0)"
                                               aria-haspopup="true"
                                               aria-expanded="false"
                                             >
                                               <span>Intérieur du gîte</span>
-                                            </a>
+                                            </button>
                                             <ul className="menu1">
                                               <li className={`menuhidden${isActive("/interieur/piece-a-vivre") ? " selected" : ""}`}>
                                                 <Link
@@ -373,14 +373,14 @@ export default function HeaderNav() {
                                             <div className="divider"></div>
                                           </li>
                                           <li className={isActive("/informations") ? "selected" : undefined}>
-                                            <a
+                                            <button
+                                              type="button"
                                               className="expandable level-0 dropdown-only"
-                                              href="javascript:void(0)"
                                               aria-haspopup="true"
                                               aria-expanded="false"
                                             >
                                               <span>Informations utiles</span>
-                                            </a>
+                                            </button>
                                             <ul className="menu1">
                                               <li className={`menuhidden${isActive("/informations/calendrier") ? " selected" : ""}`}>
                                                 <Link
@@ -439,14 +439,14 @@ export default function HeaderNav() {
                                             <div className="divider"></div>
                                           </li>
                                           <li className={isActive("/traductions") ? "selected" : undefined}>
-                                            <a
+                                            <button
+                                              type="button"
                                               className="expandable level-0 dropdown-only"
-                                              href="javascript:void(0)"
                                               aria-haspopup="true"
                                               aria-expanded="false"
                                             >
                                               <span>Traductions</span>
-                                            </a>
+                                            </button>
                                             <ul className="menu1">
                                               <li className={`menuhidden${isActive("/traductions/english") ? " selected" : ""}`}>
                                                 <Link
