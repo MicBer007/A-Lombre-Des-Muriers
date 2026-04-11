@@ -1,7 +1,36 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import vitePrerender from "vite-plugin-prerender";
+import path from "path";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    vitePrerender({
+      staticDir: path.join(__dirname, "dist"),
+      routes: [
+        "/",
+        "/terrasse",
+        "/jardin",
+        "/parking",
+        "/photos-region",
+        "/contact",
+        "/a-visiter",
+        "/interieur",
+        "/interieur/chambre",
+        "/interieur/piece-a-vivre",
+        "/interieur/salle-de-bain",
+        "/informations",
+        "/informations/calendrier",
+        "/informations/tarifs",
+        "/informations/contrat",
+        "/informations/commentaires",
+        "/informations/producteurs",
+        "/traductions",
+        "/traductions/english",
+        "/traductions/deutsch",
+      ],
+    }),
+  ],
   base: "/",
 });
