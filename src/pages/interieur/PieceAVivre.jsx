@@ -14,10 +14,10 @@ export default function PieceAVivre() {
   images.push({ src: "/assets/i284571214522214604.jpg", alt: "" });
   images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.14.19.png", alt: "le coin repas." });
   images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.15.30.png", alt: "La cuisine." });
-  images.push({ src: "/assets/i284571214498271697.jpg", alt: "Sortie de la pi\u00e8ce \u00e0 vivre vers la terrasse couverte" });
   images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.35.png", alt: "" });
   images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.17.33.png", alt: "" });
   images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.08.png", alt: "" });
+  images.push({ src: "/assets/i284571214498271697.jpg", alt: "Sortie de la pi\u00e8ce \u00e0 vivre vers la terrasse couverte" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -210,7 +210,7 @@ export default function PieceAVivre() {
                                     height="377"
                                     width="290"
                                     style={{ display: "block", cursor: "pointer" }}
-                                    onClick={() => openLightbox(images, 10)}
+                                    onClick={() => openLightbox(images, 9)}
                                   />
                                 </div>
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
@@ -221,7 +221,7 @@ export default function PieceAVivre() {
                                     height="377"
                                     width="273"
                                     style={{ display: "block", cursor: "pointer" }}
-                                    onClick={() => openLightbox(images, 11)}
+                                    onClick={() => openLightbox(images, 10)}
                                   />
                                 </div>
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
@@ -232,7 +232,7 @@ export default function PieceAVivre() {
                                     height="377"
                                     width="275"
                                     style={{ display: "block", cursor: "pointer" }}
-                                    onClick={() => openLightbox(images, 12)}
+                                    onClick={() => openLightbox(images, 11)}
                                   />
                                 </div>
                               </div>
@@ -291,7 +291,7 @@ export default function PieceAVivre() {
                                       alt="Sortie de la pi&egrave;ce &agrave; vivre vers la terrasse couverte"
                                       title="Sortie de la pi&egrave;ce &agrave; vivre vers la terrasse couverte"
                                       style={{ display: "block", cursor: "pointer" }}
-                                      onClick={() => openLightbox(images, 9)}
+                                      onClick={() => openLightbox(images, 12)}
                                     />
                                 </div>
                                 <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: 14.4, lineHeight: 1.17, fontStyle: "italic" }}>

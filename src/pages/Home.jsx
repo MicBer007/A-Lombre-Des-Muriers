@@ -5,21 +5,21 @@ export default function Home() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
   images.push({ src: "/assets/i284571214498116028.jpg", alt: "la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai" });
+  images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
+  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png", alt: "" });
+  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png", alt: "" });
+  images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
+  images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
+  images.push({ src: "/assets/i284571214516621731.jpg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
   images.push({ src: "/assets/i284571214498992102.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522141193.jpg", alt: "" });
   images.push({ src: "/assets/i284571214498515291.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522180079.jpg", alt: "" });
   images.push({ src: "/assets/i284571214498260070.jpg", alt: "" });
   images.push({ src: "/assets/i284571214498180473.jpg", alt: "Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel" });
-  images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214516621731.jpg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
   images.push({ src: "/assets/i284571214498528937.jpg", alt: "Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow" });
   images.push({ src: "/assets/i284571214498540023.jpg", alt: "Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter." });
   images.push({ src: "/assets/i284571214502644149.jpg", alt: "Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz" });
-  images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png", alt: "" });
-  images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -94,7 +94,7 @@ export default function Home() {
                               {/* Image 2: Large house photo */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={653} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 12)} />
+                                  <img loading="lazy" src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={653} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
                                 </div>
                               </div>
 
@@ -108,21 +108,21 @@ export default function Home() {
                               {/* Image 3: Spa screenshot 1 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 13)} />
+                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
                                 </div>
                               </div>
 
                               {/* Image 4: Spa screenshot 2 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 14)} />
+                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
                               </div>
 
                               {/* Image 5: Chaises longues */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={510} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 15)} />
+                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={510} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                               </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214522335201.jpg" width={680} height={488}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
                                 </div>
                               </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/i284571214516621731.jpg" width={680} height={510}
                                       alt="Entrée du gîte et Pierrade pour plus de convivialité !"
                                       title="Entrée du gîte et Pierrade pour plus de convivialité !"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Entrée du gîte et Pierrade pour plus de convivialité !
@@ -151,7 +151,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214498992102.jpg" width={680} height={496}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
                                 </div>
                               </div>
 
@@ -159,7 +159,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214522141193.jpg" width={680} height={510}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
                                 </div>
                               </div>
 
@@ -345,7 +345,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214498515291.jpg" width={680} height={495}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
                                 </div>
                               </div>
 
@@ -394,7 +394,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214522180079.jpg" width={680} height={349}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
                                 </div>
                               </div>
 
@@ -402,7 +402,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214498260070.jpg" width={680} height={215}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 11)} />
                                 </div>
                               </div>
 
@@ -412,7 +412,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/i284571214498180473.jpg" width={680} height={461}
                                       alt="Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel"
                                       title="Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 12)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel
@@ -519,7 +519,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/i284571214498528937.jpg" width={680} height={510}
                                       alt="Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow"
                                       title="Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 13)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow
@@ -532,7 +532,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/i284571214498540023.jpg" width={680} height={510}
                                       alt="Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter."
                                       title="Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter."
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 14)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter.
@@ -545,7 +545,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/i284571214502644149.jpg" width={680} height={510}
                                       alt="Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz"
                                       title="Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 11)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 15)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Un magnifique couché de soleil vue du parking ---- A beautiful
