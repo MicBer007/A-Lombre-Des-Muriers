@@ -61,13 +61,15 @@ export default function MobileNav() {
       <header
         id="MobileHeader_container"
         className="MobileHeader_container__1XW3y"
-        style={{ backgroundColor: "rgba(223, 223, 223, 1)", position: "relative", zIndex: 10010 }}
+        style={{ backgroundColor: "rgba(223, 223, 223, 1)", position: "relative", zIndex: 10010, overflow: "hidden", WebkitTapHighlightColor: "transparent" }}
         data-testid="mobile-header"
       >
-        <div className="MobileHeader_dummyMenuIconContainer__3mfi4"></div>
-        <span style={{ fontFamily: "Roboto", fontSize: 18, fontWeight: 500, color: "rgb(71, 71, 71)" }}>
-          A l'ombre des Muriers
-        </span>
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <img src="/assets/i284571214503930606.jpg" alt="Logo" style={{ height: 36, maxHeight: 36, width: "auto", display: "block" }} />
+          <span style={{ fontFamily: "Roboto", fontSize: 18, fontWeight: 500, color: "rgb(71, 71, 71)" }}>
+            A l'ombre des Muriers
+          </span>
+        </div>
         <div
           className={`MobileHeader_menuIconContainer__lc-Zq ${isOpen ? "on" : "off"}`}
           id="MobileHeader_burgerMenuIcon"
@@ -89,7 +91,7 @@ export default function MobileNav() {
       <div
         id="mm"
         className={`MobileHeaderMenu_mobileMenu__21p7v ${isOpen ? "on" : "off"}`}
-        style={{ backgroundColor: "rgba(223, 223, 223, 1)" }}
+        style={{ backgroundColor: "rgba(223, 223, 223, 1)", WebkitTapHighlightColor: "transparent" }}
         aria-hidden={!isOpen}
       >
         <ul>
@@ -112,7 +114,7 @@ export default function MobileNav() {
           {/* Intérieur */}
           <li className={expanded["interieur"] ? "expanded" : undefined}>
             <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-              <span style={isActive("/interieur") ? activeNonLinkItemStyle : nonLinkItemStyle}>
+              <span style={isActive("/interieur") ? { ...activeNonLinkItemStyle, cursor: "pointer" } : { ...nonLinkItemStyle, cursor: "pointer" }} onClick={() => toggleExpand("interieur")}>
                 Intérieur du gîte
               </span>
               <ExpandToggle itemKey="interieur" />
@@ -127,7 +129,7 @@ export default function MobileNav() {
           {/* Informations */}
           <li className={expanded["informations"] ? "expanded" : undefined}>
             <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-              <span style={isActive("/informations") ? activeNonLinkItemStyle : nonLinkItemStyle}>
+              <span style={isActive("/informations") ? { ...activeNonLinkItemStyle, cursor: "pointer" } : { ...nonLinkItemStyle, cursor: "pointer" }} onClick={() => toggleExpand("informations")}>
                 Informations utiles
               </span>
               <ExpandToggle itemKey="informations" />
@@ -151,7 +153,7 @@ export default function MobileNav() {
           {/* Traductions */}
           <li className={expanded["traductions"] ? "expanded" : undefined}>
             <div className="MobileHeaderMenu_expandCollapseItem__2WnRW">
-              <span style={isActive("/traductions") ? activeNonLinkItemStyle : nonLinkItemStyle}>
+              <span style={isActive("/traductions") ? { ...activeNonLinkItemStyle, cursor: "pointer" } : { ...nonLinkItemStyle, cursor: "pointer" }} onClick={() => toggleExpand("traductions")}>
                 Traductions
               </span>
               <ExpandToggle itemKey="traductions" />
