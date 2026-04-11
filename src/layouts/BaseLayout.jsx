@@ -5,12 +5,11 @@ import Footer from "../components/Footer";
 
 export default function BaseLayout() {
   return (
-    <div className="Preview_body__2wDzb bodyBackground desktopV effects" style={{ overflow: "auto scroll" }}>
+    <div className="Preview_body__2wDzb bodyBackground desktopV effects">
       <div>
         <MobileNav />
       </div>
       <div className="template" data-mobile-view="true" style={{ visibility: "visible" }}>
-        <div className="Preview_row__3Fkye row" style={{ width: 1050 }}></div>
         <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ minHeight: 197, width: "100%" }} id="shared-header-nav">
           <HeaderNav />
         </div>

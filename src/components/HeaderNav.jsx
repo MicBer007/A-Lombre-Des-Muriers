@@ -42,13 +42,13 @@ export default function HeaderNav() {
         >
           <div
             className="Preview_column__1KeVx col"
-            style={{ minHeight: "100%", width: 1050, margin: "0 auto" }}
+            style={{ minHeight: "100%", width: 1200, margin: "0 auto" }}
           >
-            <div className="Preview_row__3Fkye row" style={{ minHeight: 197, width: 1050 }}>
+            <div className="Preview_row__3Fkye row" style={{ minHeight: 197, width: 1200 }}>
               <div
                 data-id="D3DA77C2-B7ED-4AF4-BA0A-26DC8AC83C3F"
                 data-kind="BACKGROUND"
-                style={{ width: 980, minHeight: 197, marginTop: 0, marginLeft: 35 }}
+                style={{ width: 1130, minHeight: 197, marginTop: 0, marginLeft: 35 }}
                 className="Preview_componentWrapper__2i4QI"
               >
                 <div
@@ -76,7 +76,7 @@ export default function HeaderNav() {
                     data-height="197"
                   >
                     <div className="Preview_column__1KeVx col" style={{ minHeight: "100%" }}>
-                      <div className="Preview_row__3Fkye row" style={{ minHeight: 119, width: 980 }}>
+                      <div className="Preview_row__3Fkye row" style={{ minHeight: 119, width: 1130 }}>
                         <div
                           className="Preview_column__1KeVx col"
                           style={{ minHeight: 119, width: 111, float: "left" }}
@@ -222,11 +222,11 @@ export default function HeaderNav() {
                         </div>
                         <div style={{ clear: "both" }}></div>
                       </div>
-                      <div className="Preview_row__3Fkye row" style={{ minHeight: 78, width: 980 }}>
+                      <div className="Preview_row__3Fkye row" style={{ minHeight: 78, width: 1130 }}>
                         <div
                           data-id="645DCD7A-E1DC-4DD8-ABF9-EF8E21C6A04B"
                           data-kind="BACKGROUND"
-                          style={{ width: 980, minHeight: 51, marginTop: 27, marginLeft: 0 }}
+                          style={{ width: 1130, minHeight: 51, marginTop: 27, marginLeft: 0 }}
                           className="Preview_componentWrapper__2i4QI"
                         >
                           <div
@@ -256,13 +256,13 @@ export default function HeaderNav() {
                               <div className="Preview_column__1KeVx col" style={{ minHeight: "100%" }}>
                                 <div
                                   className="Preview_row__3Fkye row"
-                                  style={{ minHeight: 51, width: 980 }}
+                                  style={{ minHeight: 51, width: 1130 }}
                                 >
                                   <div
                                     data-id="08853971-B27F-4C3E-80AE-02F36415F418"
                                     data-kind="MENU"
                                     style={{
-                                      width: 980,
+                                      width: 1130,
                                       minHeight: 51,
                                       marginTop: 0,
                                       marginLeft: 0,
@@ -282,7 +282,7 @@ export default function HeaderNav() {
                                       `}</style>
                                       <div
                                         className="menu moreEnabled menuself menuhorizontal dropdown menuhorizontalleft menuverticalmiddle White"
-                                        style={{ width: 980, height: 51 }}
+                                        style={{ width: 1130, height: 51 }}
                                       >
                                         <ul className="menu1">
                                           <li className={isActive("/") ? "selected" : undefined}>

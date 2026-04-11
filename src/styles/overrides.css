@@ -1,0 +1,165 @@
+/* =============================================
+   MOBILE RESPONSIVE OVERRIDES
+   Breakpoint: 900px (tablets + phones)
+   ============================================= */
+
+/* Prevent horizontal overflow at the root */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Show our React mobile nav on mobile; hide the builder's static one */
+.mm-mobile-nav-react {
+  display: none;
+}
+
+/* Ensure the mobile nav bar sits at the top and the burger is correctly positioned */
+.mm-mobile-nav-react .MobileHeader_container__1XW3y {
+  position: sticky;
+  top: 0;
+  z-index: 10010;
+}
+
+.mm-mobile-nav-react .MobileHeader_menuIconContainer__lc-Zq {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+}
+
+@media (max-width: 900px) {
+  /* Show MobileNav, hide desktop header */
+  .mm-mobile-nav-react {
+    display: block !important;
+  }
+  #shared-header-nav {
+    display: none !important;
+  }
+
+
+  /* 1. Make all layout rows and columns fluid */
+  .Preview_column__1KeVx,
+  .Preview_row__3Fkye {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 2. Remove fixed margins on component wrappers */
+  .Preview_componentWrapper__2i4QI {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 3. Disable floats so sidebar stacks below content */
+  .col {
+    float: none !important;
+    clear: both !important;
+  }
+
+  /* 4. Fluid images */
+  img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .Mobile_imageComponent__QXWk1 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 5. Footer: remove giant fixed min-height so it shrinks naturally */
+  #Footer,
+  #Footer > *,
+  #Footer .StripPreview_backgroundComponent__3YmQM,
+  #Footer .Preview_column__1KeVx {
+    min-height: auto !important;
+  }
+
+  /* 6. Header: remove fixed min-height */
+  #Header,
+  #Header > *,
+  #Header .StripPreview_backgroundComponent__3YmQM,
+  #shared-header-nav {
+    min-height: auto !important;
+  }
+
+  /* 7. Scale down the large site title */
+  .mobile-oversized {
+    font-size: 26px !important;
+  }
+
+  /* 8. Ensure desktop nav stays hidden (already marked with this class) */
+  .Preview_mobileHide__9T929 {
+    display: none !important;
+  }
+
+  /* 9. Responsive video */
+  video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 10. Responsive iframes (e.g. Twitter button) */
+  iframe {
+    max-width: 100% !important;
+  }
+
+  /* 11. Add horizontal breathing room to content backgrounds */
+  .BackgroundPreview_backgroundComponent__3Dr5e {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* 12. Sidebar: full width and remove fixed margins */
+  #shared-header-nav .BackgroundPreview_backgroundComponent__3Dr5e {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* =============================================
+   END MOBILE OVERRIDES
+   ============================================= */
+
+/* Fix image border-radius clipping — the builder CSS sets overflow: visible and
+   height: 100% on .Mobile_imageComponent__QXWk1. The overflow: visible prevents
+   border-radius from clipping corners, and height: 100% makes the container size
+   wrong so the bottom corners don't clip even with overflow: hidden. */
+.Mobile_imageComponent__QXWk1.Mobile_cropMode__cLuJp {
+  overflow: hidden !important;
+  height: auto !important;
+  border-bottom-left-radius: 14px !important;
+  border-bottom-right-radius: 14px !important;
+}
+
+/* Round the bottom edges of the white content area */
+.BackgroundPreview_backgroundComponent__3Dr5e.BackgroundPreview_bgHeight__3dD2e.hasChildren {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+/* Remove all default underlines from nav items */
+.menu ul.menu1 > li > a,
+.menu ul.menu1 > li > a.expanded,
+.menu ul.menu1 > li > a.selected,
+ul.menu1 > li > a,
+ul.menu1 > li > a.selected,
+ul.menu1 > li > a.expanded span,
+ul.menu1 > li > a.selected span {
+  text-decoration: none !important;
+}
+
+/* Only underline the text (span) on hover, not the arrow pseudo-element */
+ul.menu1 > li > a:not(.dropdown-only):hover > span {
+  text-decoration: underline !important;
+}
+
+/* Never underline dropdown-only (non-clickable) items */
+ul.menu1 > li > a.dropdown-only,
+ul.menu1 > li > a.dropdown-only:hover,
+ul.menu1 > li > a.dropdown-only > span,
+ul.menu1 > li > a.dropdown-only:hover > span {
+  text-decoration: none !important;
+  cursor: default;
+}

@@ -2,274 +2,37 @@ import Sidebar from "../../components/Sidebar";
 
 export default function InformationsIndex() {
   return (
-          <div
-            className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n"
-            style={{ minHeight: "auto", width: "100%" }}
-          >
-            <div
-              data-id="39D36F48-3636-4889-9D7E-6466018B9423"
-              data-kind="SECTION"
-              style={{ width: "100%", minHeight: "auto", left: "auto", marginTop: 0, marginLeft: 0 }}
-              className="Preview_componentWrapper__2i4QI"
-            >
-              <div
-                id="PageSection"
-                data-in-template="false"
-                data-id="39D36F48-3636-4889-9D7E-6466018B9423"
-                data-kind="Block"
-                data-specific-kind="SECTION"
-                data-pin="0"
-                data-stretch="true"
-                className="Preview_block__16Zmu"
-              >
-                <div
-                  className="StripPreview_backgroundComponent__3YmQM Background_backgroundComponent__3_1Ea hasChildren"
-                  style={{ backgroundColor: "transparent", borderWidth: "1px 1px 1px 1px", borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderBottomLeftRadius: 0, minHeight: 867, paddingBottom: 0 }}
-                  data-width="100"
-                  data-height="867"
-                >
-                  <div
-                    className="Preview_column__1KeVx col"
-                    style={{ minHeight: "100%", width: 1050, margin: "0 auto" }}
-                  >
-                    <div className="Preview_row__3Fkye row" style={{ minHeight: 867, width: 1050 }}>
-                      <div
-                        data-id="8F21741A-B726-4152-955F-3E02CE56E176"
-                        data-kind="BACKGROUND"
-                        style={{ width: 980, minHeight: 867, marginTop: 0, marginLeft: 35 }}
-                        className="Preview_componentWrapper__2i4QI"
-                      >
-                        <div
-                          data-in-template="false"
-                          data-id="8F21741A-B726-4152-955F-3E02CE56E176"
-                          data-kind="Block"
-                          data-specific-kind="BACKGROUND"
-                          className="Preview_block__16Zmu"
-                        >
-                          <div
-                            className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren"
-                            style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderWidth: "1px 1px 1px 1px", borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderBottomLeftRadius: 0, minHeight: 867, paddingBottom: 22 }}
-                            data-width="980"
-                            data-height="867"
-                          >
-                            <div className="Preview_column__1KeVx col" style={{ minHeight: "100%" }}>
-                              <div
-                                className="Preview_row__3Fkye row"
-                                style={{ minHeight: 845, width: 980 }}
-                              >
-                                <div
-                                  className="Preview_column__1KeVx col"
-                                  style={{ minHeight: 845, width: 720, float: "left" }}
-                                >
-                                  <div
-                                    data-id="03FDD7BB-BB25-41BC-9042-8C33C698D5F3"
-                                    data-kind="BACKGROUND"
-                                    style={{ width: 700, minHeight: 32, marginTop: 0, marginLeft: 20 }}
-                                    className="Preview_componentWrapper__2i4QI"
-                                  >
-                                    <div
-                                      data-in-template="false"
-                                      data-id="03FDD7BB-BB25-41BC-9042-8C33C698D5F3"
-                                      data-kind="Component"
-                                      data-specific-kind="BACKGROUND"
-                                      className="Preview_mobileHide__9T929 Preview_component__SbiKo"
-                                    >
-                                      <div
-                                        className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e"
-                                        style={{ backgroundColor: "transparent", borderWidth: "1px 1px 1px 1px", borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomRightRadius: 0, borderBottomLeftRadius: 0, minHeight: 32, paddingBottom: 0 }}
-                                        data-width="700"
-                                        data-height="32"
-                                      ></div>
-                                    </div>
-                                  </div>
-                                  <div style={{ clear: "both" }}></div>
-                                </div>
-                                <div
-                                  className="Preview_column__1KeVx col"
-                                  style={{ minHeight: 845, width: 240, float: "left" }}
-                                >
-                                  <div
-                                    className="Preview_row__3Fkye row"
-                                    style={{ minHeight: 708, width: 240 }}
-                                  >
-                                    <div
-                                      data-id="CC3EA9EC-05C9-445B-BEAC-1CE3124D3598"
-                                      data-kind="BACKGROUND"
-                                      style={{ width: 220, minHeight: 708, marginTop: 0, marginLeft: 20 }}
-                                      className="Preview_componentWrapper__2i4QI"
-                                    >
-                                      <div
-                                        data-in-template="false"
-                                        data-id="CC3EA9EC-05C9-445B-BEAC-1CE3124D3598"
-                                        data-kind="Block"
-                                        data-specific-kind="BACKGROUND"
-                                        className="Preview_block__16Zmu"
-                                      >
-                                        <div
-                                          className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren"
-                                          style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderColor: "rgba(0, 0, 0, 1)", borderStyle: "none", borderWidth: "0px 0px 0px 0px", borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomRightRadius: 10, borderBottomLeftRadius: 10, minHeight: 708, paddingBottom: 11 }}
-                                          data-width="220"
-                                          data-height="708"
-                                        >
-                                          <div className="Preview_column__1KeVx col" style={{ minHeight: "100%", width: 220, float: "left" }}>
-      <Sidebar />
-    </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    className="Preview_row__3Fkye row"
-                                    style={{ minHeight: 137, width: 240 }}
-                                  >
-                                    <div
-                                      data-id="E04C2398-8B0A-4C27-AEBC-4ED907420907"
-                                      data-kind="BACKGROUND"
-                                      style={{ width: 220, minHeight: 105, marginTop: 32, marginLeft: 20 }}
-                                      className="Preview_componentWrapper__2i4QI"
-                                    >
-                                      <div
-                                        data-in-template="false"
-                                        data-id="E04C2398-8B0A-4C27-AEBC-4ED907420907"
-                                        data-kind="Block"
-                                        data-specific-kind="BACKGROUND"
-                                        className="Preview_block__16Zmu"
-                                      >
-                                        <div
-                                          className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren"
-                                          style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderColor: "rgba(0, 0, 0, 1)", borderStyle: "none", borderWidth: "0px 0px 0px 0px", borderTopLeftRadius: 10, borderTopRightRadius: 10, borderBottomRightRadius: 10, borderBottomLeftRadius: 10, minHeight: 105, paddingBottom: 11 }}
-                                          data-width="220"
-                                          data-height="105"
-                                        >
-                                          <div
-                                            className="Preview_column__1KeVx col"
-                                            style={{ minHeight: "100%" }}
-                                          >
-                                            <div
-                                              className="Preview_row__3Fkye row"
-                                              style={{ minHeight: 33, width: 220 }}
-                                            >
-                                              <div
-                                                data-id="22318756-784D-4839-AF02-2EE73445FBAB"
-                                                data-kind="TEXT"
-                                                style={{ width: 190, minHeight: 22, marginTop: 11, marginLeft: 15 }}
-                                                className="Preview_componentWrapper__2i4QI"
-                                              >
-                                                <div
-                                                  data-in-template="false"
-                                                  data-id="22318756-784D-4839-AF02-2EE73445FBAB"
-                                                  data-kind="Component"
-                                                  data-specific-kind="TEXT"
-                                                  className="Preview_component__SbiKo text-align-null"
-                                                >
-                                                  <div
-                                                    data-mve-font-change="0"
-                                                    className="styles_contentContainer__lrPIa textnormal styles_text__3jGMu"
-                                                  >
-                                                    <p
-                                                      className="textnormal"
-                                                      style={{ textAlign: "left", fontSize: 20, lineHeight: 1.1 }}
-                                                    >
-                                                      Partagez cette page
-                                                    </p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div
-                                              className="Preview_row__3Fkye row"
-                                              style={{ minHeight: 61, width: 220 }}
-                                            >
-                                              <div
-                                                data-id="81287B23-2FE5-4E1E-AA2C-714CAC6909B2"
-                                                data-kind="SHAREBUTTONS"
-                                                style={{ width: 190, height: 44, marginTop: 17, marginLeft: 15 }}
-                                                className="Preview_componentWrapper__2i4QI"
-                                              >
-                                                <div
-                                                  data-in-template="false"
-                                                  data-id="81287B23-2FE5-4E1E-AA2C-714CAC6909B2"
-                                                  data-kind="Component"
-                                                  data-specific-kind="SHAREBUTTONS"
-                                                  data-stretch="false"
-                                                  className="Preview_component__SbiKo"
-                                                >
-                                                  <div className="shareself">
-                                                    <div>
-                                                      <ul
-                                                        className="ShareButtons_shareButtonCntnr__xPagy ShareButtons_center__3Bepi ShareButtons_withoutCountCls__2kcSZ"
-                                                      >
-                                                        <li
-                                                          className="ShareButtons_withoutCountFblikeCntnr__OusNu"
-                                                        >
-                                                          <div
-                                                            className="fb-share-button fb_iframe_widget"
-                                                            data-size="small"
-                                                            data-mobile-iframe="false"
-                                                            data-type="button"
-                                                            fb-xfbml-state="rendered"
-                                                            fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fwww.alombredesmuriers.fr%2F452154387%2F&amp;locale=fr_FR&amp;mobile_iframe=false&amp;sdk=joey&amp;size=small&amp;type=button"
-                                                          >
-                                                            <span
-                                                              style={{ verticalAlign: "top", width: 0, height: 0, overflow: "hidden" }}
-                                                            >
-                                                              <iframe
-                                                                name="f8bfd428367244bc7"
-                                                                width="1000px"
-                                                                height="1000px"
-                                                                data-testid="fb:share_button Facebook Social Plugin"
-                                                                title="fb:share_button Facebook Social Plugin"
-                                                                frameBorder="0"
-                                                                allowTransparency="true"
-                                                                allowFullScreen="true"
-                                                                scrolling="no"
-                                                                allow="encrypted-media"
-                                                                src="/assets/share_button.html"
-                                                                style={{ border: "none", visibility: "visible", width: 0, height: 0 }}
-                                                              ></iframe>
-                                                            </span>
-                                                          </div>
-                                                        </li>
-                                                        <li className="ShareButtons_twtrCls__1s6GS">
-                                                          <iframe
-                                                            id="twitter-widget-0"
-                                                            scrolling="no"
-                                                            frameBorder="0"
-                                                            allowTransparency="true"
-                                                            allowFullScreen="true"
-                                                            className="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
-                                                            title="X Post Button"
-                                                            src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
-                                                            style={{ position: "static", visibility: "visible", width: 65, height: 20 }}
-                                                          ></iframe>
-                                                        </li>
-                                                      </ul>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div style={{ clear: "both" }}></div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div style={{ clear: "both" }}></div>
-                                </div>
-                                <div style={{ clear: "both" }}></div>
-                              </div>
-                              <div style={{ clear: "both" }}></div>
+    <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
+      <div data-kind="SECTION" className="Preview_componentWrapper__2i4QI" style={{ width: "100%" }}>
+        <div id="PageSection" className="Preview_block__16Zmu">
+          <div className="StripPreview_backgroundComponent__3YmQM Background_backgroundComponent__3_1Ea hasChildren" style={{ backgroundColor: "transparent" }}>
+            <div className="Preview_column__1KeVx col" style={{ width: 1200, margin: "0 auto" }}>
+              <div className="Preview_row__3Fkye row" style={{ width: 1200 }}>
+                <div className="Preview_componentWrapper__2i4QI" style={{ width: 1130, marginLeft: 35 }}>
+                  <div className="Preview_block__16Zmu">
+                    <div className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
+                      <div className="Preview_column__1KeVx col">
+                        <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
+                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                              {/* Empty index page - no content */}
                             </div>
+                            <div style={{ clear: "both" }}></div>
                           </div>
+                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left" }}>
+                            <Sidebar />
+                          </div>
+                          <div style={{ clear: "both" }}></div>
                         </div>
                       </div>
                     </div>
-                    <div style={{ clear: "both" }}></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
   );
 }

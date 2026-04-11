@@ -312,6 +312,22 @@ export default function Sidebar() {
         </div>
       </div>
       <div style={{ clear: "both" }}></div>
+
+      {/* Share section */}
+      <div style={{ marginTop: 32, marginLeft: 20, width: 220 }}>
+        <div style={{ backgroundColor: "rgb(255, 255, 255)", borderRadius: 10, paddingBottom: 11 }}>
+          <p className="textnormal" style={{ textAlign: "left", fontSize: 20, lineHeight: 1.1, paddingTop: 11, paddingLeft: 15 }}>
+            Partagez cette page
+          </p>
+          <div style={{ marginTop: 17, marginLeft: 15 }}>
+            <iframe
+              src="/assets/tweet_button.2f70fb173b9000da126c79afe2098f02.fr.html"
+              style={{ width: 120, height: 28, border: "none" }}
+              title="Share on Twitter"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
