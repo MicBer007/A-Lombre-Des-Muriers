@@ -198,3 +198,45 @@ ul.menu1 > li > a.dropdown-only:hover > span {
   text-decoration: none !important;
   cursor: default;
 }
+
+/* Reset native <button> styling and mirror the builder's <a> nav rules onto
+   dropdown-only buttons (cc6770b099.css targets <a> only). */
+ul.menu1 > li > button.dropdown-only {
+  appearance: none;
+  margin: 0;
+  text-align: inherit;
+  cursor: default;
+  /* Mirror ul.menu1 > li > a */
+  padding: 16px 20px;
+  background-color: #dfdfdf;
+  background-image: none;
+  text-decoration: none;
+  border: 0 solid #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  /* Mirror ul.menu1 li a */
+  line-height: 19px;
+}
+ul.menu1 > li > button.dropdown-only > span {
+  /* Mirror ul.menu1 li a.level-0 span */
+  display: inline-block;
+}
+/* Mirror the dropdown caret from ul.menu1 > li > a.expandable:after */
+ul.menu1 > li > button.dropdown-only.expandable:after {
+  font-family: dropDownMenu !important;
+  margin-left: 0.3em;
+  line-height: 1px;
+  font-size: 1.2em;
+  text-shadow: none;
+  content: "\e900";
+}
+ul.menu1 > li > button.dropdown-only:focus {
+  outline: none;
+}
+ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
