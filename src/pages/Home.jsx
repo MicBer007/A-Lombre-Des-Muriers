@@ -80,6 +80,9 @@ export default function Home() {
                               {/* Video */}
                               <video
                                 preload="metadata"
+                                autoPlay
+                                muted
+                                loop
                                 controls
                                 playsInline
                                 src="/assets/vid--442257519-85d50000-2892-445f-bb11-75d0ce180821-640x360.mp4#t=0.001"
