@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react";
 import vitePrerender from "vite-plugin-prerender";
 import path from "path";
 
+const Renderer = vitePrerender.PuppeteerRenderer;
+const puppeteerExecutablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+
 export default defineConfig({
   plugins: [
     react(),
@@ -30,6 +33,12 @@ export default defineConfig({
         "/traductions/english",
         "/traductions/deutsch",
       ],
+      renderer: new Renderer({
+        headless: true,
+        ...(puppeteerExecutablePath
+          ? { executablePath: puppeteerExecutablePath }
+          : {}),
+      }),
     }),
   ],
   base: "/",

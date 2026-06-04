@@ -28,8 +28,13 @@ jobs:
           node-version: 24
           cache: npm
 
+      - uses: browser-actions/setup-chrome@v2
+        id: setup-chrome
+
       - run: npm ci
       - run: npm run build
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - uses: actions/upload-pages-artifact@v4
         with:
