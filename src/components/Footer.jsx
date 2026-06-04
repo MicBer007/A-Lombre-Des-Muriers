@@ -60,8 +60,8 @@ export default function Footer() {
                       role="presentation"
                       data-scalestrategy="crop"
                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.56.47.png"
-                      srcSet={`/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.56.47.png /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.56.47.png 2x, /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.56.47.png 3x`}
+                      src="/assets/capture-decran-2025-11-10-18-56-47.png"
+                      srcSet={`/assets/capture-decran-2025-11-10-18-56-47.png /assets/capture-decran-2025-11-10-18-56-47.png 2x, /assets/capture-decran-2025-11-10-18-56-47.png 3x`}
                       height="343"
                       width="1050"
                       data-width="1050"
@@ -96,8 +96,8 @@ export default function Footer() {
                       role="presentation"
                       data-scalestrategy="crop"
                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.34.png"
-                      srcSet={`/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.34.png /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.34.png 2x, /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.34.png 3x`}
+                      src="/assets/capture-decran-2025-11-10-18-57-34.png"
+                      srcSet={`/assets/capture-decran-2025-11-10-18-57-34.png /assets/capture-decran-2025-11-10-18-57-34.png 2x, /assets/capture-decran-2025-11-10-18-57-34.png 3x`}
                       height="343"
                       width="1050"
                       data-width="1050"
@@ -132,8 +132,8 @@ export default function Footer() {
                       role="presentation"
                       data-scalestrategy="crop"
                       style={{ marginTop: -3, marginLeft: 0, display: "block", margin: 0 }}
-                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.51.png"
-                      srcSet={`/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.51.png /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.51.png 2x, /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.57.51.png 3x`}
+                      src="/assets/capture-decran-2025-11-10-18-57-51.png"
+                      srcSet={`/assets/capture-decran-2025-11-10-18-57-51.png /assets/capture-decran-2025-11-10-18-57-51.png 2x, /assets/capture-decran-2025-11-10-18-57-51.png 3x`}
                       height="343"
                       width="1050"
                       data-width="1050"
@@ -168,8 +168,8 @@ export default function Footer() {
                       role="presentation"
                       data-scalestrategy="crop"
                       style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.58.09.png"
-                      srcSet={`/assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.58.09.png /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.58.09.png 2x, /assets/Capture%20d%E2%80%99e%CC%81cran%202025-11-10%20a%CC%80%2018.58.09.png 3x`}
+                      src="/assets/capture-decran-2025-11-10-18-58-09.png"
+                      srcSet={`/assets/capture-decran-2025-11-10-18-58-09.png /assets/capture-decran-2025-11-10-18-58-09.png 2x, /assets/capture-decran-2025-11-10-18-58-09.png 3x`}
                       height="331"
                       width="1050"
                       data-width="1050"

@@ -6,7 +6,6 @@ export default function Tarifs() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
   images.push({ src: "/assets/i284571214521237393.jpg", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-05-17%20a%CC%80%2020.13.04.png", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -60,30 +59,6 @@ export default function Tarifs() {
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span className="textnormal" style={{ color: "#65b345", fontFamily: "Roboto", fontSize: 16 }}>
-                                  Haute saison + Vacances scolaires
-                                </span>
-                                <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
-                                  : ( du 3 &nbsp;juin au 24 septembre 2023 )
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span className="textnormal" style={{ color: "#65b345", fontFamily: "Roboto", fontSize: 16 }}>
-                                  Moyenne saison
-                                </span>
-                                <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
-                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : ( du 26 septembre au 15 octobre 2023) &nbsp;et (du 16 avril au 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;juin 2023)
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span className="textnormal" style={{ color: "#65b345", fontFamily: "Roboto", fontSize: 16 }}>
-                                  Basse Saison
-                                </span>
-                                <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
-                                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: ( du 15 octobre au &nbsp;15 avril &nbsp;2023 )
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 en novembre, décembre, janvier et février un supplément de 20€ par semaine est demandé pour le chauffage.
                               </p>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -113,10 +88,6 @@ export default function Tarifs() {
                               <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                 <img loading="lazy" role="presentation" style={{ display: "block", cursor: "pointer" }} src="/assets/i284571214521237393.jpg" height="195" width="680" onClick={() => openLightbox(images, 0)} />
                               </div>
-                              {/* Screenshot image */}
-                              <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                <img loading="lazy" role="presentation" style={{ display: "block", cursor: "pointer" }} src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-05-17%20a%CC%80%2020.13.04.png" height="610" width="781" onClick={() => openLightbox(images, 1)} />
-                              </div>
                               {/* English translations */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span style={{ fontSize: 24, color: "rgb(156, 27, 49)", fontFamily: "Roboto" }} className="textnormal mobile-oversized">
@@ -141,21 +112,6 @@ export default function Tarifs() {
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
                                   In low season: 70 € per day. for a minimum of 5 nights. 10% reduction if more than one month.
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  High season + school holidays: &nbsp; &nbsp; &nbsp; (from June 3 to September 25, 2022)
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  Mid season: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (from September 26 to October 16 2022)
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  Low Season: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(from October 17 to June 2, 2022)
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>

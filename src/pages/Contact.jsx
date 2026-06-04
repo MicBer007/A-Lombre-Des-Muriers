@@ -38,8 +38,13 @@ export default function Contact() {
                                 className="textnormal"
                                 style={{ textAlign: "left", lineHeight: 1.17 }}
                               >
-                                Par téléphone : 0033 (0) 6 26 03 04 19 ou le 0032
-                                (0) 474 51 80 81
+                                Par téléphone et WhatsApp : 0033 (0) 6 26 03 04 19
+                              </p>
+                              <p
+                                className="textnormal"
+                                style={{ textAlign: "left", lineHeight: 1.17 }}
+                              >
+                                Je ne réponds pas aux numéros inconnus, donc uniquement messages oraux ou écrits et je vous rappellerai.
                               </p>
                               <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d444.7182970338744!2d4.032107489728119!3d44.0605804456429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1773379472864!5m2!1sen!2sza"

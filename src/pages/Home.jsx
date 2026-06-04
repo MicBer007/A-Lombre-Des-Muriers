@@ -6,8 +6,8 @@ export default function Home() {
   const images = [];
   images.push({ src: "/assets/i284571214498116028.jpg", alt: "la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai" });
   images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png", alt: "" });
+  images.push({ src: "/assets/capture-decran-2023-04-08-18-59-01.png", alt: "" });
+  images.push({ src: "/assets/capture-decran-2023-04-28-17-06-37.png", alt: "" });
   images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
   images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
   images.push({ src: "/assets/i284571214516621731.jpg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
@@ -58,7 +58,7 @@ export default function Home() {
                               {/* Contact info: email */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>Par{" "}</span>
-                                <a href="mailto:annechoppinet@gmail.com" className="textnormal" style={{ textDecoration: "underline solid rgb(0, 0, 0)" }}>
+                                <a href="mailto:alombredesmuriers@gmail.com" className="textnormal" style={{ textDecoration: "underline solid rgb(0, 0, 0)" }}>
                                   <span className="textnormal" style={{ color: "rgb(0, 0, 0)" }}>mail</span>
                                 </a>{" "}
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>: alombredesmuriers@gmail.com</span>
@@ -67,14 +67,19 @@ export default function Home() {
                               {/* Contact info: phone */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
-                                  Par téléphone &nbsp;et WhatsApp: 0033 (0) 6 26 03 04 19 ou le
-                                  &nbsp;0032 (0) 474 51 80 81 ou via la page{" "}
+                                  Par téléphone et WhatsApp: 0033 (0) 6 26 03 04 19 ou via la page{" "}
                                 </span>
                                 <a href="/contact/" className="textnormal" style={{ textDecoration: "underline solid rgb(0, 0, 0)" }}>
                                   <span className="textnormal" style={{ color: "rgb(21, 94, 171)", fontSize: 18, textDecoration: "underline solid rgb(21, 94, 171)" }}>
                                     CONTACT
                                   </span>
                                 </a>
+                              </p>
+
+                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
+                                  Je ne réponds pas aux numéros inconnus, donc uniquement messages oraux ou écrits et je vous rappellerai.
+                                </span>
                               </p>
 
                               {/* Video */}
@@ -111,14 +116,14 @@ export default function Home() {
                               {/* Image 3: Spa screenshot 1 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
                                 </div>
                               </div>
 
                               {/* Image 4: Spa screenshot 2 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-28%20a%CC%80%2017.06.37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2023-04-28-17-06-37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
                               </div>
 

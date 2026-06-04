@@ -8,13 +8,13 @@ export default function Jardin() {
   images.push({ src: "/assets/i284571214522315913.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522136776.jpg", alt: "La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum" });
   images.push({ src: "/assets/i284571214522315918.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522136707.jpg", alt: "Le chemin d'accès.----- Entrance ------ Eingang" });
+  images.push({ src: "/assets/garden-access-path-2026.avif", alt: "Le chemin d'accès.----- Entrance ------ Eingang" });
   images.push({ src: "/assets/i284571214522136710.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522136712.jpg", alt: "Jardin côté gîte ---Garden ---- Gartenhaus" });
-  images.push({ src: "/assets/i284571214522333137.jpg", alt: "" });
+  images.push({ src: "/assets/garden-view-2026.jpeg", alt: "" });
   images.push({ src: "/assets/i284571214522613580.jpg", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-09-29%20a%CC%80%2017.59.13.png", alt: "Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png", alt: "" });
+  images.push({ src: "/assets/capture-decran-2025-09-29-17-59-13.png", alt: "Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" });
+  images.push({ src: "/assets/capture-decran-2023-04-08-18-59-01.png", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -55,7 +55,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522136707.jpg" width={680} height={505} alt="Le chemin d'accès.----- Entrance ------ Eingang" title="Le chemin d'accès.----- Entrance ------ Eingang" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                  <img loading="lazy" src="/assets/garden-access-path-2026.avif" width={680} height={510} alt="Le chemin d'accès.----- Entrance ------ Eingang" title="Le chemin d'accès.----- Entrance ------ Eingang" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Le chemin d'accès.----- Entrance ------ Eingang
@@ -76,7 +76,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522333137.jpg" width={680} height={432} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
+                                  <img loading="lazy" src="/assets/garden-view-2026.jpeg" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
                                 </div>
                               </div>
                               <div className="gallery-item">
@@ -86,7 +86,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-09-29%20a%CC%80%2017.59.13.png" width={680} height={879} alt="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" title="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={879} alt="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" title="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz
@@ -94,7 +94,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-04-08%20a%CC%80%2018.59.01.png" width={680} height={429} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={429} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
                                 </div>
                               </div>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>

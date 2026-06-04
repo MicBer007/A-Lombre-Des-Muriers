@@ -5,19 +5,20 @@ export default function PieceAVivre() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
 
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-05-11%20a%CC%80%2019.07.04.png", alt: "Canap\u00e9 3 places" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202023-05-11%20a%CC%80%2019.06.26.png", alt: "Canap\u00e9 3 places et po\u00eale \u00e0 bois" });
-  images.push({ src: "/assets/i284571214522214574.jpg", alt: "Canap\u00e9 lit rapido" });
+  images.push({ src: "/assets/capture-decran-2023-05-11-19-07-04.png", alt: "Canap\u00e9 3 places" });
+  images.push({ src: "/assets/capture-decran-2023-05-11-19-06-26.png", alt: "Canap\u00e9 3 places et po\u00eale \u00e0 bois" });
+  images.push({ src: "/assets/living-room-2026.jpeg", alt: "Canap\u00e9 lit rapido" });
   images.push({ src: "/assets/i284571214522769720.jpg", alt: "Le canap\u00e9 lit rapido ouvert" });
   images.push({ src: "/assets/i284571214522769663.jpg", alt: "Le canap\u00e9 lit rapido ouvert. Couchage 160/190cm" });
   images.push({ src: "/assets/i284571214522214587.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522214604.jpg", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.14.19.png", alt: "le coin repas." });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.15.30.png", alt: "La cuisine." });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.35.png", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.17.33.png", alt: "" });
-  images.push({ src: "/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.08.png", alt: "" });
-  images.push({ src: "/assets/i284571214498271697.jpg", alt: "Sortie de la pi\u00e8ce \u00e0 vivre vers la terrasse couverte" });
+  images.push({ src: "/assets/capture-decran-2025-10-03-16-14-19.png", alt: "le coin repas." });
+  images.push({ src: "/assets/capture-decran-2025-10-03-16-15-30.png", alt: "La cuisine." });
+  images.push({ src: "/assets/capture-decran-2025-10-03-16-16-35.png", alt: "" });
+  images.push({ src: "/assets/capture-decran-2025-10-03-16-17-33.png", alt: "" });
+  images.push({ src: "/assets/capture-decran-2025-10-03-16-16-08.png", alt: "" });
+  images.push({ src: "/assets/covered-terrace-2026-a.jpeg", alt: "Terrasse couverte --- Covered patio ---- \u00dcberdachte Terrasse" });
+  images.push({ src: "/assets/covered-terrace-2026-b.jpeg", alt: "Terrasse couverte --- Covered patio ---- \u00dcberdachte Terrasse" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -40,7 +41,7 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-05-11%20a%CC%80%2019.07.04.png"
+                                      src="/assets/capture-decran-2023-05-11-19-07-04.png"
                                       height="510"
                                       width="680"
                                       alt="Canap&eacute; 3 places"
@@ -60,7 +61,7 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202023-05-11%20a%CC%80%2019.06.26.png"
+                                      src="/assets/capture-decran-2023-05-11-19-06-26.png"
                                       height="510"
                                       width="680"
                                       alt="Canap&eacute; 3 places et po&ecirc;le &agrave; bois"
@@ -80,7 +81,7 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/i284571214522214574.jpg"
+                                      src="/assets/living-room-2026.jpeg"
                                       height="510"
                                       width="680"
                                       alt="Canap&eacute; lit rapido"
@@ -166,7 +167,7 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.14.19.png"
+                                      src="/assets/capture-decran-2025-10-03-16-14-19.png"
                                       height="510"
                                       width="680"
                                       alt="le coin repas."
@@ -186,7 +187,7 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.15.30.png"
+                                      src="/assets/capture-decran-2025-10-03-16-15-30.png"
                                       height="510"
                                       width="680"
                                       alt="La cuisine."
@@ -206,7 +207,7 @@ export default function PieceAVivre() {
                                   <img
                                     loading="lazy"
                                     role="presentation"
-                                    src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.35.png"
+                                    src="/assets/capture-decran-2025-10-03-16-16-35.png"
                                     height="377"
                                     width="290"
                                     style={{ display: "block", cursor: "pointer" }}
@@ -217,7 +218,7 @@ export default function PieceAVivre() {
                                   <img
                                     loading="lazy"
                                     role="presentation"
-                                    src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.17.33.png"
+                                    src="/assets/capture-decran-2025-10-03-16-17-33.png"
                                     height="377"
                                     width="273"
                                     style={{ display: "block", cursor: "pointer" }}
@@ -228,7 +229,7 @@ export default function PieceAVivre() {
                                   <img
                                     loading="lazy"
                                     role="presentation"
-                                    src="/assets/Capture%20d%E2%80%99e%CC%81cran%202025-10-03%20a%CC%80%2016.16.08.png"
+                                    src="/assets/capture-decran-2025-10-03-16-16-08.png"
                                     height="377"
                                     width="275"
                                     style={{ display: "block", cursor: "pointer" }}
@@ -285,17 +286,36 @@ export default function PieceAVivre() {
                                     <img
                                       loading="lazy"
                                       role="presentation"
-                                      src="/assets/i284571214498271697.jpg"
-                                      height="907"
+                                      src="/assets/covered-terrace-2026-a.jpeg"
+                                      height="510"
                                       width="680"
-                                      alt="Sortie de la pi&egrave;ce &agrave; vivre vers la terrasse couverte"
-                                      title="Sortie de la pi&egrave;ce &agrave; vivre vers la terrasse couverte"
+                                      alt="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
+                                      title="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
                                       style={{ display: "block", cursor: "pointer" }}
                                       onClick={() => openLightbox(images, 12)}
                                     />
                                 </div>
                                 <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: 14.4, lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Sortie de la pi&egrave;ce &agrave; vivre vers la terrasse couverte
+                                  Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse
+                                </p>
+                              </div>
+
+                              <div>
+                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
+                                    <img
+                                      loading="lazy"
+                                      role="presentation"
+                                      src="/assets/covered-terrace-2026-b.jpeg"
+                                      height="907"
+                                      width="680"
+                                      alt="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
+                                      title="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
+                                      style={{ display: "block", cursor: "pointer" }}
+                                      onClick={() => openLightbox(images, 13)}
+                                    />
+                                </div>
+                                <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: 14.4, lineHeight: 1.17, fontStyle: "italic" }}>
+                                  Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse
                                 </p>
                               </div>
 

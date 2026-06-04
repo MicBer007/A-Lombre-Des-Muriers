@@ -8,7 +8,7 @@ export default function Chambre() {
   images.push({ src: "/assets/i284571214498194393.jpg", alt: "Lit double de 160 / 200" });
   images.push({ src: "/assets/i284571214498194449.jpg", alt: "Ou 2 lits simples de 80 / 200" });
   images.push({ src: "/assets/i284571214498194478.jpg", alt: "Literie de qualit\u00e9." });
-  images.push({ src: "/assets/i284571214498194569.jpg", alt: "" });
+  images.push({ src: "/assets/baby-bed-2026.avif", alt: "Lit de B\u00e9b\u00e9 \u00e0 disposition." });
   images.push({ src: "/assets/i284571214498194590.jpg", alt: "Petite table bureau dans la chambre" });
 
   return (
@@ -54,8 +54,11 @@ export default function Chambre() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194569.jpg" width={680} height={508} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
+                                  <img loading="lazy" src="/assets/baby-bed-2026.avif" width={680} height={510} alt="Lit de B&eacute;b&eacute; &agrave; disposition." title="Lit de B&eacute;b&eacute; &agrave; disposition." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
+                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
+                                  Lit de B&eacute;b&eacute; &agrave; disposition.
+                                </p>
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
