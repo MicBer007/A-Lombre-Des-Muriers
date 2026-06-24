@@ -1,0 +1,16 @@
+{
+  "name": "gerald-playwright-mcp-blueprint",
+  "version": "0.1.1",
+  "upstreamPlaywrightMcpPackage": "@playwright/mcp@0.0.76",
+  "guarantees": [
+    "official Playwright MCP tool surface is preserved behind Gerald policy guards",
+    "one browser runtime per MCP process",
+    "persistent Chromium auth profile is stored outside the project repository",
+    "Playwright output defaults to OS temp storage",
+    "relative screenshot filenames are rewritten into the temp output directory before upstream Playwright receives them",
+    "page YAML and console logs use upstream stdout mode instead of repository files",
+    "numeric IP hosts are rejected, including 127.0.0.1",
+    "localhost is allowed for local development",
+    "auth gates wait briefly and recheck before returning AUTH_REQUIRED"
+  ]
+}
