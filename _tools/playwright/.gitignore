@@ -1,6 +1,0 @@
-node_modules/
-dist/
-*.log
-.env
-.env.*
-!BLUEPRINT_VERSION.json

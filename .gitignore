@@ -1,3 +1,7 @@
 node_modules/
 dist/
 .playwright-mcp/
+_tools/playwright/
+.claude/
+.codex/
+.mcp.json
