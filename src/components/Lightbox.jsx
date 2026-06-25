@@ -1,6 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 
+function fullImageSrc(src) {
+  if (!src || !src.startsWith("/assets/") || src.startsWith("/assets/full/")) {
+    return src;
+  }
+  return src.replace("/assets/", "/assets/full/");
+}
+
 export function useLightbox() {
   const [lightbox, setLightbox] = useState({ open: false, index: 0, images: [] });
 
@@ -35,6 +42,7 @@ export function useLightbox() {
   }, [lightbox.open, closeLightbox, navigate]);
 
   const current = lightbox.images[lightbox.index];
+  const currentSrc = fullImageSrc(current?.src);
 
   const LightboxModal = lightbox.open
     ? createPortal(
@@ -116,7 +124,7 @@ export function useLightbox() {
           )}
 
           <img
-            src={current?.src}
+            src={currentSrc}
             alt={current?.alt || ""}
             style={{
               width: "90vw",

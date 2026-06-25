@@ -10,7 +10,7 @@ export default function Home() {
   images.push({ src: "/assets/capture-decran-2023-04-28-17-06-37.png", alt: "" });
   images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
   images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214516621731.jpg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
+  images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
   images.push({ src: "/assets/i284571214498992102.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522141193.jpg", alt: "" });
   images.push({ src: "/assets/i284571214498515291.jpg", alt: "" });
@@ -145,7 +145,7 @@ export default function Home() {
                               {/* Image 13: Entrée du gîte */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214516621731.jpg" width={680} height={510}
+                                    <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510}
                                       alt="Entrée du gîte et Pierrade pour plus de convivialité !"
                                       title="Entrée du gîte et Pierrade pour plus de convivialité !"
                                       style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />

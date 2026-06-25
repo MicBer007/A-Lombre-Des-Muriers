@@ -17,7 +17,6 @@ export default function PieceAVivre() {
   images.push({ src: "/assets/capture-decran-2025-10-03-16-16-35.png", alt: "" });
   images.push({ src: "/assets/capture-decran-2025-10-03-16-17-33.png", alt: "" });
   images.push({ src: "/assets/capture-decran-2025-10-03-16-16-08.png", alt: "" });
-  images.push({ src: "/assets/covered-terrace-2026-a.jpeg", alt: "Terrasse couverte --- Covered patio ---- \u00dcberdachte Terrasse" });
   images.push({ src: "/assets/covered-terrace-2026-b.jpeg", alt: "Terrasse couverte --- Covered patio ---- \u00dcberdachte Terrasse" });
 
   return (
@@ -280,26 +279,6 @@ export default function PieceAVivre() {
                                 </p>
                               </div>
 
-                              {/* Image 10: Sortie vers terrasse */}
-                              <div>
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img
-                                      loading="lazy"
-                                      role="presentation"
-                                      src="/assets/covered-terrace-2026-a.jpeg"
-                                      height="510"
-                                      width="680"
-                                      alt="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
-                                      title="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
-                                      style={{ display: "block", cursor: "pointer" }}
-                                      onClick={() => openLightbox(images, 12)}
-                                    />
-                                </div>
-                                <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: 14.4, lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse
-                                </p>
-                              </div>
-
                               <div>
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img
@@ -311,7 +290,7 @@ export default function PieceAVivre() {
                                       alt="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
                                       title="Terrasse couverte --- Covered patio ---- &Uuml;berdachte Terrasse"
                                       style={{ display: "block", cursor: "pointer" }}
-                                      onClick={() => openLightbox(images, 13)}
+                                      onClick={() => openLightbox(images, 12)}
                                     />
                                 </div>
                                 <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: 14.4, lineHeight: 1.17, fontStyle: "italic" }}>

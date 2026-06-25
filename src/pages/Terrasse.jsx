@@ -4,13 +4,13 @@ import { useLightbox } from "../components/Lightbox";
 export default function Terrasse() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
-  images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "ntrée du gîte et Pierrade pour plus de convivialité !" });
+  images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
   images.push({ src: "/assets/terrace-breakfast-2026.jpeg", alt: "terrasse pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." });
-  images.push({ src: "/assets/i284571214522316112.jpg", alt: "Terrasse couverte --- Covered patio ---- Überdachte Terrasse" });
+  images.push({ src: "/assets/covered-terrace-2026-a.jpeg", alt: "Terrasse couverte --- Covered patio ---- Überdachte Terrasse" });
   images.push({ src: "/assets/terrace-shaded-2026.jpeg", alt: "Le matin." });
   images.push({ src: "/assets/i284571214522613543.jpg", alt: "L'après midi." });
   images.push({ src: "/assets/i284571214522315927.jpg", alt: "Le matin" });
-  images.push({ src: "/assets/i284571214522214522.jpg", alt: "a terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." });
+  images.push({ src: "/assets/i284571214522214522.jpg", alt: "La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." });
   images.push({ src: "/assets/i284571214522136847.jpg", alt: "Pierrade à disposition" });
   images.push({ src: "/assets/terrace-view-2026.jpeg", alt: "" });
   images.push({ src: "/assets/i284571214522316137.jpg", alt: "" });
@@ -32,10 +32,10 @@ export default function Terrasse() {
                             <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510} alt="ntrée du gîte et Pierrade pour plus de convivialité !" title="ntrée du gîte et Pierrade pour plus de convivialité !" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
+                                  <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510} alt="Entrée du gîte et Pierrade pour plus de convivialité !" title="Entrée du gîte et Pierrade pour plus de convivialité !" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  ntrée du gîte et Pierrade pour plus de convivialité !
+                                  Entrée du gîte et Pierrade pour plus de convivialité !
                                 </p>
                               </div>
                               <div className="gallery-item">
@@ -48,7 +48,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522316112.jpg" width={680} height={907} alt="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" title="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
+                                  <img loading="lazy" src="/assets/covered-terrace-2026-a.jpeg" width={680} height={510} alt="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" title="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Terrasse couverte --- Covered patio ---- Überdachte Terrasse
@@ -80,10 +80,10 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522214522.jpg" width={680} height={510} alt="a terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." title="a terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
+                                  <img loading="lazy" src="/assets/i284571214522214522.jpg" width={680} height={510} alt="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." title="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  a terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse.
+                                  La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse.
                                 </p>
                               </div>
                               <div className="gallery-item">
