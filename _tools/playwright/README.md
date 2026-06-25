@@ -22,6 +22,8 @@ Default behavior:
 - Playwright output defaults to an OS temp run directory
 - upstream `--output-mode stdout` keeps page YAML and console logs in MCP responses instead of files
 - browser automation defaults to a visible window; set `GERALD_PLAYWRIGHT_ALLOW_HEADLESS=1` only when headless is intentional
+- Chromium sandboxing is enabled by default with upstream `PLAYWRIGHT_MCP_SANDBOX=1`
 - screenshot filenames must be relative; the wrapper rewrites them into the temp output directory before forwarding to upstream Playwright
 - auth gates wait briefly, recheck the page snapshot, then return `AUTH_REQUIRED` and instruct the agent to ask for human login
-- `localhost` is allowed, but numeric IP hosts return `IP is not supported. Use localhost instead.`
+- `localhost` is allowed, loopback IP hosts such as `127.0.0.1` and `::1` are rewritten to `localhost`, and other numeric IP hosts return `IP is not supported. Use localhost instead.`
+- when the only tab is the initial `about:blank` tab, the first `browser_tabs new` request reuses that tab instead of leaving it open

@@ -1,11 +1,12 @@
 {
   "name": "gerald-playwright-mcp-blueprint",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test tests/url-policy.test.ts",
     "start": "tsx src/server.ts"
   },
   "dependencies": {

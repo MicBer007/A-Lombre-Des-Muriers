@@ -27,7 +27,7 @@ const AUTH_KEYWORD_RE = /\b(?:sign in|log in|login|continue with (?:google|micro
 const PAGE_URL_RE = /(?:Page URL:\s*|["']url["']\s*:\s*["'])(https?:\/\/[^\s"',}]+)/gi;
 const IP_NOT_SUPPORTED_TEXT = 'IP is not supported. Use localhost instead.';
 const SCREENSHOT_PATH_ERROR_TEXT = 'Screenshot paths must be relative to the Playwright temp output directory.';
-const BLUEPRINT_VERSION = '0.1.2';
+const BLUEPRINT_VERSION = '0.1.4';
 const UPSTREAM_PLAYWRIGHT_MCP_PACKAGE = process.env.GERALD_PLAYWRIGHT_MCP_PACKAGE ?? '@playwright/mcp@0.0.76';
 const AUTH_SETTLE_SECONDS = Number.parseInt(process.env.GERALD_PLAYWRIGHT_AUTH_SETTLE_SECONDS ?? '8', 10);
 const ALLOW_HEADLESS = process.env.GERALD_PLAYWRIGHT_ALLOW_HEADLESS === '1';
@@ -52,6 +52,10 @@ const PAGE_CONTENT_TOOL_NAMES = new Set([
 const __filename = fileURLToPath(import.meta.url);
 
 type JsonObject = Record<string, unknown>;
+
+type ToolCaller = {
+  callTool(request: { name: string; arguments?: JsonObject }): Promise<unknown>;
+};
 
 type UpstreamConfig = {
   command: string;
@@ -164,6 +168,13 @@ function visibleByDefaultArgs(args: string[]): string[] {
   return args.filter(arg => arg !== '--headless');
 }
 
+export function sandboxByDefaultEnv(env: Record<string, string>): Record<string, string> {
+  return {
+    ...env,
+    PLAYWRIGHT_MCP_SANDBOX: '1',
+  };
+}
+
 function normalizeOfficialPlaywrightArgs(args: string[], projectRoot: string): { args: string[]; outputDir: string; profileDir: string } {
   const next = visibleByDefaultArgs(args.length ? [...args] : ['-y', UPSTREAM_PLAYWRIGHT_MCP_PACKAGE]);
   const profileDir = resolve(process.env.GERALD_PLAYWRIGHT_PROFILE_DIR ?? argValue(next, '--user-data-dir') ?? defaultProfileDir(projectRoot));
@@ -181,7 +192,7 @@ function normalizeOfficialPlaywrightArgs(args: string[], projectRoot: string): {
 
 export function resolveUpstreamConfig(projectRoot = resolveProjectRoot()): UpstreamConfig {
   const local = readLocalPlaywrightConfig(projectRoot);
-  const env = { ...processEnvStrings(), ...(local?.env ?? {}) };
+  const env = sandboxByDefaultEnv({ ...processEnvStrings(), ...(local?.env ?? {}) });
 
   if (local) {
     const guardArgIndex = local.args.findIndex(arg => isOwnWrapperArg(projectRoot, arg));
@@ -281,7 +292,15 @@ function isNumericIpHostname(hostname: string): boolean {
   return host.includes(':') && /^[0-9a-f:.]+$/i.test(host);
 }
 
-export function validateNavigableUrl(rawUrl: unknown): { allowed: true } | { allowed: false; reason: string; message: string } {
+function isLoopbackIpHostname(hostname: string): boolean {
+  const host = normalizeHostname(hostname);
+  if (/^127(?:\.\d{1,3}){3}$/.test(host)) {
+    return host.split('.').every(part => Number(part) >= 0 && Number(part) <= 255);
+  }
+  return host === '::1' || host === '0:0:0:0:0:0:0:1';
+}
+
+export function applyNavigableUrlPolicy(rawUrl: unknown): { allowed: true; url?: string } | { allowed: false; reason: string; message: string } {
   if (typeof rawUrl !== 'string' || rawUrl.trim() === '') return { allowed: true };
   const trimmed = rawUrl.trim();
   const candidate = /^[a-z][a-z0-9+.-]*:\/\//i.test(trimmed) ? trimmed : `http://${trimmed}`;
@@ -294,6 +313,10 @@ export function validateNavigableUrl(rawUrl: unknown): { allowed: true } | { all
   }
 
   if (!['http:', 'https:'].includes(parsed.protocol)) return { allowed: true };
+  if (isLoopbackIpHostname(parsed.hostname)) {
+    parsed.hostname = 'localhost';
+    return { allowed: true, url: parsed.href };
+  }
   if (isNumericIpHostname(parsed.hostname)) {
     return {
       allowed: false,
@@ -303,6 +326,12 @@ export function validateNavigableUrl(rawUrl: unknown): { allowed: true } | { all
   }
 
   return { allowed: true };
+}
+
+export function validateNavigableUrl(rawUrl: unknown): { allowed: true } | { allowed: false; reason: string; message: string } {
+  const policy = applyNavigableUrlPolicy(rawUrl);
+  if (policy.allowed) return { allowed: true };
+  return policy;
 }
 
 function navigationUrlsForToolCall(req: JsonObject): unknown[] {
@@ -323,7 +352,7 @@ function validateScreenshotPath(rawPath: unknown): { allowed: true } | { allowed
   return { allowed: true };
 }
 
-function guardToolCall(req: JsonObject): JsonObject | null {
+export function guardToolCall(req: JsonObject): JsonObject | null {
   const blocked = navigationUrlsForToolCall(req)
     .map(url => ({ url, validation: validateNavigableUrl(url) }))
     .find(({ validation }) => !validation.allowed);
@@ -350,9 +379,31 @@ function guardToolCall(req: JsonObject): JsonObject | null {
   return null;
 }
 
-async function rewriteToolCallForPolicy(req: JsonObject, outputDir: string): Promise<JsonObject> {
+function rewriteNavigationToolCallForPolicy(req: JsonObject): JsonObject {
   const params = req.params as JsonObject | undefined;
-  if (params?.name !== 'browser_take_screenshot') return req;
+  const args = params?.arguments as JsonObject | undefined ?? {};
+  const isNavigation = params?.name === 'browser_navigate' || (params?.name === 'browser_tabs' && args.action === 'new');
+  if (!isNavigation) return req;
+
+  const policy = applyNavigableUrlPolicy(args.url);
+  if (!policy.allowed || !policy.url) return req;
+
+  return {
+    ...req,
+    params: {
+      ...params,
+      arguments: {
+        ...args,
+        url: policy.url,
+      },
+    },
+  };
+}
+
+export async function rewriteToolCallForPolicy(req: JsonObject, outputDir: string): Promise<JsonObject> {
+  const navigationReq = rewriteNavigationToolCallForPolicy(req);
+  const params = navigationReq.params as JsonObject | undefined;
+  if (params?.name !== 'browser_take_screenshot') return navigationReq;
 
   const args = { ...((params.arguments as JsonObject | undefined) ?? {}) };
   const rawPath = args.filename ?? args.path;
@@ -370,10 +421,42 @@ async function rewriteToolCallForPolicy(req: JsonObject, outputDir: string): Pro
   else args.filename = targetPath;
 
   return {
-    ...req,
+    ...navigationReq,
     params: {
       ...params,
       arguments: args,
+    },
+  };
+}
+
+function hasSingleInitialBlankTab(result: unknown): boolean {
+  const lines = flattenText(result).join('\n').split(/\r?\n/);
+  const tabLines = lines.map(line => line.trim()).filter(line => /^-\s+\d+:\s/.test(line));
+  return tabLines.length === 1 && /^-\s+0:\s+\(current\)\s+\[\]\(about:blank\)$/.test(tabLines[0]);
+}
+
+export async function rewriteInitialBlankTabNewCall(req: JsonObject, client: ToolCaller): Promise<JsonObject> {
+  const params = req.params as JsonObject | undefined;
+  const args = params?.arguments as JsonObject | undefined ?? {};
+  if (params?.name !== 'browser_tabs' || args.action !== 'new' || typeof args.url !== 'string' || args.url.trim() === '') return req;
+
+  let tabs: unknown;
+  try {
+    tabs = await client.callTool({ name: 'browser_tabs', arguments: { action: 'list' } });
+  } catch {
+    return req;
+  }
+
+  if (!hasSingleInitialBlankTab(tabs)) return req;
+
+  return {
+    ...req,
+    params: {
+      ...params,
+      name: 'browser_navigate',
+      arguments: {
+        url: args.url,
+      },
     },
   };
 }
@@ -487,8 +570,10 @@ async function main(): Promise<void> {
         'Playwright browser automation with Gerald policy guards.',
         'This server wraps the official Playwright MCP tool surface, so browser_snapshot, browser_tabs, screenshots, clicks, form fills, file upload, evaluate, and other upstream tools remain available.',
         'If a tool result returns AUTH_REQUIRED, ask the user to complete the login manually in the browser session and retry. Do not debug or modify application auth code unless the user explicitly asks.',
-        'Allow localhost, but reject numeric IP hosts with: IP is not supported. Use localhost instead.',
+        'Allow localhost and rewrite loopback IP hosts such as 127.0.0.1 to localhost before upstream navigation. Reject other numeric IP hosts with: IP is not supported. Use localhost instead.',
+        'When the only open tab is the initial about:blank tab, turn the first browser_tabs new request into a browser_navigate call so the blank tab does not linger.',
         'Default to a visible browser window. Headless mode is allowed only when GERALD_PLAYWRIGHT_ALLOW_HEADLESS=1 is set before launch.',
+        'Default to Chromium sandboxing by setting PLAYWRIGHT_MCP_SANDBOX=1 before launching upstream Playwright MCP.',
         'Keep generated artifacts out of project directories. Screenshots should use relative filenames and land under the configured temp output directory.',
       ].join(' '),
     },
@@ -499,7 +584,8 @@ async function main(): Promise<void> {
     const blocked = guardToolCall(req as JsonObject);
     if (blocked) return blocked;
 
-    const upstreamReq = await rewriteToolCallForPolicy(req as JsonObject, upstreamConfig.outputDir);
+    const policyReq = await rewriteToolCallForPolicy(req as JsonObject, upstreamConfig.outputDir);
+    const upstreamReq = await rewriteInitialBlankTabNewCall(policyReq, client);
     const params = upstreamReq.params as JsonObject;
     const result = await client.callTool({
       name: String(params.name),
