@@ -27,9 +27,10 @@ const AUTH_KEYWORD_RE = /\b(?:sign in|log in|login|continue with (?:google|micro
 const PAGE_URL_RE = /(?:Page URL:\s*|["']url["']\s*:\s*["'])(https?:\/\/[^\s"',}]+)/gi;
 const IP_NOT_SUPPORTED_TEXT = 'IP is not supported. Use localhost instead.';
 const SCREENSHOT_PATH_ERROR_TEXT = 'Screenshot paths must be relative to the Playwright temp output directory.';
-const BLUEPRINT_VERSION = '0.1.1';
+const BLUEPRINT_VERSION = '0.1.2';
 const UPSTREAM_PLAYWRIGHT_MCP_PACKAGE = process.env.GERALD_PLAYWRIGHT_MCP_PACKAGE ?? '@playwright/mcp@0.0.76';
 const AUTH_SETTLE_SECONDS = Number.parseInt(process.env.GERALD_PLAYWRIGHT_AUTH_SETTLE_SECONDS ?? '8', 10);
+const ALLOW_HEADLESS = process.env.GERALD_PLAYWRIGHT_ALLOW_HEADLESS === '1';
 const RUN_ID = `${new Date().toISOString().replace(/[:.]/g, '-')}-${randomBytes(3).toString('hex')}`;
 
 const PAGE_CONTENT_TOOL_NAMES = new Set([
@@ -158,8 +159,13 @@ function hasArg(args: string[], flag: string): boolean {
   return args.includes(flag) || args.some(arg => arg.startsWith(`${flag}=`));
 }
 
+function visibleByDefaultArgs(args: string[]): string[] {
+  if (ALLOW_HEADLESS) return args;
+  return args.filter(arg => arg !== '--headless');
+}
+
 function normalizeOfficialPlaywrightArgs(args: string[], projectRoot: string): { args: string[]; outputDir: string; profileDir: string } {
-  const next = args.length ? [...args] : ['-y', UPSTREAM_PLAYWRIGHT_MCP_PACKAGE];
+  const next = visibleByDefaultArgs(args.length ? [...args] : ['-y', UPSTREAM_PLAYWRIGHT_MCP_PACKAGE]);
   const profileDir = resolve(process.env.GERALD_PLAYWRIGHT_PROFILE_DIR ?? argValue(next, '--user-data-dir') ?? defaultProfileDir(projectRoot));
   const outputDir = resolve(process.env.GERALD_PLAYWRIGHT_OUTPUT_DIR ?? argValue(next, '--output-dir') ?? defaultOutputDir(projectRoot));
 
@@ -482,6 +488,7 @@ async function main(): Promise<void> {
         'This server wraps the official Playwright MCP tool surface, so browser_snapshot, browser_tabs, screenshots, clicks, form fills, file upload, evaluate, and other upstream tools remain available.',
         'If a tool result returns AUTH_REQUIRED, ask the user to complete the login manually in the browser session and retry. Do not debug or modify application auth code unless the user explicitly asks.',
         'Allow localhost, but reject numeric IP hosts with: IP is not supported. Use localhost instead.',
+        'Default to a visible browser window. Headless mode is allowed only when GERALD_PLAYWRIGHT_ALLOW_HEADLESS=1 is set before launch.',
         'Keep generated artifacts out of project directories. Screenshots should use relative filenames and land under the configured temp output directory.',
       ].join(' '),
     },

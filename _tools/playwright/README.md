@@ -21,6 +21,7 @@ Default behavior:
 - persistent Chromium auth/profile state is saved outside the project repository
 - Playwright output defaults to an OS temp run directory
 - upstream `--output-mode stdout` keeps page YAML and console logs in MCP responses instead of files
+- browser automation defaults to a visible window; set `GERALD_PLAYWRIGHT_ALLOW_HEADLESS=1` only when headless is intentional
 - screenshot filenames must be relative; the wrapper rewrites them into the temp output directory before forwarding to upstream Playwright
 - auth gates wait briefly, recheck the page snapshot, then return `AUTH_REQUIRED` and instruct the agent to ask for human login
 - `localhost` is allowed, but numeric IP hosts return `IP is not supported. Use localhost instead.`

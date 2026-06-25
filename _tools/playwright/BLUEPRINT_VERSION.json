@@ -1,6 +1,6 @@
 {
   "name": "gerald-playwright-mcp-blueprint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "upstreamPlaywrightMcpPackage": "@playwright/mcp@0.0.76",
   "guarantees": [
     "official Playwright MCP tool surface is preserved behind Gerald policy guards",
@@ -11,6 +11,7 @@
     "page YAML and console logs use upstream stdout mode instead of repository files",
     "numeric IP hosts are rejected, including 127.0.0.1",
     "localhost is allowed for local development",
+    "browser automation defaults to a visible window and strips inherited --headless unless GERALD_PLAYWRIGHT_ALLOW_HEADLESS=1",
     "auth gates wait briefly and recheck before returning AUTH_REQUIRED"
   ]
 }

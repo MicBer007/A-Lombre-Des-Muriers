@@ -1,8 +1,8 @@
 {
   "blueprintName": "gerald-playwright-mcp-blueprint",
-  "blueprintVersion": "0.1.1",
+  "blueprintVersion": "0.1.2",
   "blueprintCommit": "40fc1ae",
   "upstreamPlaywrightMcpPackage": "@playwright/mcp@0.0.76",
-  "copiedAt": "2026-06-16",
+  "copiedAt": "2026-06-25",
   "notes": "This project-local Playwright MCP setup is based on the Gerald Playwright blueprint wrapper pattern."
 }
