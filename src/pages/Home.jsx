@@ -86,10 +86,7 @@ export default function Home() {
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
                                   Je ne réponds pas aux numéros inconnus, donc,
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
+                                  <br />
                                   (Uniquement messages oraux ou écrits et je vous rappellerai).
                                 </span>
                               </p>
