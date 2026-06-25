@@ -64,10 +64,10 @@ export default function Home() {
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>: alombredesmuriers@gmail.com</span>
                               </p>
 
-                              {/* Contact info: phone */}
+                              {/* Contact info: contact form */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
-                                  Par téléphone et WhatsApp: 0033 (0) 6 26 03 04 19 ou via la page{" "}
+                                  Par la page{" "}
                                 </span>
                                 <a href="/contact/" className="textnormal" style={{ textDecoration: "underline solid rgb(0, 0, 0)" }}>
                                   <span className="textnormal" style={{ color: "rgb(21, 94, 171)", fontSize: 18, textDecoration: "underline solid rgb(21, 94, 171)" }}>
@@ -76,9 +76,21 @@ export default function Home() {
                                 </a>
                               </p>
 
+                              {/* Contact info: phone */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
-                                  Je ne réponds pas aux numéros inconnus, donc uniquement messages oraux ou écrits et je vous rappellerai.
+                                  Par téléphone et WhatsApp: 0033(0)6 26 03 04 19
+                                </span>
+                              </p>
+
+                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
+                                  Je ne réponds pas aux numéros inconnus, donc,
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                <span className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16 }}>
+                                  (Uniquement messages oraux ou écrits et je vous rappellerai).
                                 </span>
                               </p>
 
