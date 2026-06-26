@@ -5,14 +5,14 @@ export default function Home() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
   images.push({ src: "/assets/i284571214498116028.jpg", alt: "la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai" });
+  images.push({ src: "/assets/home-access-path-2026.jpeg", alt: "Chemin d’accès au gîte" });
   images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
   images.push({ src: "/assets/capture-decran-2023-04-08-18-59-01.png", alt: "" });
   images.push({ src: "/assets/capture-decran-2023-04-28-17-06-37.png", alt: "" });
   images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
   images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
   images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
-  images.push({ src: "/assets/i284571214498992102.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522141193.jpg", alt: "" });
+  images.push({ src: "/assets/home-facade-table-2026.jpeg", alt: "" });
   images.push({ src: "/assets/i284571214498515291.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522180079.jpg", alt: "" });
   images.push({ src: "/assets/i284571214498260070.jpg", alt: "" });
@@ -91,6 +91,25 @@ export default function Home() {
                                 </span>
                               </p>
 
+                              {/* Chemin d’accès au gîte */}
+                              <div className="gallery-item">
+                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
+                                  <img
+                                    loading="lazy"
+                                    src="/assets/home-access-path-2026.jpeg"
+                                    width={680}
+                                    height={510}
+                                    alt="Chemin d’accès au gîte"
+                                    title="Chemin d’accès au gîte"
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => openLightbox(images, 1)}
+                                  />
+                                </div>
+                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
+                                  Chemin d’accès au gîte
+                                </p>
+                              </div>
+
                               {/* Video */}
                               <video
                                 preload="metadata"
@@ -111,7 +130,7 @@ export default function Home() {
                               {/* Image 2: Large house photo */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={653} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
+                                  <img loading="lazy" src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={653} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
                                 </div>
                               </div>
 
@@ -125,21 +144,21 @@ export default function Home() {
                               {/* Image 3: Spa screenshot 1 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
                               </div>
 
                               {/* Image 4: Spa screenshot 2 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2023-04-28-17-06-37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2023-04-28-17-06-37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                               </div>
 
                               {/* Image 5: Chaises longues */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={510} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={510} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
                                 </div>
                               </div>
 
@@ -147,7 +166,7 @@ export default function Home() {
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
                                     <img loading="lazy" src="/assets/i284571214522335201.jpg" width={680} height={488}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
                                 </div>
                               </div>
 
@@ -157,7 +176,7 @@ export default function Home() {
                                     <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510}
                                       alt="Entrée du gîte et Pierrade pour plus de convivialité !"
                                       title="Entrée du gîte et Pierrade pour plus de convivialité !"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
+                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Entrée du gîte et Pierrade pour plus de convivialité !
@@ -167,15 +186,7 @@ export default function Home() {
                               {/* Image 6 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498992102.jpg" width={680} height={496}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
-                                </div>
-                              </div>
-
-                              {/* Image 7 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214522141193.jpg" width={680} height={510}
+                                    <img loading="lazy" src="/assets/home-facade-table-2026.jpeg" width={680} height={510}
                                       style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
                                 </div>
                               </div>

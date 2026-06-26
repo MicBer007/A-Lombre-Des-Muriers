@@ -21,7 +21,7 @@ export default function Calendrier() {
                                   loading="lazy"
                                   role="presentation"
                                   style={{ display: "block", margin: 0, width: "100%", height: "auto" }}
-                                  src="/assets/New_Calendrier.jpg"
+                                  src="/assets/calendrier-2026-reservations.png"
                                 />
                               </div>
                             </div>

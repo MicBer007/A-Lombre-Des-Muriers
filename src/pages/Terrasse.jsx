@@ -4,16 +4,14 @@ import { useLightbox } from "../components/Lightbox";
 export default function Terrasse() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
-  images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
   images.push({ src: "/assets/terrace-breakfast-2026.jpeg", alt: "terrasse pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." });
   images.push({ src: "/assets/covered-terrace-2026-a.jpeg", alt: "Terrasse couverte --- Covered patio ---- Überdachte Terrasse" });
-  images.push({ src: "/assets/terrace-shaded-2026.jpeg", alt: "Le matin." });
-  images.push({ src: "/assets/i284571214522613543.jpg", alt: "L'après midi." });
+  images.push({ src: "/assets/terrace-shaded-entry-2026.jpeg", alt: "L'après midi." });
   images.push({ src: "/assets/i284571214522315927.jpg", alt: "Le matin" });
   images.push({ src: "/assets/i284571214522214522.jpg", alt: "La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." });
   images.push({ src: "/assets/i284571214522136847.jpg", alt: "Pierrade à disposition" });
   images.push({ src: "/assets/terrace-view-2026.jpeg", alt: "" });
-  images.push({ src: "/assets/i284571214522316137.jpg", alt: "" });
+  images.push({ src: "/assets/terrace-covered-side-2026.jpeg", alt: "" });
   images.push({ src: "/assets/photo_de_la_terrasse.jpeg", alt: "Photo de la terrasse" });
 
   return (
@@ -32,15 +30,7 @@ export default function Terrasse() {
                             <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510} alt="Entrée du gîte et Pierrade pour plus de convivialité !" title="Entrée du gîte et Pierrade pour plus de convivialité !" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Entrée du gîte et Pierrade pour plus de convivialité !
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/terrace-breakfast-2026.jpeg" width={680} height={510} alt="terrasse pour des petits d&eacute;jeuners au soleil et en soir&eacute;e &agrave; l'ombre ---- outside patio ----Au&szlig;enterrasse." title="terrasse pour des petits d&eacute;jeuners au soleil et en soir&eacute;e &agrave; l'ombre ---- outside patio ----Au&szlig;enterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
+                                  <img loading="lazy" src="/assets/terrace-breakfast-2026.jpeg" width={680} height={510} alt="terrasse pour des petits d&eacute;jeuners au soleil et en soir&eacute;e &agrave; l'ombre ---- outside patio ----Au&szlig;enterrasse." title="terrasse pour des petits d&eacute;jeuners au soleil et en soir&eacute;e &agrave; l'ombre ---- outside patio ----Au&szlig;enterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   terrasse pour des petits d&eacute;jeuners au soleil et en soir&eacute;e &agrave; l'ombre ---- outside patio ----Au&szlig;enterrasse.
@@ -48,7 +38,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/covered-terrace-2026-a.jpeg" width={680} height={510} alt="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" title="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
+                                  <img loading="lazy" src="/assets/covered-terrace-2026-a.jpeg" width={680} height={510} alt="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" title="Terrasse couverte --- Covered patio ---- Überdachte Terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Terrasse couverte --- Covered patio ---- Überdachte Terrasse
@@ -56,15 +46,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/terrace-shaded-2026.jpeg" width={680} height={510} alt="Le matin." title="Le matin." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Le matin.
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522613543.jpg" width={680} height={510} alt="L'après midi." title="L'après midi." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                  <img loading="lazy" src="/assets/terrace-shaded-entry-2026.jpeg" width={680} height={510} alt="L'après midi." title="L'après midi." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   L'après midi.
@@ -72,7 +54,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522315927.jpg" width={680} height={510} alt="Le matin" title="Le matin" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
+                                  <img loading="lazy" src="/assets/i284571214522315927.jpg" width={680} height={510} alt="Le matin" title="Le matin" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Le matin
@@ -80,7 +62,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522214522.jpg" width={680} height={510} alt="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." title="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
+                                  <img loading="lazy" src="/assets/i284571214522214522.jpg" width={680} height={510} alt="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." title="La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   La terrasse ouverte pour des petits déjeuners au soleil et en soirée à l'ombre ---- outside patio ----Außenterrasse.
@@ -88,7 +70,7 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522136847.jpg" width={680} height={712} alt="Pierrade à disposition" title="Pierrade à disposition" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
+                                  <img loading="lazy" src="/assets/i284571214522136847.jpg" width={680} height={712} alt="Pierrade à disposition" title="Pierrade à disposition" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Pierrade à disposition
@@ -96,17 +78,17 @@ export default function Terrasse() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/terrace-view-2026.jpeg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
+                                  <img loading="lazy" src="/assets/terrace-view-2026.jpeg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
                                 </div>
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522316137.jpg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
+                                  <img loading="lazy" src="/assets/terrace-covered-side-2026.jpeg" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
                                 </div>
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/photo_de_la_terrasse.jpeg" width={680} height={510} alt="Photo de la terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
+                                  <img loading="lazy" src="/assets/photo_de_la_terrasse.jpeg" width={680} height={510} alt="Photo de la terrasse" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
                                 </div>
                               </div>
                             </div>
