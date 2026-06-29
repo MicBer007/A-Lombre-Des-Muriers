@@ -19,9 +19,9 @@ export default function Calendrier() {
                               <div className="Mobile_imageComponent__QXWk1" style={{ overflow: "hidden" }}>
                                 <img
                                   loading="lazy"
-                                  role="presentation"
+                                  alt="Calendrier des reservations 2026"
                                   style={{ display: "block", margin: 0, width: "100%", height: "auto" }}
-                                  src="/assets/calendrier-2026-reservations.png"
+                                  src="/assets/calendrier-2026-reservations.jpg"
                                 />
                               </div>
                             </div>
