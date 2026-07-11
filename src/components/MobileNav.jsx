@@ -65,7 +65,7 @@ export default function MobileNav() {
         data-testid="mobile-header"
       >
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-          <img src="/assets/i284571214503930606.jpg" alt="Logo" style={{ height: 36, maxHeight: 36, width: "auto", display: "block" }} />
+          <img src="/assets/gite-profile-2026.webp" alt="Le gîte à l'ombre des mûriers" style={{ height: 36, width: 36, objectFit: "cover", display: "block" }} />
           <span style={{ fontFamily: "Roboto", fontSize: 18, fontWeight: 500, color: "rgb(71, 71, 71)" }}>
             A l'ombre des Muriers
           </span>

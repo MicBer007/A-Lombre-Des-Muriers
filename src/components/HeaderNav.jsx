@@ -113,11 +113,10 @@ export default function HeaderNav() {
                                 >
                                   <img
                                     loading="lazy"
-                                    role="presentation"
+                                    alt="Le gîte à l'ombre des mûriers"
                                     data-scalestrategy="crop"
-                                    style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0 }}
-                                    src="/assets/i284571214503930606.jpg"
-                                    srcSet={`/assets/i284571214503930606.jpg /assets/i284571214503930606.jpg 2x, /assets/i284571214503930606.jpg 3x`}
+                                    style={{ marginTop: 0, marginLeft: 0, display: "block", margin: 0, objectFit: "cover" }}
+                                    src="/assets/gite-profile-2026.webp"
                                     height="84"
                                     width="91"
                                     data-width="91"

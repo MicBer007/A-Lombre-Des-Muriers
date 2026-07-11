@@ -4,7 +4,7 @@ import { useLightbox } from "../components/Lightbox";
 export default function Contact() {
   const { openLightbox, LightboxModal } = useLightbox();
   const images = [];
-  images.push({ src: "/assets/contact-gite-2026.webp", alt: "Le gîte à l'ombre des mûriers" });
+  images.push({ src: "/assets/i284571214498199093.jpg", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -61,10 +61,10 @@ export default function Contact() {
                               >
                                 <img
                                     loading="lazy"
-                                    alt="Le gîte à l'ombre des mûriers"
+                                    role="presentation"
                                     style={{ display: "block", cursor: "pointer" }}
-                                    src="/assets/contact-gite-2026.webp"
-                                    height="510"
+                                    src="/assets/i284571214498199093.jpg"
+                                    height="461"
                                     width="680"
                                     onClick={() => openLightbox(images, 0)}
                                   />
