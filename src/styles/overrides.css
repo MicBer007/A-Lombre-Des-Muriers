@@ -50,6 +50,7 @@ html, body {
 
 /* Ensure the mobile nav bar sits at the top and the burger is correctly positioned */
 .mm-mobile-nav-react .MobileHeader_container__1XW3y {
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 10010;
@@ -59,6 +60,26 @@ html, body {
   position: relative !important;
   top: auto !important;
   right: auto !important;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  flex: 0 0 48px;
+}
+
+.mm-mobile-nav-react .MobileHeader_menuIconContainer__lc-Zq span {
+  width: 24px;
+  height: 3px;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.mm-mobile-nav-react .MobileHeader_menuIconContainer__lc-Zq.on span:first-child {
+  top: 8px;
+}
+
+.mm-mobile-nav-react .MobileHeader_menuIconContainer__lc-Zq.on span:nth-child(3) {
+  bottom: 8px;
 }
 
 @media (max-width: 1199px) {
