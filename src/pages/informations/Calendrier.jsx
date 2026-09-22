@@ -1,3 +1,4 @@
+import AvailabilityCalendar from "../../components/AvailabilityCalendar";
 import Sidebar from "../../components/Sidebar";
 
 export default function Calendrier() {
@@ -16,14 +17,7 @@ export default function Calendrier() {
                           {/* Content column */}
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
                             <div style={{ padding: "40px 20px 84px" }}>
-                              <div className="Mobile_imageComponent__QXWk1" style={{ overflow: "hidden" }}>
-                                <img
-                                  loading="lazy"
-                                  alt="Calendrier des reservations 2026"
-                                  style={{ display: "block", margin: 0, width: "100%", height: "auto" }}
-                                  src="/assets/calendrier-2026-reservations.jpg"
-                                />
-                              </div>
+                              <AvailabilityCalendar />
                             </div>
                             <div style={{ clear: "both" }}></div>
                           </div>

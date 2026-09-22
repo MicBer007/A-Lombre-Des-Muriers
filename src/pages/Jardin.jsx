@@ -8,13 +8,13 @@ export default function Jardin() {
   images.push({ src: "/assets/i284571214522315913.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522136776.jpg", alt: "La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum" });
   images.push({ src: "/assets/i284571214522315918.jpg", alt: "" });
-  images.push({ src: "/assets/garden-access-path-2026.avif", alt: "Le chemin d'accès.----- Entrance ------ Eingang" });
+  images.push({ src: "/assets/garden-access-path-2026.jpg", alt: "Le chemin d'accès.----- Entrance ------ Eingang" });
   images.push({ src: "/assets/i284571214522136710.jpg", alt: "" });
   images.push({ src: "/assets/i284571214522136712.jpg", alt: "Jardin côté gîte ---Garden ---- Gartenhaus" });
   images.push({ src: "/assets/garden-view-2026.jpeg", alt: "" });
   images.push({ src: "/assets/i284571214522613580.jpg", alt: "" });
   images.push({ src: "/assets/capture-decran-2025-09-29-17-59-13.png", alt: "Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" });
-  images.push({ src: "/assets/capture-decran-2023-04-08-18-59-01.png", alt: "" });
+  images.push({ src: "/assets/spa-bioclimatique-2026.jpeg", alt: "Le spa sous sa couverture bioclimatique" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -55,7 +55,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/garden-access-path-2026.avif" width={680} height={510} alt="Le chemin d'accès.----- Entrance ------ Eingang" title="Le chemin d'accès.----- Entrance ------ Eingang" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                  <img loading="lazy" src="/assets/garden-access-path-2026.jpg" width={680} height={510} alt="Le chemin d'accès.----- Entrance ------ Eingang" title="Le chemin d'accès.----- Entrance ------ Eingang" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Le chemin d'accès.----- Entrance ------ Eingang
@@ -86,7 +86,7 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={879} alt="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" title="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
+                                  <img loading="lazy" src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={664} alt="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" title="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
                                 </div>
                                 <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
                                   Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz
@@ -94,11 +94,11 @@ export default function Jardin() {
                               </div>
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={429} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
+                                  <img loading="lazy" src="/assets/spa-bioclimatique-2026.jpeg" alt="Le spa sous sa couverture bioclimatique" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
                                 </div>
                               </div>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Entre le 1er mai et le 15 septembre, Spa de nage extérieur avec contre courant à partager avec la propriétaire&nbsp;
+                                Entre le 1er mai et le 15 septembre, Spa de nage extérieur avec contre courant à partager avec la propriétaire. Une couverture bioclimatique permet d’en profiter par tous les temps.
                               </p>
                             </div>
                             <div style={{ clear: "both" }}></div>

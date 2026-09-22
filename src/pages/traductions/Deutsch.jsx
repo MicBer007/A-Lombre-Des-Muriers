@@ -72,7 +72,7 @@ export default function Deutsch() {
                                 </a>
                                 {" "}
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  und ein schönes Wohnzimmer von 32 m2 alle im Geist des Landes mit Stein und ein Holzofen für Winterabende.
+                                  und ein schönes Wohnzimmer von 32 m2 alle im Geist des Landes mit Stein und ein Holzofen für Winterabende. Das Wohnzimmer verfügt über eine Klimaanlage zum Kühlen und Heizen.
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>

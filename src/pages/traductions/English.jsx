@@ -58,7 +58,7 @@ export default function English() {
                                   </a>
                                 </span>
                                 <span style={{ padding: 0, textAlign: "left", color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, letterSpacing: 0, fontWeight: "normal", fontStyle: "normal", textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  , 32m2, &nbsp;there is an equipped kitchen, &nbsp;in Provencal style, &nbsp;with exposed stones, and a wood burning stove for the cooler moments.&nbsp;
+                                  , 32m2, &nbsp;there is an equipped kitchen, &nbsp;in Provencal style, &nbsp;with exposed stones, and a wood burning stove for the cooler moments. The living room has air conditioning for cooling and heating.&nbsp;
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>

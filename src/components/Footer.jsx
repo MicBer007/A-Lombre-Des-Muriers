@@ -4,7 +4,7 @@ export default function Footer() {
       data-id="B7B71D67-9A55-4AFC-AE1E-AACD7248C825"
       data-kind="SECTION"
       style={{ width: "100%", minHeight: 1511, left: "auto", marginTop: 0, marginLeft: 0 }}
-      className="Preview_componentWrapper__2i4QI"
+      className="Preview_componentWrapper__2i4QI site-footer"
     >
       <div
         id="Footer"

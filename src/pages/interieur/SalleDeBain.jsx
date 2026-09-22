@@ -1,3 +1,4 @@
+import PhotoGallery from "../../components/PhotoGallery";
 import Sidebar from "../../components/Sidebar";
 import { useLightbox } from "../../components/Lightbox";
 
@@ -62,6 +63,11 @@ export default function SalleDeBain() {
                                   Lave linge Thomson
                                 </p>
                               </div>
+                              <h2 className="textheading3 mobile-oversized">Toilette séparée</h2>
+                              <PhotoGallery images={[
+                                { src: "/assets/toilettes-2026.jpeg", alt: "Toilette séparée" },
+                                { src: "/assets/toilettes-decoration-2026.jpeg", alt: "Toilette séparée — la décoration" },
+                              ]} />
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Etendoir &agrave; linge avec pinces &agrave; linge
                               </p>

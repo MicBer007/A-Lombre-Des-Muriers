@@ -35,7 +35,7 @@
 
 /* =============================================
    MOBILE RESPONSIVE OVERRIDES
-   Breakpoint: 900px (tablets + phones)
+   Breakpoint: 1199px (tablets + phones)
    ============================================= */
 
 /* Prevent horizontal overflow at the root */
@@ -61,7 +61,7 @@ html, body {
   right: auto !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1199px) {
   /* Show MobileNav, hide desktop header */
   .mm-mobile-nav-react {
     display: block !important;
@@ -70,6 +70,9 @@ html, body {
     display: none !important;
   }
 
+
+  #PageSection *, #Footer * { box-sizing: border-box; }
+  .col { margin-left: 0 !important; }
 
   /* 1. Make all layout rows and columns fluid */
   .Preview_column__1KeVx,
@@ -115,6 +118,9 @@ html, body {
   }
 
   /* 5. Footer: remove giant fixed min-height so it shrinks naturally */
+  .site-footer,
+  #Footer .Preview_row__3Fkye,
+  #Footer .Preview_componentWrapper__2i4QI,
   #Footer,
   #Footer > *,
   #Footer .StripPreview_backgroundComponent__3YmQM,
@@ -250,4 +256,37 @@ ul.menu1 > li > button.dropdown-only:focus {
 ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+.photo-gallery { display: grid; gap: 40px; width: 100%; max-width: 680px; }
+.photo-gallery figure { margin: 0; min-width: 0; }
+.photo-gallery button { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.photo-gallery button:focus-visible { outline: 3px solid #587346; outline-offset: 4px; }
+.photo-gallery img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 10px; }
+.photo-gallery figcaption { margin-top: 8px; font-size: 14.4px; line-height: 1.17; font-style: italic; }
+.kitchen-equipment { columns: 2; padding-left: 22px; line-height: 1.7; }
+.kitchen-equipment li { break-inside: avoid; }
+.availability h1 { margin-bottom: 28px; }
+.calendar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.calendar-grid table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 2px; font-size: 16px; }
+.calendar-grid caption { text-align: left; font-weight: bold; text-transform: capitalize; padding-bottom: 10px; }
+.calendar-grid th { font-size: 13px; font-weight: normal; }
+.calendar-grid td { text-align: center; height: 32px; color: #222; }
+.calendar-available { background: #b7e4b8; }
+.calendar-reserved { background: #f3b0b4; }
+.calendar-past { background: #eee; }
+.calendar-arrival { background: linear-gradient(60deg, #b7e4b8 30%, #f3b0b4 30%); }
+.calendar-departure { background: linear-gradient(60deg, #f3b0b4 30%, #b7e4b8 30%); }
+@media (max-width: 600px) {
+  .calendar-grid { grid-template-columns: minmax(0, 1fr); }
+  .kitchen-equipment { columns: 1; }
+}
+/* Keep portrait photos inside the viewer, including short tablet screens. */
+.photo-image-area { width: calc(100vw - 80px); height: calc(100dvh - 130px); overflow: auto; cursor: default; }
+.photo-lightbox .photo-image-area img { display: block; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none; object-fit: contain; }
+.photo-lightbox .photo-image-area.is-zoomed img { width: 200% !important; height: 200% !important; }
+.photo-lightbox .photo-zoom-button { position: absolute; top: 12px; right: 80px; color: white; font-size: 36px; width: 44px; height: 44px; cursor: pointer; z-index: 100000; }
+.photo-lightbox button { border: 0; background: transparent; font-family: inherit; }
+.photo-lightbox button:focus-visible { outline: 2px solid white; }
+@media (max-width: 600px) {
+  .language-links { grid-template-columns: minmax(0, 1fr) !important; }
 }

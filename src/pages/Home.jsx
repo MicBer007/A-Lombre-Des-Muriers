@@ -7,8 +7,8 @@ export default function Home() {
   images.push({ src: "/assets/i284571214498116028.jpg", alt: "la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai" });
   images.push({ src: "/assets/home-access-path-2026.jpeg", alt: "Chemin d’accès au gîte" });
   images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
-  images.push({ src: "/assets/capture-decran-2023-04-08-18-59-01.png", alt: "" });
-  images.push({ src: "/assets/capture-decran-2023-04-28-17-06-37.png", alt: "" });
+  images.push({ src: "/assets/spa-bioclimatique-2026.jpeg", alt: "Le spa sous sa couverture bioclimatique" });
+  images.push({ src: "/assets/spa-couvert-2026.jpeg", alt: "Le spa couvert pour en profiter par tous les temps" });
   images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
   images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
   images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
@@ -138,27 +138,27 @@ export default function Home() {
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Et depuis ce mois d'avril 2023 un SPA de Nage avec
                                 contre courant a partager avec la propriétaire. Le Spa
-                                est accessible du 1er mai au 30 septembre.
+                                est accessible du 1er mai au 30 septembre. Une couverture bioclimatique permet d’en profiter par tous les temps.
                               </p>
 
                               {/* Image 3: Spa screenshot 1 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2023-04-08-18-59-01.png" width={680} height={458} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
+                                  <img loading="lazy" src="/assets/spa-bioclimatique-2026.jpeg" alt="Le spa sous sa couverture bioclimatique" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
                                 </div>
                               </div>
 
                               {/* Image 4: Spa screenshot 2 */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2023-04-28-17-06-37.png" width={680} height={498} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
+                                  <img loading="lazy" src="/assets/spa-couvert-2026.jpeg" alt="Le spa couvert pour en profiter par tous les temps" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
                                 </div>
                               </div>
 
                               {/* Image 5: Chaises longues */}
                               <div className="gallery-item">
                                 <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={510} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
+                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={907} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
                                 </div>
                               </div>
 
@@ -268,7 +268,7 @@ export default function Home() {
                                   </span>{" "}
                                   et d'un joli salon l'ensemble de 32 m2 dans l'esprit
                                   du pays avec des pierres apparentes et un poêle à
-                                  bois pour les soirées d'hiver.
+                                  bois pour les soirées d'hiver. Le salon est équipé d'une climatisation réversible.
                                 </span>
                               </p>
 
@@ -339,7 +339,7 @@ export default function Home() {
                               </p>
 
                               {/* Navigation links - 3 language columns */}
-                              <div className="textnormal" style={{ fontFamily: "Roboto", fontSize: 16, lineHeight: 2.2, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0 12px" }}>
+                              <div className="textnormal language-links" style={{ fontFamily: "Roboto", fontSize: 16, lineHeight: 2.2, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0 12px" }}>
                                 <a href="/a-visiter/" style={{ color: "rgb(21, 94, 171)", textDecoration: "underline" }}>LES LIEUX A VISITER</a>
                                 <a href="/a-visiter/" style={{ color: "rgb(156, 27, 49)", textDecoration: "underline" }}>PLACES TO VISIT</a>
                                 <a href="/a-visiter/" style={{ color: "rgb(101, 179, 69)", textDecoration: "underline" }}>ORTE ZU BESUCHEN</a>
