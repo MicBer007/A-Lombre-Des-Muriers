@@ -1,10 +1,7 @@
 import Sidebar from "../components/Sidebar";
-import { useLightbox } from "../components/Lightbox";
+import Photo from "../components/Photo";
 
 export default function Contact() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-  images.push({ src: "/assets/i284571214498199093.jpg", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -55,20 +52,7 @@ export default function Contact() {
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                               ></iframe>
-                              <div
-                                className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp"
-                                style={{ borderRadius: 10, overflow: "hidden" }}
-                              >
-                                <img
-                                    loading="lazy"
-                                    role="presentation"
-                                    style={{ display: "block", cursor: "pointer" }}
-                                    src="/assets/i284571214498199093.jpg"
-                                    height="461"
-                                    width="680"
-                                    onClick={() => openLightbox(images, 0)}
-                                  />
-                              </div>
+                              <Photo src="/assets/i284571214498199093.jpg" width={680} height={461} />
                             </div>
                             <div style={{ clear: "both" }}></div>
                           </div>
@@ -88,7 +72,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

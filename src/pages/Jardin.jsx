@@ -1,20 +1,7 @@
 import Sidebar from "../components/Sidebar";
-import { useLightbox } from "../components/Lightbox";
+import Photo from "../components/Photo";
 
 export default function Jardin() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-  images.push({ src: "/assets/i284571214522329899.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522315913.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522136776.jpg", alt: "La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum" });
-  images.push({ src: "/assets/i284571214522315918.jpg", alt: "" });
-  images.push({ src: "/assets/garden-access-path-2026.jpg", alt: "Le chemin d'accès.----- Entrance ------ Eingang" });
-  images.push({ src: "/assets/i284571214522136710.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522136712.jpg", alt: "Jardin côté gîte ---Garden ---- Gartenhaus" });
-  images.push({ src: "/assets/garden-view-2026.jpeg", alt: "" });
-  images.push({ src: "/assets/i284571214522613580.jpg", alt: "" });
-  images.push({ src: "/assets/capture-decran-2025-09-29-17-59-13.png", alt: "Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" });
-  images.push({ src: "/assets/spa-bioclimatique-2026.jpeg", alt: "Le spa sous sa couverture bioclimatique" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -30,73 +17,17 @@ export default function Jardin() {
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
                             <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522329899.jpg" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522315913.jpg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522136776.jpg" width={680} height={513} alt="La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum" title="La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  La charrette à l'ombre des muriers---The barrow under the Mulberry tree---Der Karren im Schatten der Maulbeerbaum
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522315918.jpg" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/garden-access-path-2026.jpg" width={680} height={510} alt="Le chemin d'accès.----- Entrance ------ Eingang" title="Le chemin d'accès.----- Entrance ------ Eingang" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Le chemin d'accès.----- Entrance ------ Eingang
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522136710.jpg" width={680} height={506} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522136712.jpg" width={680} height={513} alt="Jardin côté gîte ---Garden ---- Gartenhaus" title="Jardin côté gîte ---Garden ---- Gartenhaus" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Jardin côté gîte ---Garden ---- Gartenhaus
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/garden-view-2026.jpeg" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214522613580.jpg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={664} alt="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" title="Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Le terrain de pétanque 4m/10m --- Pétanque court --- Bouleplatz
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/spa-bioclimatique-2026.jpeg" alt="Le spa sous sa couverture bioclimatique" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214522329899.jpg" width={680} height={510} />
+                              <Photo src="/assets/i284571214522315913.jpg" width={680} height={907} />
+                              <Photo src="/assets/i284571214522136776.jpg" width={680} height={513} caption={["La charrette à l'ombre des muriers", "The barrow under the Mulberry tree", "Der Karren im Schatten der Maulbeerbaum"]} />
+                              <Photo src="/assets/i284571214522315918.jpg" width={680} height={510} />
+                              <Photo src="/assets/garden-access-path-2026.jpg" width={680} height={510} caption={["Le chemin d'accès.", "Entrance", "Eingang"]} />
+                              <Photo src="/assets/i284571214522136710.jpg" width={680} height={506} />
+                              <Photo src="/assets/i284571214522136712.jpg" width={680} height={513} caption={["Jardin côté gîte", "Garden", "Gartenhaus"]} />
+                              <Photo src="/assets/garden-view-2026.jpeg" width={680} height={510} />
+                              <Photo src="/assets/i284571214522613580.jpg" width={680} height={907} />
+                              <Photo src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={664} caption={["Le terrain de pétanque 4m/10m", "Pétanque court", "Bouleplatz"]} />
+                              <Photo src="/assets/spa-bioclimatique-2026.jpeg" width={680} height={510} alt="Le spa sous sa couverture bioclimatique" />
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Entre le 1er mai et le 15 septembre, Spa de nage extérieur avec contre courant à partager avec la propriétaire. Une couverture bioclimatique permet d’en profiter par tous les temps.
                               </p>
@@ -117,7 +48,6 @@ export default function Jardin() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

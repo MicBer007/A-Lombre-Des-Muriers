@@ -1,25 +1,7 @@
 import Sidebar from "../components/Sidebar";
-import { useLightbox } from "../components/Lightbox";
+import Photo from "../components/Photo";
 
 export default function Home() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-  images.push({ src: "/assets/i284571214498116028.jpg", alt: "la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai" });
-  images.push({ src: "/assets/home-access-path-2026.jpeg", alt: "Chemin d’accès au gîte" });
-  images.push({ src: "/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG", alt: "" });
-  images.push({ src: "/assets/spa-bioclimatique-2026.jpeg", alt: "Le spa sous sa couverture bioclimatique" });
-  images.push({ src: "/assets/spa-couvert-2026.jpeg", alt: "Le spa couvert pour en profiter par tous les temps" });
-  images.push({ src: "/assets/chaises_longues.jpeg", alt: "Chaises longues" });
-  images.push({ src: "/assets/i284571214522335201.jpg", alt: "" });
-  images.push({ src: "/assets/terrace-entry-2026.jpeg", alt: "Entrée du gîte et Pierrade pour plus de convivialité !" });
-  images.push({ src: "/assets/home-facade-table-2026.jpeg", alt: "" });
-  images.push({ src: "/assets/i284571214498515291.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214522180079.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498260070.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498180473.jpg", alt: "Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel" });
-  images.push({ src: "/assets/i284571214498528937.jpg", alt: "Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow" });
-  images.push({ src: "/assets/i284571214498540023.jpg", alt: "Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter." });
-  images.push({ src: "/assets/i284571214502644149.jpg", alt: "Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -38,17 +20,7 @@ export default function Home() {
                             <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 35px" }}>
 
                               {/* Image 1: Facade sud */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498116028.jpg" width={680} height={510}
-                                      alt="la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai"
-                                      title="la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  la façade sud au mois de mai - The south facade in May - Die Südfassade im Mai
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498116028.jpg" width={680} height={510} caption={["La façade sud au mois de mai", "The south facade in May", "Die Südfassade im Mai"]} />
 
                               {/* Pour me contacter heading */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -92,23 +64,7 @@ export default function Home() {
                               </p>
 
                               {/* Chemin d’accès au gîte */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img
-                                    loading="lazy"
-                                    src="/assets/home-access-path-2026.jpeg"
-                                    width={680}
-                                    height={510}
-                                    alt="Chemin d’accès au gîte"
-                                    title="Chemin d’accès au gîte"
-                                    style={{ cursor: "pointer" }}
-                                    onClick={() => openLightbox(images, 1)}
-                                  />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Chemin d’accès au gîte
-                                </p>
-                              </div>
+                              <Photo src="/assets/home-access-path-2026.jpeg" width={680} height={510} caption="Chemin d’accès au gîte" />
 
                               {/* Video */}
                               <video
@@ -128,11 +84,7 @@ export default function Home() {
                               </p>
 
                               {/* Image 2: Large house photo */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={653} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={655} />
 
                               {/* SPA text */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -142,54 +94,22 @@ export default function Home() {
                               </p>
 
                               {/* Image 3: Spa screenshot 1 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/spa-bioclimatique-2026.jpeg" alt="Le spa sous sa couverture bioclimatique" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/spa-bioclimatique-2026.jpeg" width={680} height={510} alt="Le spa sous sa couverture bioclimatique" />
 
                               {/* Image 4: Spa screenshot 2 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/spa-couvert-2026.jpeg" alt="Le spa couvert pour en profiter par tous les temps" width={680} height={510} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/spa-couvert-2026.jpeg" width={680} height={510} alt="Le spa couvert pour en profiter par tous les temps" />
 
                               {/* Image 5: Chaises longues */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/chaises_longues.jpeg" width={680} height={907} alt="Chaises longues" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 5)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/chaises_longues.jpeg" width={680} height={907} alt="Chaises longues" />
 
                               {/* Image 12 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214522335201.jpg" width={680} height={488}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 6)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214522335201.jpg" width={680} height={488} />
 
                               {/* Image 13: Entrée du gîte */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/terrace-entry-2026.jpeg" width={680} height={510}
-                                      alt="Entrée du gîte et Pierrade pour plus de convivialité !"
-                                      title="Entrée du gîte et Pierrade pour plus de convivialité !"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 7)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Entrée du gîte et Pierrade pour plus de convivialité !
-                                </p>
-                              </div>
+                              <Photo src="/assets/terrace-entry-2026.jpeg" width={680} height={510} caption="Entrée du gîte et Pierrade pour plus de convivialité !" />
 
                               {/* Image 6 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/home-facade-table-2026.jpeg" width={680} height={510}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 8)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/home-facade-table-2026.jpeg" width={680} height={510} />
 
                               {/* Heading: Pour profiter */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -370,12 +290,7 @@ export default function Home() {
                               </div>
 
                               {/* Image 8 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498515291.jpg" width={680} height={495}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 9)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214498515291.jpg" width={680} height={495} />
 
                               {/* Pour trouver la maison */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -419,33 +334,13 @@ export default function Home() {
                               ></iframe>
 
                               {/* Image 9 */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214522180079.jpg" width={680} height={349}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 10)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214522180079.jpg" width={680} height={349} />
 
                               {/* Image 10: panoramic */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498260070.jpg" width={680} height={215}
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 11)} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214498260070.jpg" width={680} height={215} />
 
                               {/* Image 11: Plan vu du ciel */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498180473.jpg" width={680} height={461}
-                                      alt="Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel"
-                                      title="Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 12)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Plan vu du ciel---Plan from the sky---Planen Sie vom Himmel
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498180473.jpg" width={680} height={461} caption={["Plan vu du ciel", "Plan from the sky", "Planen Sie vom Himmel"]} />
 
                               {/* La situation du Gîte */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -542,45 +437,13 @@ export default function Home() {
                               </p>
 
                               {/* Image 14: Sous la neige */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498528937.jpg" width={680} height={510}
-                                      alt="Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow"
-                                      title="Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 13)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Sous la neige.... Spectacle féerique !---Under the snow .... Fairy show !---Unter dem Schnee ... Märchenshow
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498528937.jpg" width={680} height={510} caption={["Sous la neige.... Spectacle féerique !", "Under the snow .... Fairy show !", "Unter dem Schnee ... Märchenshow"]} />
 
                               {/* Image 15: Les Muriers en Hiver */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214498540023.jpg" width={680} height={510}
-                                      alt="Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter."
-                                      title="Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter."
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 14)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Les Muriers en Hiver ---- Mulberries in Winter ---- Maulbeeren im Winter.
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498540023.jpg" width={680} height={510} caption={["Les Muriers en Hiver", "Mulberries in Winter", "Maulbeeren im Winter."]} />
 
                               {/* Image 16: Coucher de soleil */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img loading="lazy" src="/assets/i284571214502644149.jpg" width={680} height={510}
-                                      alt="Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz"
-                                      title="Un magnifique couché de soleil vue du parking ---- A beautiful sunset view of the parking ---- Ein wunderschöner Sonnenuntergang über dem Parkplatz"
-                                      style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 15)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Un magnifique couché de soleil vue du parking ---- A beautiful
-                                  sunset view of the parking ---- Ein wunderschöner
-                                  Sonnenuntergang über dem Parkplatz
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214502644149.jpg" width={680} height={510} caption={["Un magnifique couché de soleil vue du parking", "A beautiful sunset view of the parking", "Ein wunderschöner Sonnenuntergang über dem Parkplatz"]} />
 
                               {/* Commentaires section */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -676,7 +539,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

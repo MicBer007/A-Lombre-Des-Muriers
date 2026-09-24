@@ -1,15 +1,7 @@
 import Sidebar from "../../components/Sidebar";
-import { useLightbox } from "../../components/Lightbox";
+import Photo from "../../components/Photo";
 
 export default function Chambre() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-
-  images.push({ src: "/assets/i284571214498194393.jpg", alt: "Lit double de 160 / 200" });
-  images.push({ src: "/assets/i284571214498194449.jpg", alt: "Ou 2 lits simples de 80 / 200" });
-  images.push({ src: "/assets/i284571214498194478.jpg", alt: "Literie de qualit\u00e9." });
-  images.push({ src: "/assets/baby-bed-2026.jpg", alt: "Lit de B\u00e9b\u00e9 \u00e0 disposition." });
-  images.push({ src: "/assets/i284571214498194590.jpg", alt: "Petite table bureau dans la chambre" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -28,46 +20,11 @@ export default function Chambre() {
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Pour toutes r&eacute;servations &agrave; partir d'une semaine ou plus, les draps seront compris dans la location.
                               </p>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194393.jpg" width={680} height={510} alt="Lit double de 160 / 200" title="Lit double de 160 / 200" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Lit double de 160 / 200
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194449.jpg" width={680} height={510} alt="Ou 2 lits simples de 80 / 200" title="Ou 2 lits simples de 80 / 200" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Ou 2 lits simples de 80 / 200
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194478.jpg" width={680} height={510} alt="Literie de qualit&eacute;." title="Literie de qualit&eacute;." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Literie de qualit&eacute;.
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/baby-bed-2026.jpg" width={680} height={510} alt="Lit de B&eacute;b&eacute; &agrave; disposition." title="Lit de B&eacute;b&eacute; &agrave; disposition." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Lit de B&eacute;b&eacute; &agrave; disposition.
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194590.jpg" width={680} height={510} alt="Petite table bureau dans la chambre" title="Petite table bureau dans la chambre" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Petite table bureau dans la chambre
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498194393.jpg" width={680} height={510} caption="Lit double de 160 / 200" />
+                              <Photo src="/assets/i284571214498194449.jpg" width={680} height={510} caption="Ou 2 lits simples de 80 / 200" />
+                              <Photo src="/assets/i284571214498194478.jpg" width={680} height={510} caption="Literie de qualité." />
+                              <Photo src="/assets/baby-bed-2026.jpg" width={680} height={510} caption="Lit de Bébé à disposition." />
+                              <Photo src="/assets/i284571214498194590.jpg" width={680} height={510} caption="Petite table bureau dans la chambre" />
                             </div>
                             <div style={{ clear: "both" }}></div>
                           </div>
@@ -85,7 +42,6 @@ export default function Chambre() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

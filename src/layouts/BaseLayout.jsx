@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import MobileNav from "../components/MobileNav";
 import HeaderNav from "../components/HeaderNav";
 import Footer from "../components/Footer";
+import { LightboxProvider } from "../components/Lightbox";
 
 export default function BaseLayout() {
   return (
@@ -14,7 +15,9 @@ export default function BaseLayout() {
           <HeaderNav />
         </div>
         {/* Page content (includes sidebar within each page's two-column layout) */}
-        <Outlet />
+        <LightboxProvider>
+          <Outlet />
+        </LightboxProvider>
         <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }} id="shared-footer">
           <Footer />
         </div>

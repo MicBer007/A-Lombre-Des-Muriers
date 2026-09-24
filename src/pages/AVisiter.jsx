@@ -1,44 +1,7 @@
 import Sidebar from "../components/Sidebar";
-import { useLightbox } from "../components/Lightbox";
+import Photo, { PhotoRow } from "../components/Photo";
 
 export default function AVisiter() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-  images.push({ src: "/assets/i284571214498218018.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218061.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218095.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218401.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218608.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218711.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218735.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218771.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498224819.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498218819.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498219440.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498219077.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498219550.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498219891.jpg", alt: "Pour des promenades inoubliables" });
-  images.push({ src: "/assets/i284571214498220075.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498225402.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498225636.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498226068.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498260808.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498226986.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498226895.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498227038.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498227582.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498227632.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498227921.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214504326517.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498228054.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498230883.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498541579.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498231115.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498231774.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498233261.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214504979004.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214504978883.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214504979194.jpg", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -118,23 +81,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Bambouseraie images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 0)} loading="lazy" src="/assets/i284571214498218018.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 1)} loading="lazy" src="/assets/i284571214498218061.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 2)} loading="lazy" src="/assets/i284571214498218095.jpg" width={213} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498218018.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498218061.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498218095.jpg" width={213} height={160} />
+                              </PhotoRow>
 
                               {/* Le village médiéval de Vézénobres */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -191,23 +142,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Vezenobres images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 3)} loading="lazy" src="/assets/i284571214498218401.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 4)} loading="lazy" src="/assets/i284571214498218608.jpg" width={214} height={300} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 5)} loading="lazy" src="/assets/i284571214498218711.jpg" width={213} height={142} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498218401.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498218608.jpg" width={214} height={300} />
+                                <Photo src="/assets/i284571214498218711.jpg" width={213} height={142} />
+                              </PhotoRow>
 
                               {/* Les grottes */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -452,23 +391,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Grottes images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 6)} loading="lazy" src="/assets/i284571214498218735.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 7)} loading="lazy" src="/assets/i284571214498218771.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 8)} loading="lazy" src="/assets/i284571214498224819.jpg" width={213} height={149} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498218735.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498218771.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498224819.jpg" width={213} height={149} />
+                              </PhotoRow>
 
                               {/* La ville d'Anduze */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -490,23 +417,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Anduze images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 9)} loading="lazy" src="/assets/i284571214498218819.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 10)} loading="lazy" src="/assets/i284571214498219440.jpg" width={214} height={285} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 11)} loading="lazy" src="/assets/i284571214498219077.jpg" width={213} height={153} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498218819.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498219440.jpg" width={214} height={285} />
+                                <Photo src="/assets/i284571214498219077.jpg" width={213} height={153} />
+                              </PhotoRow>
 
                               {/* A Sauve, la mer de Rochers */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -538,26 +453,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Sauve images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 12)} loading="lazy" src="/assets/i284571214498219550.jpg" width={214} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 13)} loading="lazy" src="/assets/i284571214498219891.jpg" width={214} height={160} alt="Pour des promenades inoubliables" title="Pour des promenades inoubliables" style={{ cursor: "pointer" }} />
-                                  </div>
-                                  <p className="textnormal mobile-undersized-upper" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                    Pour des promenades inoubliables
-                                  </p>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 14)} loading="lazy" src="/assets/i284571214498220075.jpg" width={213} height={160} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498219550.jpg" width={214} height={160} />
+                                <Photo src="/assets/i284571214498219891.jpg" width={214} height={160} caption="Pour des promenades inoubliables" />
+                                <Photo src="/assets/i284571214498220075.jpg" width={213} height={160} />
+                              </PhotoRow>
 
                               {/* Parc Parfum d'Aventure et Forest Parc */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -590,23 +490,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Parc images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 15)} loading="lazy" src="/assets/i284571214498225402.jpg" width={214} height={159} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 16)} loading="lazy" src="/assets/i284571214498225636.jpg" width={214} height={96} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 17)} loading="lazy" src="/assets/i284571214498226068.jpg" width={213} height={193} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498225402.jpg" width={214} height={159} />
+                                <Photo src="/assets/i284571214498225636.jpg" width={214} height={96} />
+                                <Photo src="/assets/i284571214498226068.jpg" width={213} height={193} />
+                              </PhotoRow>
 
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <a
@@ -631,11 +519,7 @@ export default function AVisiter() {
                               </p>
 
                               {/* Large forest parc image */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 18)} loading="lazy" src="/assets/i284571214498260808.jpg" width={680} height={507} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214498260808.jpg" width={680} height={507} />
 
                               {/* Le musée du désert */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -648,23 +532,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Musee du desert images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 19)} loading="lazy" src="/assets/i284571214498226986.jpg" width={214} height={321} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 20)} loading="lazy" src="/assets/i284571214498226895.jpg" width={214} height={174} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 21)} loading="lazy" src="/assets/i284571214498227038.jpg" width={213} height={321} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498226986.jpg" width={214} height={321} />
+                                <Photo src="/assets/i284571214498226895.jpg" width={214} height={174} />
+                                <Photo src="/assets/i284571214498227038.jpg" width={213} height={321} />
+                              </PhotoRow>
 
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <a
@@ -701,23 +573,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Second musee images - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 22)} loading="lazy" src="/assets/i284571214498227582.jpg" width={214} height={319} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 23)} loading="lazy" src="/assets/i284571214498227632.jpg" width={214} height={319} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 24)} loading="lazy" src="/assets/i284571214498227921.jpg" width={213} height={319} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498227582.jpg" width={214} height={319} />
+                                <Photo src="/assets/i284571214498227632.jpg" width={214} height={319} />
+                                <Photo src="/assets/i284571214498227921.jpg" width={213} height={319} />
+                              </PhotoRow>
 
                               {/* Le train à vapeur des Cévennes */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -731,24 +591,12 @@ export default function AVisiter() {
                               </p>
 
                               {/* Train large image */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 25)} loading="lazy" src="/assets/i284571214504326517.jpg" width={680} height={240} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214504326517.jpg" width={680} height={240} />
 
                               {/* Train images and text - 3 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 26)} loading="lazy" src="/assets/i284571214498228054.jpg" width={214} height={322} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 27)} loading="lazy" src="/assets/i284571214498230883.jpg" width={214} height={143} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498228054.jpg" width={214} height={322} />
+                                <Photo src="/assets/i284571214498230883.jpg" width={214} height={143} />
                                 <div style={{ flex: 1 }}>
                                   <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                     <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
@@ -820,7 +668,7 @@ export default function AVisiter() {
                                     </span>
                                   </p>
                                 </div>
-                              </div>
+                              </PhotoRow>
 
                               {/* Le vélo-rail */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -830,11 +678,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 28)} loading="lazy" src="/assets/i284571214498541579.jpg" width={680} height={450} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214498541579.jpg" width={680} height={450} />
 
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <a
@@ -975,24 +819,12 @@ export default function AVisiter() {
                               </p>
 
                               {/* Gardon images - 2 columns */}
-                              <div style={{ display: "flex", gap: 10 }}>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 29)} loading="lazy" src="/assets/i284571214498231115.jpg" width={323} height={242} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                                <div className="gallery-item">
-                                  <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                    <img onClick={() => openLightbox(images, 30)} loading="lazy" src="/assets/i284571214498231774.jpg" width={323} height={215} style={{ cursor: "pointer" }} />
-                                  </div>
-                                </div>
-                              </div>
+                              <PhotoRow>
+                                <Photo src="/assets/i284571214498231115.jpg" width={323} height={242} />
+                                <Photo src="/assets/i284571214498231774.jpg" width={323} height={215} />
+                              </PhotoRow>
 
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 31)} loading="lazy" src="/assets/i284571214498233261.jpg" width={680} height={451} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214498233261.jpg" width={680} height={451} />
 
                               {/* Visites virtuelles */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
@@ -1489,23 +1321,11 @@ export default function AVisiter() {
                               </p>
 
                               {/* Restaurant images */}
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 32)} loading="lazy" src="/assets/i284571214504979004.jpg" width={680} height={367} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214504979004.jpg" width={680} height={367} />
 
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 33)} loading="lazy" src="/assets/i284571214504978883.jpg" width={680} height={475} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214504978883.jpg" width={680} height={475} />
 
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img onClick={() => openLightbox(images, 34)} loading="lazy" src="/assets/i284571214504979194.jpg" width={680} height={248} style={{ cursor: "pointer" }} />
-                                </div>
-                              </div>
+                              <Photo src="/assets/i284571214504979194.jpg" width={680} height={248} />
 
                             </div>
                             <div style={{ clear: "both" }}></div>
@@ -1524,7 +1344,6 @@ export default function AVisiter() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

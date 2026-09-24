@@ -1,17 +1,7 @@
-import PhotoGallery from "../../components/PhotoGallery";
 import Sidebar from "../../components/Sidebar";
-import { useLightbox } from "../../components/Lightbox";
+import Photo from "../../components/Photo";
 
 export default function SalleDeBain() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-
-  images.push({ src: "/assets/i284571214498194679.jpg", alt: "La douche et le lavabo avec acc\u00e8s direct \u00e0 la chambre." });
-  images.push({ src: "/assets/i284571214498194708.jpg", alt: "La douche" });
-  images.push({ src: "/assets/i284571214498271061.jpg", alt: "" });
-  images.push({ src: "/assets/i284571214498194760.jpg", alt: "Salle de bain \u00e9quip\u00e9e d'un lave linge." });
-  images.push({ src: "/assets/i284571214498194767.jpg", alt: "Lave linge Thomson" });
-
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
       <div data-kind="SECTION" className="Preview_componentWrapper__2i4QI" style={{ width: "100%" }}>
@@ -26,48 +16,14 @@ export default function SalleDeBain() {
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
                             <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194679.jpg" width={680} height={510} alt="La douche et le lavabo avec acc&egrave;s direct &agrave; la chambre." title="La douche et le lavabo avec acc&egrave;s direct &agrave; la chambre." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 0)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  La douche et le lavabo avec acc&egrave;s direct &agrave; la chambre.
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194708.jpg" width={680} height={907} alt="La douche" title="La douche" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 1)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  La douche
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498271061.jpg" width={680} height={907} style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 2)} />
-                                </div>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194760.jpg" width={680} height={455} alt="Salle de bain &eacute;quip&eacute;e d'un lave linge." title="Salle de bain &eacute;quip&eacute;e d'un lave linge." style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 3)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Salle de bain &eacute;quip&eacute;e d'un lave linge.
-                                </p>
-                              </div>
-                              <div className="gallery-item">
-                                <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                  <img loading="lazy" src="/assets/i284571214498194767.jpg" width={680} height={510} alt="Lave linge Thomson" title="Lave linge Thomson" style={{ cursor: "pointer" }} onClick={() => openLightbox(images, 4)} />
-                                </div>
-                                <p className="textnormal" style={{ fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                  Lave linge Thomson
-                                </p>
-                              </div>
+                              <Photo src="/assets/i284571214498194679.jpg" width={680} height={510} caption="La douche et le lavabo avec accès direct à la chambre." />
+                              <Photo src="/assets/i284571214498194708.jpg" width={680} height={907} caption="La douche" />
+                              <Photo src="/assets/i284571214498271061.jpg" width={680} height={907} />
+                              <Photo src="/assets/i284571214498194760.jpg" width={680} height={455} caption="Salle de bain équipée d'un lave linge." />
+                              <Photo src="/assets/i284571214498194767.jpg" width={680} height={510} caption="Lave linge Thomson" />
                               <h2 className="textheading3 mobile-oversized">Toilette séparée</h2>
-                              <PhotoGallery images={[
-                                { src: "/assets/toilettes-2026.jpeg", alt: "Toilette séparée" },
-                                { src: "/assets/toilettes-decoration-2026.jpeg", alt: "Toilette séparée — la décoration" },
-                              ]} />
+                              <Photo src="/assets/toilettes-2026.jpeg" width={680} height={907} caption="Toilette séparée" />
+                              <Photo src="/assets/toilettes-decoration-2026.jpeg" width={680} height={510} caption="Toilette séparée — la décoration" />
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Etendoir &agrave; linge avec pinces &agrave; linge
                               </p>
@@ -100,7 +56,6 @@ export default function SalleDeBain() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

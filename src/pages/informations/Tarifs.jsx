@@ -1,11 +1,8 @@
 import Sidebar from "../../components/Sidebar";
-import { useLightbox } from "../../components/Lightbox";
+import Photo from "../../components/Photo";
 import { Link } from "react-router-dom";
 
 export default function Tarifs() {
-  const { openLightbox, LightboxModal } = useLightbox();
-  const images = [];
-  images.push({ src: "/assets/i284571214521237393.jpg", alt: "" });
 
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -85,9 +82,7 @@ export default function Tarifs() {
                                 </span>
                               </p>
                               {/* Image */}
-                              <div className="Mobile_imageComponent__QXWk1 Mobile_cropMode__cLuJp" style={{ borderRadius: 10, overflow: "hidden" }}>
-                                <img loading="lazy" role="presentation" style={{ display: "block", cursor: "pointer" }} src="/assets/i284571214521237393.jpg" height="195" width="680" onClick={() => openLightbox(images, 0)} />
-                              </div>
+                              <Photo src="/assets/i284571214521237393.jpg" width={680} height={195} />
                               {/* English translations */}
                               <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 <span style={{ fontSize: 24, color: "rgb(156, 27, 49)", fontFamily: "Roboto" }} className="textnormal mobile-oversized">
@@ -246,7 +241,6 @@ export default function Tarifs() {
           </div>
         </div>
       </div>
-      {LightboxModal}
     </div>
   );
 }

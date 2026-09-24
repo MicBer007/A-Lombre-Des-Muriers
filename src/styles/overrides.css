@@ -237,6 +237,11 @@ ul.menu1 > li > a.dropdown-only:hover > span {
   cursor: default;
 }
 
+/* Dropdowns are at least as wide as the nav item that opens them */
+.menuself.dropdown.menuhorizontal > ul > li > ul {
+  min-width: 100%;
+}
+
 /* Reset native <button> styling and mirror the builder's <a> nav rules onto
    dropdown-only buttons (cc6770b099.css targets <a> only). */
 ul.menu1 > li > button.dropdown-only {
@@ -278,12 +283,19 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.photo-gallery { display: grid; gap: 40px; width: 100%; max-width: 680px; }
-.photo-gallery figure { margin: 0; min-width: 0; }
-.photo-gallery button { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
-.photo-gallery button:focus-visible { outline: 3px solid #587346; outline-offset: 4px; }
-.photo-gallery img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 10px; }
-.photo-gallery figcaption { margin-top: 8px; font-size: 14.4px; line-height: 1.17; font-style: italic; }
+/* Photo component */
+.photo { margin: 0; width: min(100%, var(--photo-width, 100%)); min-width: 0; }
+.photo--center { margin-left: auto; margin-right: auto; }
+.photo--right { margin-left: auto; }
+.photo-frame { border-radius: var(--photo-radius); overflow: hidden; }
+.photo-frame--shadow { box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3); }
+.photo-frame--border { border: 1px solid #a0a0a0; }
+.photo-frame button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.photo-frame button:focus-visible { outline: 3px solid #587346; outline-offset: -3px; }
+.photo-frame img { display: block; width: 100% !important; height: auto !important; }
+.photo-caption { display: flex; flex-direction: column; gap: 2px; margin-top: 10px; padding-left: 10px; border-left: 2px solid #c8b99c; font-family: Roboto, sans-serif; font-size: 14px; line-height: 1.35; color: #333; }
+.photo-caption span + span { color: #777; font-style: italic; font-size: 13px; }
+.photo-row { display: flex; align-items: flex-start; }
 .kitchen-equipment { columns: 2; padding-left: 22px; line-height: 1.7; }
 .kitchen-equipment li { break-inside: avoid; }
 .availability h1 { margin-bottom: 28px; }
@@ -300,10 +312,8 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
   .kitchen-equipment { columns: 1; }
 }
 /* Keep portrait photos inside the viewer, including short tablet screens. */
-.photo-image-area { width: calc(100vw - 80px); height: calc(100dvh - 130px); overflow: auto; cursor: default; }
-.photo-lightbox .photo-image-area img { display: block; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none; object-fit: contain; }
-.photo-lightbox .photo-image-area.is-zoomed img { width: 200% !important; height: 200% !important; }
-.photo-lightbox .photo-zoom-button { position: absolute; top: 12px; right: 80px; color: white; font-size: 36px; width: 44px; height: 44px; cursor: pointer; z-index: 100000; }
+.photo-image-area { width: calc(100vw - 80px); height: calc(100dvh - 130px); overflow: hidden; touch-action: none; }
+.photo-lightbox .photo-image-area img { display: block; width: 100% !important; height: 100% !important; max-width: none !important; object-fit: contain; transform-origin: 0 0; user-select: none; }
 .photo-lightbox button { border: 0; background: transparent; font-family: inherit; }
 .photo-lightbox button:focus-visible { outline: 2px solid white; }
 @media (max-width: 600px) {
