@@ -211,7 +211,7 @@ export default function HeaderNav() {
                                       lineHeight: 1,
                                     }}
                                   >
-                                    Gîte situé dans le Gard à quelques Kilometres d'Anduze
+                                    Gîte situé dans le Gard à quelques kilomètres d'Anduze
                                   </p>
                                 </div>
                               </div>
@@ -433,7 +433,7 @@ export default function HeaderNav() {
                                               className={`level-0${isActive("/a-visiter") ? " selected" : ""}`}
                                               to="/a-visiter"
                                             >
-                                              <span>A visiter</span>
+                                              <span>À visiter</span>
                                             </Link>
                                             <div className="divider"></div>
                                           </li>

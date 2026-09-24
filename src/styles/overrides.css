@@ -319,3 +319,35 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 @media (max-width: 600px) {
   .language-links { grid-template-columns: minmax(0, 1fr) !important; }
 }
+/* Page body text */
+:root { --body-font: "Nunito Sans", Roboto, sans-serif; }
+.page-content { display: flex; flex-direction: column; gap: var(--page-gap); }
+.page-content .textnormal,
+.page-content .textnormal * { font-family: var(--body-font) !important; }
+.page-content p.textnormal { max-width: 680px; line-height: 1.65; }
+/* Consecutive paragraphs read as one block instead of floating apart. */
+.page-content > p.textnormal + p.textnormal { margin-top: calc(14px - var(--page-gap)); }
+.distances { columns: 2; column-gap: 48px; max-width: 680px; margin: 0; padding: 0; list-style: none; font-family: var(--body-font); font-size: 16px; color: #000; }
+.distances li { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dotted #c8b99c; break-inside: avoid; }
+.distances li span:last-child { white-space: nowrap; color: #555; }
+/* Guest comments */
+.comment-list { display: flex; flex-direction: column; gap: 14px; max-width: 680px; }
+.comment { padding: 14px 18px; border: 1px solid #ebe3d3; border-radius: 10px; background: #faf7f1; }
+.comment--reply { margin-left: 32px; border-color: #e3e8dc; background: #f6f8f3; }
+.comment-header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 6px; }
+.comment-author { font-family: Roboto, sans-serif; font-size: 17px; font-weight: 500; color: #222; }
+.comment-date { flex-shrink: 0; font-family: Roboto, sans-serif; font-size: 14px; color: #777; }
+.comment-text { margin: 0; font-family: var(--body-font); font-size: 16px; line-height: 1.6; color: #000; }
+@media (max-width: 600px) {
+  .distances { columns: 1; }
+  .comment--reply { margin-left: 16px; }
+}
+.sidebar-comments { width: 190px; margin: 17px 0 0 15px; }
+.sidebar-comments .comment { padding: 12px 14px; }
+.sidebar-comments .comment-header { flex-direction: column; gap: 2px; }
+.sidebar-comments .comment-author { font-size: 16px; }
+.sidebar-comments .comment-date { font-size: 13px; }
+.sidebar-comments .comment-text { font-size: 15px; line-height: 1.5; }
+@media (max-width: 1199px) {
+  .sidebar-comments { width: auto; margin-left: 0; }
+}

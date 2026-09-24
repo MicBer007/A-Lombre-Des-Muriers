@@ -14,7 +14,7 @@ export default function InformationsIndex() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               {/* Empty index page - no content */}
                             </div>
                             <div style={{ clear: "both" }}></div>

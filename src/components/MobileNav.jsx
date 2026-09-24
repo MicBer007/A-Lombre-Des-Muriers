@@ -143,10 +143,10 @@ export default function MobileNav() {
             </ul>
           </li>
 
-          {/* A visiter */}
+          {/* À visiter */}
           <li>
             <Link to="/a-visiter" style={isActive("/a-visiter") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>
-              A visiter
+              À visiter
             </Link>
           </li>
 

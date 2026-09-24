@@ -16,7 +16,7 @@ export default function PhotosRegion() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               <Photo src="/assets/i284571214522136966.jpg" width={680} height={451} shadow border />
                               <Photo src="/assets/i284571214522137042.jpg" width={680} height={451} shadow border />
                               <Photo src="/assets/i284571214522137066.jpg" width={680} height={451} shadow border />

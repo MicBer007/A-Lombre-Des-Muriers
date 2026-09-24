@@ -16,8 +16,8 @@ export default function Chambre() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Pour toutes r&eacute;servations &agrave; partir d'une semaine ou plus, les draps seront compris dans la location.
                               </p>
                               <Photo src="/assets/i284571214498194393.jpg" width={680} height={510} caption="Lit double de 160 / 200" />

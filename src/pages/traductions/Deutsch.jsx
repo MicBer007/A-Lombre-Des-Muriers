@@ -1,5 +1,7 @@
 import Sidebar from "../../components/Sidebar";
 
+const LINK = { color: "rgb(21, 94, 171)", textDecoration: "underline" };
+
 export default function Deutsch() {
   return (
     <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ width: "100%" }}>
@@ -15,169 +17,85 @@ export default function Deutsch() {
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 22, padding: "50px 20px 100px" }}>
+                            <div className="page-content" style={{ "--page-gap": "22px", padding: "50px 20px 100px" }}>
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Sich abwechseln und wohlfühlen
+                                Dem Alltag entfliehen, zur Ruhe kommen und sich wie zu Hause fühlen
                               </h3>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ fontSize: 18, color: "rgb(0, 0, 0)", fontFamily: "Roboto", textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Beschreibung
-                                </span>
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  :
-                                </span>
+                              <p className="textnormal" style={{ fontSize: 18 }}>Beschreibung:</p>
+                              <p className="textnormal">
+                                Das Ferienhaus hat einen eigenen Eingang für die Gäste.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Das Haus hat einen privaten Zugang für Reisende.
+                              <p className="textnormal">
+                                Es gibt ein <a href="/interieur/chambre/" style={LINK}>großes Schlafzimmer</a> (15&nbsp;m²) mit einem Doppelbett (160&nbsp;×&nbsp;200&nbsp;cm), das sich in zwei 80&nbsp;cm breite Einzelbetten teilen lässt. Vom Zimmer aus gelangen Sie ebenerdig direkt auf eine teilweise überdachte Terrasse und auf eine zweite Terrasse zum Sonnenbaden.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Es ist ein
-                                </span>
-                                {" "}
-                                <span style={{ fontSize: 18, color: "rgb(21, 94, 171)", fontFamily: "Roboto", textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                  <a style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 18, textDecoration: "underline solid rgb(21, 94, 171)" }} href="/interieur/chambre/">
-                                    GROßES ZIMMER
-                                  </a>
-                                </span>
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  &nbsp;15 m2 mit einem Doppelbett 1m60 / 2m teilbar in zwei 80cm breite Betten mit direktem Zugang vollem Fuß auf eine teilweise überdachte Terrasse und eine weitere Terrasse zum Sonnenbaden.
-                                </span>
+                              <p className="textnormal">
+                                Ein schmiedeeiserner Tisch, Gartenstühle und zwei Sonnenliegen stehen für entspannte Stunden bereit.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Ein schmiedeeiserner Tisch und Gartenstühle sowie 2 Sonnenliegen sorgen für entspannende Momente.
+                              <p className="textnormal">
+                                Ein Grill steht Ihnen ebenfalls zur Verfügung.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Ein Grill ist ebenfalls vorhanden.
+                              <p className="textnormal">
+                                Im <a href="/interieur/piece-a-vivre/" style={LINK}>Wohnbereich</a> finden Sie eine <a href="/interieur/piece-a-vivre/" style={LINK}>ausgestattete Küche</a> und ein schönes Wohnzimmer – zusammen 32&nbsp;m² im landestypischen Stil, mit Natursteinwänden und einem Holzofen für die Winterabende. Das Wohnzimmer hat eine Klimaanlage, die kühlen und heizen kann.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Im
-                                </span>
-                                {" "}
-                                <a href="/interieur/piece-a-vivre/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ fontSize: 18, color: "rgb(21, 94, 171)", fontFamily: "Roboto", textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    WOHN HABEN
-                                  </span>
-                                </a>
-                                {" "}
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Sie auch
-                                </span>
-                                {" "}
-                                <a href="/interieur/piece-a-vivre/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    AUSGESTATTETE KÜCHE
-                                  </span>
-                                </a>
-                                {" "}
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  und ein schönes Wohnzimmer von 32 m2 alle im Geist des Landes mit Stein und ein Holzofen für Winterabende. Das Wohnzimmer verfügt über eine Klimaanlage zum Kühlen und Heizen.
-                                </span>
+                              <p className="textnormal">
+                                Im Wohnbereich gibt es außerdem ein Schlafsofa (Aufpreis bei mehr als zwei Personen).
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Das Zimmer hat auch ein Schlafsofa. (Aufpreis bei mehr als 2 Personen)
+                              <p className="textnormal">
+                                Das Ferienhaus hat Glasfaser-Internet und WLAN, aber keinen Fernseher.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Das Haus hat WIFI, aber keinen Fernseher.
+                              <p className="textnormal">
+                                Das <a href="/interieur/salle-de-bain/" style={LINK}>Badezimmer</a> ist ausschließlich für die Gäste da und wurde komplett renoviert. Es hat eine fast bodengleiche Dusche mit nur 3&nbsp;cm hoher Kante, ein Waschbecken, eine Waschmaschine, einen großen Ganzkörperspiegel und einen kleinen Spiegel über dem Waschbecken. Die Toilette ist separat.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Das
-                                </span>
-                                {" "}
-                                <a href="/interieur/salle-de-bain/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ fontSize: 18, color: "rgb(21, 94, 171)", fontFamily: "Roboto", textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    BADEZIMMER
-                                  </span>
-                                </a>
-                                {" "}
-                                <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  Dusche fast italienisch, nur ein kleiner Rand von 3 cm. Waschbecken und Waschmaschine. Ein großer Spiegel von oben nach unten und ein kleiner Spiegel über der Spüle. Das Badezimmer wurde komplett renoviert. Die Toilette ist separat.
-                                </span>
+                              <p className="textnormal">
+                                Das Grundstück ist insgesamt 4.000&nbsp;m² groß; der gepflegte Garten auf der Seite des Ferienhauses umfasst 2.000&nbsp;m².
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Die gesamte Grundstücksfläche des Grundstücks beträgt 4000m2, und das Gartenhäuschen hat eine Fläche von 2000m2 und ist gepflegt.
+                              <p className="textnormal">
+                                Das Wohlbefinden meiner Gäste liegt mir am Herzen. Ich lasse Ihnen alle Freiheit und bin offen für einen Austausch, bei dem das Wohlbefinden jedes Einzelnen gewahrt bleibt. Wenn Sie etwas brauchen, bin ich gern für Sie da.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Ich möchte das Wohlbefinden meiner Gäste und ich sie unabhängig lassen, ich bin für den Handel in Übereinstimmung mit der gut von allen zu sein, so dass ich auf dich hören, wenn Sie die Notwendigkeit auszudrücken.
+                              <p className="textnormal">
+                                Auf Anfrage gebe ich gegen Aufpreis gern Nähkurse und zeige Ihnen auch, wie man Stoffe mit aufbügelbaren Applikationen aus geblümtem Liberty-Stoff verziert.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Auf Anfrage kann ich gegen eine Gebühr einen Nähkurs oder Liberty-Schmelzapplikationen geben.
+                              <p className="textnormal">
+                                Im Sommer gebe ich außerdem gern Kurse zur Herstellung von Puzzles.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Im Sommer kann ich auch einen Scheren-Säge-Kurs zum Puzzeln geben. Ich werde Urlauber bitten, nicht mit unseren Freunden die Tiere mitzunehmen, es wird mir Asthmaanfälle im Kontakt mit Hunden und Katzen und auch aus hygienischen Gründen sowohl im Haus als auch auf dem Grundstück vorbeugen .
+                              <p className="textnormal">
+                                Bitte bringen Sie keine Haustiere mit: Der Kontakt mit Hunden und Katzen löst bei mir Asthmaanfälle aus, und auch aus hygienischen Gründen sind Tiere weder im Ferienhaus noch auf dem Grundstück erlaubt. Vielen Dank für Ihr Verständnis.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Vielen Dank, dass Sie darüber nachgedacht haben.
+                              <p className="textnormal">
+                                Ich vermiete das Ferienhaus außerdem nur an Nichtraucher.
                               </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Ich vermiete das Ferienhaus auch nur an Nichtraucher.
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <a href="/a-visiter/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    ORTE ZU BESUCHEN
-                                  </span>
-                                </a>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                  <a href="/informations/commentaires/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                    KOMMENTARE ERHALTEN
-                                  </a>
-                                  &nbsp;
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <a href="/informations/tarifs/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    PREIS FÜR DIE MIETPREISE
-                                  </span>
-                                </a>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                  <a href="/informations/calendrier/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                    KALENDER
-                                  </a>
-                                  &nbsp;
-                                </span>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <a href="/contact/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    FORMULAR KONTAKT
-                                  </span>
-                                </a>
-                              </p>
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                <a href="/informations/contrat/" style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }}>
-                                  <span style={{ color: "rgb(21, 94, 171)", fontFamily: "Roboto", fontSize: 16, textDecoration: "none solid rgb(21, 94, 171)" }}>
-                                    VERTRAG
-                                  </span>
-                                </a>
-                              </p>
-                              <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17, marginTop: 89 }}>
-                                Ausstattung
+                              <p className="textnormal"><a href="/a-visiter/" style={LINK}>Sehenswürdigkeiten</a></p>
+                              <p className="textnormal"><a href="/informations/commentaires/" style={LINK}>Gästebewertungen</a></p>
+                              <p className="textnormal"><a href="/informations/tarifs/" style={LINK}>Mietpreise</a></p>
+                              <p className="textnormal"><a href="/informations/calendrier/" style={LINK}>Belegungskalender</a></p>
+                              <p className="textnormal"><a href="/contact/" style={LINK}>Kontaktformular</a></p>
+                              <p className="textnormal"><a href="/informations/contrat/" style={LINK}>Mietvertrag</a></p>
+                              <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17, marginTop: 67 }}>
+                                In der Küche vorhanden
                               </h3>
-                              <p style={{ padding: "0px 0px 22px", marginBottom: 0, textAlign: "left", lineHeight: 1.17 }} className="textnormal">
-                                <span style={{ fontSize: 18, color: "rgb(0, 0, 0)", fontFamily: "Roboto", textDecoration: "none solid rgb(0, 0, 0)" }}>
-                                  <span style={{ textDecoration: "underline solid rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 18 }}>
-                                    Küche
-                                  </span>
-                                  :
-                                </span>
-                              </p>
-                              <p style={{ padding: "0px 0px 22px", marginBottom: 0, textAlign: "left", lineHeight: 1.17 }} className="textnormal">
-                                Kühlschrank&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Mikrowelle&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Toaster&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Geschirr und Besteck&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              </p>
-                              <p style={{ padding: "0px 0px 22px", marginBottom: 0, textAlign: "left", lineHeight: 1.17 }} className="textnormal">
-                                Herd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaffeemaschine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mixer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Küche
-                              </p>
-                              <p style={{ textAlign: "left", lineHeight: 1.17 }} className="textnormal">
-                                Ofen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Grill&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gewürze&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Wasserkocher
-                              </p>
+                              <ul className="kitchen-equipment textnormal">
+                                <li>Dampfbackofen</li>
+                                <li>Mikrowelle</li>
+                                <li>Heißluftfritteuse (Airfryer)</li>
+                                <li>Kühl-Gefrier-Kombination</li>
+                                <li>Induktionskochfeld</li>
+                                <li>Nespresso-Kaffeemaschine</li>
+                                <li>Wasserkocher</li>
+                                <li>Toaster</li>
+                                <li>Kenwood-Küchenmaschine</li>
+                                <li>Sodastream</li>
+                                <li>Stabmixer</li>
+                                <li>Zitruspresse</li>
+                                <li>Geschirr für 4 Personen</li>
+                                <li>Auflaufformen</li>
+                                <li>Tarteform</li>
+                                <li>Salz, Pfeffer, Zucker</li>
+                                <li>Kaffeekapseln, Tee, Kräutertee</li>
+                                <li>Spülmittel</li>
+                                <li>Handseife</li>
+                                <li>Hand- und Geschirrtücher</li>
+                                <li>Müllbeutel</li>
+                              </ul>
                             </div>
                             <div style={{ clear: "both" }}></div>
                           </div>

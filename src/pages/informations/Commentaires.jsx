@@ -17,7 +17,7 @@ export default function Commentaires() {
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 60, padding: "40px 20px 84px" }}>
+                            <div className="page-content" style={{ "--page-gap": "60px", padding: "40px 20px 84px" }}>
                               <Photo src="/assets/i284571214506718529.jpg" width={680} height={754} />
                               <Photo src="/assets/i284571214522386436.jpg" width={680} height={246} />
                               <Photo src="/assets/i284571214522386443.jpg" width={680} height={216} />

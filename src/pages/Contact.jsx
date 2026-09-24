@@ -17,7 +17,7 @@ export default function Contact() {
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 20, padding: "70px 20px 30px" }}>
+                            <div className="page-content" style={{ "--page-gap": "20px", padding: "70px 20px 30px" }}>
                               {/* EMAIL FORM HIDDEN - no working email provider */}
                               <h3
                                 className="textheading3 mobile-oversized"
@@ -27,19 +27,19 @@ export default function Contact() {
                               </h3>
                               <p
                                 className="textnormal"
-                                style={{ textAlign: "left", lineHeight: 1.17 }}
+                                style={{ textAlign: "left" }}
                               >
                                 Par mail : alombredesmuriers@gmail.com
                               </p>
                               <p
                                 className="textnormal"
-                                style={{ textAlign: "left", lineHeight: 1.17 }}
+                                style={{ textAlign: "left" }}
                               >
                                 Par téléphone et WhatsApp : 0033 (0) 6 26 03 04 19
                               </p>
                               <p
                                 className="textnormal"
-                                style={{ textAlign: "left", lineHeight: 1.17 }}
+                                style={{ textAlign: "left" }}
                               >
                                 Je ne réponds pas aux numéros inconnus, donc uniquement messages oraux ou écrits et je vous rappellerai.
                               </p>

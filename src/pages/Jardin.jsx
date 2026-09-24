@@ -16,7 +16,7 @@ export default function Jardin() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               <Photo src="/assets/i284571214522329899.jpg" width={680} height={510} />
                               <Photo src="/assets/i284571214522315913.jpg" width={680} height={907} />
                               <Photo src="/assets/i284571214522136776.jpg" width={680} height={513} caption={["La charrette à l'ombre des muriers", "The barrow under the Mulberry tree", "Der Karren im Schatten der Maulbeerbaum"]} />
@@ -28,7 +28,7 @@ export default function Jardin() {
                               <Photo src="/assets/i284571214522613580.jpg" width={680} height={907} />
                               <Photo src="/assets/capture-decran-2025-09-29-17-59-13.png" width={680} height={664} caption={["Le terrain de pétanque 4m/10m", "Pétanque court", "Bouleplatz"]} />
                               <Photo src="/assets/spa-bioclimatique-2026.jpeg" width={680} height={510} alt="Le spa sous sa couverture bioclimatique" />
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Entre le 1er mai et le 15 septembre, Spa de nage extérieur avec contre courant à partager avec la propriétaire. Une couverture bioclimatique permet d’en profiter par tous les temps.
                               </p>
                             </div>

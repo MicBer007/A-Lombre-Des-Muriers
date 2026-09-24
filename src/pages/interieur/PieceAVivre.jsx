@@ -16,7 +16,7 @@ export default function PieceAVivre() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
 
                               <h1 className="textheading3 mobile-oversized">La pièce à vivre</h1>
                               <p className="textnormal">Le salon est équipé d'une climatisation réversible pour votre confort en été comme en hiver.</p>
@@ -39,7 +39,7 @@ export default function PieceAVivre() {
 
                               {/* Kitchen items heading */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A disposition dans la cuisine
+                                À disposition dans la cuisine
                               </h3>
 
                               <ul className="kitchen-equipment textnormal">

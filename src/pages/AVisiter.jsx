@@ -16,7 +16,7 @@ export default function AVisiter() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 40, padding: "40px 20px" }}>
+                            <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
 
                               {/* La bambouseraie */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
@@ -25,7 +25,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/generargues/la-bambouseraie-en-cevennes/tabid/2678/offreid/2aef83ec-5316-45ca-8bd9-b9fbec57bc9f"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -36,23 +36,23 @@ export default function AVisiter() {
                                   </span>
                                 </a>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  , Heures d'ouverture, Tarif, Réservation.....
+                                  , Heures d'ouverture, Tarif, Réservation…
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 18, fontStyle: "italic" }} className="textnormal">
                                   <a
                                     style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 18, fontStyle: "italic", textDecoration: "underline solid rgb(156, 27, 49)" }}
                                     href="https://www.bambouseraie.fr/en/preparing-to-visit/"
                                     className="textnormal"
                                   >
-                                    Prepararing to visit&nbsp;
+                                    Preparing to visit&nbsp;
                                   </a>
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/generargues/la-bambouseraie-en-cevennes/tabid/2678/offreid/2aef83ec-5316-45ca-8bd9-b9fbec57bc9f"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -64,7 +64,7 @@ export default function AVisiter() {
                                 </a>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="https://www.youtube.com/watch?v=Yabgo-bq-Qs"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -94,7 +94,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Visitez
                                 </span>
@@ -110,7 +110,7 @@ export default function AVisiter() {
                                 </a>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
                                   Vézénobres: &nbsp;
                                   <a
@@ -125,7 +125,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
                                   Une&nbsp;
                                   <a
@@ -155,7 +155,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Les
                                 </span>
@@ -177,7 +177,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(21, 94, 171)", fontSize: 18, fontFamily: "Roboto" }} className="textnormal">
                                   <span style={{ fontSize: 16, color: "rgb(0, 0, 0)", fontFamily: "Roboto" }} className="textnormal">
                                     Grand site
@@ -190,7 +190,7 @@ export default function AVisiter() {
                                       className="textnormal"
                                     >
                                       <span style={{ color: "rgb(21, 94, 171)", fontSize: 18, fontFamily: "Roboto", fontStyle: "italic" }} className="textnormal">
-                                        L' Aven d'Orgnac
+                                        L'Aven d'Orgnac
                                       </span>
                                     </a>
                                   </span>
@@ -202,7 +202,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/st-sauveur-camprieu/l-abime-de-bramabiau/tabid/2678/offreid/a09a9268-6800-4512-aa97-4f31d02e7450"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -214,12 +214,12 @@ export default function AVisiter() {
                                 </a>
                                 {" "}
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  A la limite des Causses et des Cévennes, dans le
+                                  À la limite des Causses et des Cévennes, dans le
                                   massif de l'Aigoual.
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(21, 94, 171)", fontSize: 18, fontFamily: "Roboto" }} className="textnormal">
                                   <span style={{ fontSize: 16, color: "rgb(0, 0, 0)", fontFamily: "Roboto" }} className="textnormal">
                                     La &nbsp;
@@ -242,7 +242,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/st-remeze/aven-marzal/tabid/2678/offreid/f52e7ef4-bc37-4d21-9f85-cbca54bdf1f6"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -260,7 +260,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -281,7 +281,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -302,7 +302,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -323,7 +323,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -346,7 +346,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -364,12 +364,12 @@ export default function AVisiter() {
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Classée au Patrimoine National pour son intérêt
                                   géologique et archéologique, la grotte de Saint
-                                  Marcel est – avec ses 60 kms de réseaux- l'une des
+                                  Marcel est – avec ses 60&nbsp;km de réseaux – l'une des
                                   plus vastes cavités de France
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La
                                 </span>
@@ -404,7 +404,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/accueil/decouvrir/notre-territoire/les-villes-phares/anduze"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -423,10 +423,10 @@ export default function AVisiter() {
                                 <Photo src="/assets/i284571214498219077.jpg" width={213} height={153} />
                               </PhotoRow>
 
-                              {/* A Sauve, la mer de Rochers */}
+                              {/* À Sauve, la mer de Rochers */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
                                 <span style={{ fontSize: 30, color: "rgb(0, 0, 0)", fontFamily: "Roboto" }} className="textnormal mobile-oversized">
-                                  A Sauve, la mer de Rochers
+                                  À Sauve, la mer de Rochers
                                 </span>
                               </p>
 
@@ -436,14 +436,14 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Surplombant la cité médiévale de Sauve, ce chaos
                                 rocheux présente un paysage féerique où se mêlent
                                 végétation et rochers aux formes étonnantes. Suivre
                                 le balisage Jaune.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Overlooking the medieval town of Sauve, this
                                   blockfield presents a magical landscape which
@@ -462,12 +462,12 @@ export default function AVisiter() {
                               {/* Parc Parfum d'Aventure et Forest Parc */}
                               <p className="textnormal mobile-oversized" style={{ textAlign: "left", fontSize: 28, lineHeight: 1.17 }}>
                                 <span style={{ fontSize: 30, color: "rgb(0, 0, 0)", fontFamily: "Roboto" }} className="textnormal mobile-oversized">
-                                  A Générargues "le Parc Parfum d'Aventure" et à
+                                  À Générargues "le Parc Parfum d'Aventure" et à
                                   Bagard "Forest Parc"
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Au
                                 </span>
@@ -496,7 +496,7 @@ export default function AVisiter() {
                                 <Photo src="/assets/i284571214498226068.jpg" width={213} height={193} />
                               </PhotoRow>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/bagard/forest-parc/tabid/2678/offreid/cc0d237f-2adb-4c1e-842d-b3cd0cc0c747"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -508,11 +508,11 @@ export default function AVisiter() {
                                 </a>
                                 {" "}
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  est à moins de un Km du gîte.
+                                  est à moins d'un km du gîte.
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Parcours aventure sur 3 hectares de forêt, 10
                                 parcours, 120 jeux dans les arbres et Laser Game en
                                 forêt sur une zone naturelle de 3000 m².
@@ -538,7 +538,7 @@ export default function AVisiter() {
                                 <Photo src="/assets/i284571214498227038.jpg" width={213} height={321} />
                               </PhotoRow>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.museedudesert.com/article5684.html"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -598,7 +598,7 @@ export default function AVisiter() {
                                 <Photo src="/assets/i284571214498228054.jpg" width={214} height={322} />
                                 <Photo src="/assets/i284571214498230883.jpg" width={214} height={143} />
                                 <div style={{ flex: 1 }}>
-                                  <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                  <p className="textnormal" style={{ textAlign: "left" }}>
                                     <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                       Entre Anduze et
                                     </span>
@@ -627,7 +627,7 @@ export default function AVisiter() {
                                     </a>
                                     <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                       &nbsp;vous fera découvrir la vallée des
-                                      gardons et ses admirables panoramas. A toute
+                                      gardons et ses admirables panoramas. À toute
                                       vapeur, de viaducs en tunnels, vous pourrez
                                       retrouver les chemins de fer d'autrefois. Dans
                                       les gares, le chauffeur et le mécanicien vous
@@ -636,7 +636,7 @@ export default function AVisiter() {
                                       expositions qui vous raconteront son histoire.
                                     </span>
                                   </p>
-                                  <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                  <p className="textnormal" style={{ textAlign: "left" }}>
                                     <a
                                       href="https://www.youtube.com/watch?time_continue=32&amp;v=O4p95pPQYC4&amp;feature=emb_logo"
                                       style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -647,9 +647,9 @@ export default function AVisiter() {
                                       </span>
                                     </a>
                                   </p>
-                                  <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                                  <p className="textnormal" style={{ textAlign: "left" }}>
                                     <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                      Fonctionne d' avril à fin octobre. Horaires
+                                      Fonctionne d'avril à fin octobre. Horaires
                                       sur le
                                     </span>
                                     {" "}
@@ -680,7 +680,7 @@ export default function AVisiter() {
 
                               <Photo src="/assets/i284571214498541579.jpg" width={680} height={450} />
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="https://www.youtube.com/watch?v=fFjUhAkMR6M"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -704,14 +704,14 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Le "Vélorail des Cévennes" propose une balade
                                 originale entre Thoiras et Générargues, en
                                 empruntant la célèbre ligne touristique du Train à
                                 Vapeur des Cévennes.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Le public peut pédaler sur un tronçon de 6,2 km de
                                 voie ferrée, entre les gares de Thoiras et
                                 Générargues. Le vélo-rail fonctionne sur la voie de
@@ -719,7 +719,7 @@ export default function AVisiter() {
                                 circulation routière.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 À l'avant, deux places sont réservées à ceux qui
                                 pédalent. À l'arrière, trois places permettent
                                 d'embarquer les amis ou les enfants, même les plus
@@ -738,7 +738,7 @@ export default function AVisiter() {
                                 s'y arrête pas, nous proposons un aller-retour sur
                                 le plus beau tronçon de la ligne, qui emprunte trois
                                 viaducs et deux tunnels taillés dans la roche
-                                calcaire. La vue est imprenable ! A voir, le
+                                calcaire. La vue est imprenable ! À voir, le
                                 Mescladou, où se rejoignent les Gardons de
                                 Saint-Jean et de Mialet… Ce sont des paysages qui ne
                                 sont pas visibles depuis les routes et que l'on
@@ -747,7 +747,7 @@ export default function AVisiter() {
                                 en un peu moins de deux heures.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   En pratique :
                                 </span>
@@ -786,7 +786,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Dans le sud-est de la France s'écoule le Gardon :
                                 une rivière de près de 130 kilomètres, parfois
                                 appelée le Gard. Ce cours d'eau a façonné d'étroites
@@ -795,7 +795,7 @@ export default function AVisiter() {
                                 hauteur.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Pour découvrir ces paysages, plusieurs tronçons du
                                 Gardon peuvent être parcourus en canoë ou en kayak.
                                 Selon l'itinéraire choisi, on passe sous le pont
@@ -806,7 +806,7 @@ export default function AVisiter() {
                                 haut pont-aqueduc du monde romain.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Il a été construit il y a près de 2000 ans pour
                                 enjamber la vallée et approvisionner Nîmes en eau.
                                 Par ailleurs, le Gardon et ses environs abritent un
@@ -829,16 +829,16 @@ export default function AVisiter() {
                               {/* Visites virtuelles */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Pour des visites virtuelles des villages, cliquez
-                                sur les noms soulignées
+                                sur les noms soulignés
                               </h3>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Il y a encore tellement de choses à voir ou à faire
                                 qu'il me faudrait encore des pages et des
-                                pages.......
+                                pages…
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Quatre des Plus beaux villages de France s'offrent
                                   à vous dans le Gard. Et pour ne rien gâcher, tous
@@ -909,7 +909,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Tout aussi beaux, trois
                                 </span>
@@ -978,7 +978,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Nîmes, Uzès et Beaucaire bénéficient toutes trois
                                   du label national
@@ -1040,7 +1040,7 @@ export default function AVisiter() {
                                 Pour les amateurs de GR
                               </h3>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Les plus belles{" "}
                                   <a
@@ -1068,12 +1068,12 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              {/* A découvrir aussi */}
+                              {/* À découvrir aussi */}
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A découvrir aussi,
+                                À découvrir aussi,
                               </h3>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <a
                                   href="http://www.cevennes-tourisme.fr/st-hippolyte-du-fort/musee-de-la-soie/tabid/2678/offreid/40b75b4b-1ab0-4614-9a9f-5cea6e6ac4eb"
                                   style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -1101,7 +1101,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Le
                                 </span>
@@ -1117,7 +1117,7 @@ export default function AVisiter() {
                                 </a>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Pour les sportifs sur la commune d'Anduze&nbsp;
                                   <a
@@ -1132,7 +1132,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Loisir Sportif à Aujac{" "}
                                   <a
@@ -1147,9 +1147,9 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
-                                  Cévennnes{" "}
+                                  Cévennes{" "}
                                   <a
                                     href="http://www.cevennes-tourisme.fr/st-etienne-vallee-francaise/cevennes-g-randos-d-anes/tabid/2678/offreid/9f88b657-7054-4b8c-a81e-a36e3b060320"
                                     style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16, textDecoration: "underline solid rgb(0, 0, 0)" }}
@@ -1163,7 +1163,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
                                   <a
                                     href="https://www.trottingard.com/a-propos"
@@ -1178,7 +1178,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
                                   <a
                                     href="http://www.cevennes-tourisme.fr/st-christol-les-ales/musee-du-scribe/tabid/2678/offreid/3ff8723e-70a3-47cb-8a34-707cf943b863"
@@ -1205,7 +1205,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontSize: 16, fontFamily: "Roboto" }} className="textnormal">
                                   Monuments et Patrimoine culturel à ST JEAN DU GARD{" "}
                                   <a
@@ -1220,7 +1220,7 @@ export default function AVisiter() {
                                 </span>
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Lieux de Culte : à BOISSET à 3 km du gîte
                                 </span>
@@ -1256,31 +1256,31 @@ export default function AVisiter() {
                                 Les Marchés de Producteurs -- Farmers Markets
                               </h3>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A Saint Jean-du-Gard marché hebdomadaire le mardi matin et en Juillet-Aout
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                À Saint Jean-du-Gard marché hebdomadaire le mardi matin et en Juillet-Aout
                                 marché nocturne le jeudi.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A Vézénobres le jeudi matin
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                À Vézénobres le jeudi matin
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A Uzès marché de producteurs locaux le mercredi matin et grand marché le
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                À Uzès marché de producteurs locaux le mercredi matin et grand marché le
                                 samedi matin.
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                A Saint-Quentin-la-Poterie le vendredi matin
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                À Saint-Quentin-la-Poterie le vendredi matin
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 Au Vigan Marché du terroir avril à octobre le mardi matin
                               </p>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
-                                  A Thoiras
+                                  À Thoiras
                                 </span>
                                 {" "}
                                 <a
@@ -1304,7 +1304,7 @@ export default function AVisiter() {
                                 Pour se restaurer
                               </h3>
 
-                              <p className="textnormal" style={{ textAlign: "left", lineHeight: 1.17 }}>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(0, 0, 0)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   La table des saisons, &nbsp;nouvellement nommé:
                                 </span>
