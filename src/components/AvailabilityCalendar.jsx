@@ -4,7 +4,8 @@ import { supabase } from "../lib/supabase";
 const labels = { available: "Disponible", reserved: "Réservé", past: "Date passée" };
 const monthCount = 16;
 
-const isoDate = date => date.toISOString().slice(0, 10);
+// month is zero-based, as in Date.
+const isoDate = (year, month, day) => `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 
 // Reservations are inclusive of both start_date and end_date.
 function statusFor(date, today, reservations) {
@@ -15,9 +16,9 @@ function statusFor(date, today, reservations) {
 
 export default function AvailabilityCalendar() {
   const now = new Date();
-  const [year, month] = [now.getFullYear(), now.getMonth()];
-  const today = isoDate(new Date(Date.UTC(year, month, now.getDate())));
-  const rangeEnd = isoDate(new Date(Date.UTC(year, month + monthCount, 1)));
+  const today = isoDate(now.getFullYear(), now.getMonth(), now.getDate());
+  const end = new Date(Date.UTC(now.getFullYear(), now.getMonth() + monthCount, 1));
+  const rangeEnd = isoDate(end.getUTCFullYear(), end.getUTCMonth(), 1);
   const [reservations, setReservations] = useState(null);
   const [failed, setFailed] = useState(false);
 
@@ -33,11 +34,11 @@ export default function AvailabilityCalendar() {
       : !reservations ? <p>Chargement du calendrier…</p>
       : <div className="calendar-grid">
       {Array.from({ length: monthCount }, (_, index) => {
-        const first = new Date(Date.UTC(year, month + index, 1));
-        const firstYear = first.getUTCFullYear();
-        const firstMonth = first.getUTCMonth();
+        const first = new Date(Date.UTC(now.getFullYear(), now.getMonth() + index, 1));
+        const year = first.getUTCFullYear();
+        const month = first.getUTCMonth();
         const offset = (first.getUTCDay() + 6) % 7;
-        const count = new Date(Date.UTC(firstYear, firstMonth + 1, 0)).getUTCDate();
+        const count = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
         const title = first.toLocaleDateString("fr-FR", { month: "long", year: "numeric", timeZone: "UTC" });
         return <table key={index}>
           <caption>{title}</caption>
@@ -46,7 +47,7 @@ export default function AvailabilityCalendar() {
             {Array.from({ length: 7 }, (_, weekday) => {
               const day = week * 7 + weekday - offset + 1;
               if (day < 1 || day > count) return <td key={weekday} />;
-              const date = `${firstYear}-${String(firstMonth + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+              const date = isoDate(year, month, day);
               const status = statusFor(date, today, reservations);
               return <td key={weekday} className={`calendar-${status}`} aria-label={`${day} ${title} : ${labels[status]}`}><time dateTime={date}>{day}</time></td>;
             })}
