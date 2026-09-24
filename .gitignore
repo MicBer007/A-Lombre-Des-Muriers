@@ -6,4 +6,3 @@ _tools/playwright/
 .codex/
 .mcp.json
 .env.local
-backend/.env

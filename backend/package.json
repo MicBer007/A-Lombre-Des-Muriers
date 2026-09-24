@@ -1,7 +1,0 @@
-{
-  "name": "alombredesmuriers-backend",
-  "private": true,
-  "devDependencies": {
-    "supabase": "^2.117.0"
-  }
-}
