@@ -56,7 +56,7 @@ export default function Deutsch() {
                                 Auf Anfrage gebe ich gegen Aufpreis gern Nähkurse und zeige Ihnen auch, wie man Stoffe mit aufbügelbaren Applikationen aus geblümtem Liberty-Stoff verziert.
                               </p>
                               <p className="textnormal">
-                                Im Sommer gebe ich außerdem gern Kurse zur Herstellung von Puzzles.
+                                Im Sommer biete ich außerdem gern Kurse an, in denen Sie Holzpuzzles mit der Laubsäge selbst aussägen.
                               </p>
                               <p className="textnormal">
                                 Bitte bringen Sie keine Haustiere mit: Der Kontakt mit Hunden und Katzen löst bei mir Asthmaanfälle aus, und auch aus hygienischen Gründen sind Tiere weder im Ferienhaus noch auf dem Grundstück erlaubt. Vielen Dank für Ihr Verständnis.
