@@ -295,8 +295,6 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 .calendar-available { background: #b7e4b8; }
 .calendar-reserved { background: #f3b0b4; }
 .calendar-past { background: #eee; }
-.calendar-arrival { background: linear-gradient(60deg, #b7e4b8 30%, #f3b0b4 30%); }
-.calendar-departure { background: linear-gradient(60deg, #f3b0b4 30%, #b7e4b8 30%); }
 @media (max-width: 600px) {
   .calendar-grid { grid-template-columns: minmax(0, 1fr); }
   .kitchen-equipment { columns: 1; }
