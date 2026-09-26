@@ -1,5 +1,4 @@
 import Photo from "../components/Photo";
-import Comment, { CommentList } from "../components/Comment";
 
 const DISTANCES = [
   ["Boisset-et-Gaujac", 4],
@@ -307,9 +306,9 @@ export default function Home() {
                                 <a href="/informations/contrat/" style={{ color: "rgb(156, 27, 49)", textDecoration: "underline" }}>CONTRACT</a>
                                 <a href="/informations/contrat/" style={{ color: "rgb(101, 179, 69)", textDecoration: "underline" }}>VERTRAG</a>
 
-                                <a href="http://www.latelierdepierreetsophie.fr/" style={{ color: "rgb(21, 94, 171)", textDecoration: "underline" }}>RESTAURATION</a>
-                                <a href="http://www.latelierdepierreetsophie.fr/" style={{ color: "rgb(156, 27, 49)", textDecoration: "underline" }}>RESTAURANT</a>
-                                <a href="http://www.latelierdepierreetsophie.fr/" style={{ color: "rgb(101, 179, 69)", textDecoration: "underline" }}>RESTAURANT</a>
+                                <a href="/informations/restauration/" style={{ color: "rgb(21, 94, 171)", textDecoration: "underline" }}>RESTAURATION</a>
+                                <a href="/informations/restauration/" style={{ color: "rgb(156, 27, 49)", textDecoration: "underline" }}>RESTAURANT</a>
+                                <a href="/informations/restauration/" style={{ color: "rgb(101, 179, 69)", textDecoration: "underline" }}>RESTAURANT</a>
                               </div>
 
                               {/* Image 8 */}
@@ -475,38 +474,6 @@ export default function Home() {
                               {/* Image 16: Coucher de soleil */}
                               <Photo src="/assets/i284571214502644149.jpg" width={680} height={510} caption={["Un magnifique coucher de soleil vu du parking", "A beautiful sunset view of the parking", "Ein wunderschöner Sonnenuntergang über dem Parkplatz"]} />
 
-                              {/* Commentaires section */}
-                              <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
-                                Commentaires
-                              </h3>
-
-                              <CommentList>
-                                <Comment author="Philippe et Albin" date="13 fév 2022">
-                                  Un gite très calme, bien agencé. Nous avons passé trois nuits reposante
-                                  durant un week-end chargé au pole mécanique d'Alès.
-                                </Comment>
-                                <Comment author="Saliha et Daniel" date="29 jun 2020">
-                                  Le gite est très bien pensé, agencé et décoré. On s'y sent bien. Nous
-                                  tenons à remercier Anne pour son accueil et son sourire et son désir de se
-                                  sentir comme chez soi. C'est réussi.
-                                </Comment>
-                                <Comment author="Salih et Daniel" date="29 jun 2020">
-                                  Nous reviendrons aussi pour les cigales, les oiseaux qui ont bercé chaque
-                                  matin notre réveil et pour découvrir encore un peu plus cette magnifique
-                                  vallée du Gardon bordée de ces très jolis villages mé
-                                </Comment>
-                                <Comment author="Wilfried" date="23 aoû 2019">
-                                  Super séjour. Location calme propre et tres bien entretenue.
-                                  <br />
-                                  Anne est une hote charmante
-                                  <br />
-                                  Nous reviendrons
-                                </Comment>
-                                <Comment author="Veronique.lavoix" date="16 avr 2019">
-                                  Nous avons séjourné une semaine à noël dans cette belle maison propre et
-                                  conviviale. Nous reviendrons avec grand plaisir. Véronique et Ludovic
-                                </Comment>
-                              </CommentList>
 
                             </div>
                             <div style={{ clear: "both" }}></div>
