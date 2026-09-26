@@ -1,4 +1,3 @@
-import Sidebar from "../../components/Sidebar";
 import Photo from "../../components/Photo";
 
 export default function Chambre() {
@@ -15,7 +14,7 @@ export default function Chambre() {
                     <div className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren" style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderRadius: 0 }}>
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               <p className="textnormal" style={{ textAlign: "left" }}>
                                 Pour toutes r&eacute;servations &agrave; partir d'une semaine ou plus, les draps seront compris dans la location.
@@ -27,9 +26,6 @@ export default function Chambre() {
                               <Photo src="/assets/i284571214498194590.jpg" width={680} height={510} caption="Petite table bureau dans la chambre" />
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left" }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

@@ -1,5 +1,4 @@
 import AvailabilityCalendar from "../../components/AvailabilityCalendar";
-import Sidebar from "../../components/Sidebar";
 
 export default function Calendrier() {
   return (
@@ -15,15 +14,11 @@ export default function Calendrier() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div style={{ padding: "40px 20px 84px" }}>
                               <AvailabilityCalendar />
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          {/* Sidebar */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left", marginLeft: 20 }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

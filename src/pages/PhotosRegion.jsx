@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar";
 import Photo from "../components/Photo";
 
 export default function PhotosRegion() {
@@ -15,7 +14,7 @@ export default function PhotosRegion() {
                     <div className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren" style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderRadius: 0 }}>
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               <Photo src="/assets/i284571214522136966.jpg" width={680} height={451} shadow border />
                               <Photo src="/assets/i284571214522137042.jpg" width={680} height={451} shadow border />
@@ -45,9 +44,6 @@ export default function PhotosRegion() {
                               <Photo src="/assets/i284571214522149876.jpg" width={680} height={510} caption="Le pont du Gard" shadow border />
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left" }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

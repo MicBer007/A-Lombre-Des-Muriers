@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabase";
+import { isoDate, monthCount, loadCalendarReservations } from "../lib/calendar";
 
 const labels = { available: "Disponible", reserved: "Réservé", past: "Date passée" };
-const monthCount = 16;
-
-// month is zero-based, as in Date.
-const isoDate = (year, month, day) => `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 
 // Reservations are inclusive of both start_date and end_date.
 function statusFor(date, today, reservations) {
@@ -17,16 +13,13 @@ function statusFor(date, today, reservations) {
 export default function AvailabilityCalendar() {
   const now = new Date();
   const today = isoDate(now.getFullYear(), now.getMonth(), now.getDate());
-  const end = new Date(Date.UTC(now.getFullYear(), now.getMonth() + monthCount, 1));
-  const rangeEnd = isoDate(end.getUTCFullYear(), end.getUTCMonth(), 1);
   const [reservations, setReservations] = useState(null);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    supabase.from("calendar_reservations").select("start_date, end_date")
-      .gte("end_date", today).lt("start_date", rangeEnd)
+    loadCalendarReservations()
       .then(({ data, error }) => error ? setFailed(true) : setReservations(data));
-  }, [today, rangeEnd]);
+  }, [today]);
 
   return <section className="availability textnormal">
     <h1 className="textheading3 mobile-oversized">Calendrier des disponibilités</h1>

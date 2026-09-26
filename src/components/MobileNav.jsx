@@ -139,7 +139,7 @@ export default function MobileNav() {
               <li><Link to="/informations/tarifs" style={isActive("/informations/tarifs") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>Tarifs</Link></li>
               <li><Link to="/informations/contrat" style={isActive("/informations/contrat") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>Contrat</Link></li>
               <li><Link to="/informations/commentaires" style={isActive("/informations/commentaires") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>Commentaires</Link></li>
-              <li><Link to="/informations/producteurs" style={isActive("/informations/producteurs") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>Producteurs</Link></li>
+              <li><Link to="/informations/restauration" style={isActive("/informations/restauration") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>Restauration</Link></li>
             </ul>
           </li>
 

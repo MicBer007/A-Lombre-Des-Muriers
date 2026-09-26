@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import BaseLayout from "./layouts/BaseLayout";
 import Home from "./pages/Home";
 import Terrasse from "./pages/Terrasse";
@@ -16,7 +16,7 @@ import Calendrier from "./pages/informations/Calendrier";
 import Tarifs from "./pages/informations/Tarifs";
 import Contrat from "./pages/informations/Contrat";
 import Commentaires from "./pages/informations/Commentaires";
-import Producteurs from "./pages/informations/Producteurs";
+import Restauration from "./pages/informations/Restauration";
 import TraductionsIndex from "./pages/traductions/Index";
 import English from "./pages/traductions/English";
 import Deutsch from "./pages/traductions/Deutsch";
@@ -43,7 +43,8 @@ export default function App() {
           <Route path="informations/tarifs" element={<Tarifs />} />
           <Route path="informations/contrat" element={<Contrat />} />
           <Route path="informations/commentaires" element={<Commentaires />} />
-          <Route path="informations/producteurs" element={<Producteurs />} />
+          <Route path="informations/producteurs" element={<Navigate to="/informations/restauration" replace />} />
+          <Route path="informations/restauration" element={<Restauration />} />
           <Route path="traductions" element={<TraductionsIndex />} />
           <Route path="traductions/english" element={<English />} />
           <Route path="traductions/deutsch" element={<Deutsch />} />

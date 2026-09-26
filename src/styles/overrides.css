@@ -92,7 +92,7 @@ html, body {
   }
 
 
-  #PageSection *, #Footer * { box-sizing: border-box; }
+  #PageSection * { box-sizing: border-box; }
   .col { margin-left: 0 !important; }
 
   /* 1. Make all layout rows and columns fluid */
@@ -136,17 +136,6 @@ html, body {
   .Mobile_imageComponent__QXWk1 {
     width: 100% !important;
     height: auto !important;
-  }
-
-  /* 5. Footer: remove giant fixed min-height so it shrinks naturally */
-  .site-footer,
-  #Footer .Preview_row__3Fkye,
-  #Footer .Preview_componentWrapper__2i4QI,
-  #Footer,
-  #Footer > *,
-  #Footer .StripPreview_backgroundComponent__3YmQM,
-  #Footer .Preview_column__1KeVx {
-    min-height: auto !important;
   }
 
   /* 6. Header: remove fixed min-height */
@@ -342,12 +331,45 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
   .distances { columns: 1; }
   .comment--reply { margin-left: 16px; }
 }
-.sidebar-comments { width: 190px; margin: 17px 0 0 15px; }
-.sidebar-comments .comment { padding: 12px 14px; }
-.sidebar-comments .comment-header { flex-direction: column; gap: 2px; }
-.sidebar-comments .comment-author { font-size: 16px; }
-.sidebar-comments .comment-date { font-size: 13px; }
-.sidebar-comments .comment-text { font-size: 15px; line-height: 1.5; }
-@media (max-width: 1199px) {
-  .sidebar-comments { width: auto; margin-left: 0; }
+
+
+/* Restaurant listings appear only on the Restauration page. */
+.restaurant-page {
+  box-sizing: border-box;
+  width: min(1130px, 100%);
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 0 0 10px 10px;
 }
+.restaurant-page h2 {
+  text-align: center;
+  margin: 0 0 30px;
+}
+.restaurant-page img {
+  display: block;
+  width: 100%;
+  max-width: 1050px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+/* Center the former two-column pages without stretching their photos. */
+.page-main-column {
+  width: min(750px, 100%);
+  margin: 0 auto;
+}
+.page-footer {
+  box-sizing: border-box;
+  clear: both;
+  width: min(1130px, 100%);
+  margin: 0 auto;
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.page-footer p { margin: 0; }
+.page-footer iframe { display: block; }

@@ -417,12 +417,12 @@ export default function HeaderNav() {
                                                 </Link>
                                                 <div className="divider"></div>
                                               </li>
-                                              <li className={`menuhidden${isActive("/informations/producteurs") ? " selected" : ""}`}>
+                                              <li className={`menuhidden${isActive("/informations/restauration") ? " selected" : ""}`}>
                                                 <Link
-                                                  className={`level-1${isActive("/informations/producteurs") ? " selected" : ""}`}
-                                                  to="/informations/producteurs"
+                                                  className={`level-1${isActive("/informations/restauration") ? " selected" : ""}`}
+                                                  to="/informations/restauration"
                                                 >
-                                                  <span>Producteurs</span>
+                                                  <span>Restauration</span>
                                                 </Link>
                                               </li>
                                             </ul>

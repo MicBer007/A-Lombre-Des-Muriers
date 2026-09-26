@@ -28,6 +28,7 @@ export default defineConfig({
         "/informations/tarifs",
         "/informations/contrat",
         "/informations/commentaires",
+        "/informations/restauration",
         "/informations/producteurs",
         "/traductions",
         "/traductions/english",

@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar";
 import Photo from "../components/Photo";
 
 export default function Terrasse() {
@@ -15,7 +14,7 @@ export default function Terrasse() {
                     <div className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren" style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderRadius: 0 }}>
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 20px" }}>
                               <Photo src="/assets/terrace-breakfast-2026.jpeg" width={680} height={510} caption={["terrasse pour des petits déjeuners au soleil et en soirée à l'ombre", "outside patio", "Außenterrasse."]} />
                               <Photo src="/assets/covered-terrace-2026-a.jpeg" width={680} height={510} caption={["Terrasse couverte", "Covered patio", "Überdachte Terrasse"]} />
@@ -28,9 +27,6 @@ export default function Terrasse() {
                               <Photo src="/assets/photo_de_la_terrasse.jpeg" width={680} height={510} alt="Photo de la terrasse" />
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left" }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

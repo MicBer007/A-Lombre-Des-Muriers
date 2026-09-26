@@ -1,4 +1,3 @@
-import Sidebar from "../../components/Sidebar";
 
 export default function Contrat() {
   return (
@@ -14,7 +13,7 @@ export default function Contrat() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "22px", padding: "50px 20px 84px" }}>
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 Contrat
@@ -223,10 +222,6 @@ export default function Contrat() {
                               </p>
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          {/* Sidebar */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left", marginLeft: 20 }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

@@ -1,4 +1,3 @@
-import Sidebar from "../../components/Sidebar";
 
 export default function English() {
   return (
@@ -14,7 +13,7 @@ export default function English() {
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
                           {/* Content column */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "22px", padding: "50px 20px 84px" }}>
                               <h3 className="textheading3 mobile-oversized" style={{ textAlign: "left", lineHeight: 1.17 }}>
                                 There's no place like home, except in the beautiful sunny south of France… come and see for yourself…
@@ -153,10 +152,6 @@ export default function English() {
                               </p>
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          {/* Sidebar */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left", marginLeft: 20 }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>

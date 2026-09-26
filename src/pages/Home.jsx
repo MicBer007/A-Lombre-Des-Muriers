@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar";
 import Photo from "../components/Photo";
 import Comment, { CommentList } from "../components/Comment";
 
@@ -37,8 +36,8 @@ export default function Home() {
                     <div className="BackgroundPreview_backgroundComponent__3Dr5e BackgroundPreview_bgHeight__3dD2e hasChildren" style={{ backgroundColor: "rgba(255, 255, 255, 1)", borderRadius: 0 }}>
                       <div className="Preview_column__1KeVx col">
                         <div className="Preview_row__3Fkye row" style={{ width: 1130 }}>
-                          {/* Content column - LEFT, 720px */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 870, float: "left" }}>
+                          {/* Main content */}
+                          <div className="page-main-column">
                             <div className="page-content" style={{ "--page-gap": "40px", padding: "40px 35px" }}>
 
                               {/* Image 1: Facade sud */}
@@ -509,10 +508,6 @@ export default function Home() {
 
                             </div>
                             <div style={{ clear: "both" }}></div>
-                          </div>
-                          {/* Sidebar column - RIGHT, 220px */}
-                          <div className="Preview_column__1KeVx col" style={{ width: 220, float: "left" }}>
-                            <Sidebar />
                           </div>
                           <div style={{ clear: "both" }}></div>
                         </div>
