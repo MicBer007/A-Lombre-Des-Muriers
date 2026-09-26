@@ -184,17 +184,6 @@ html, body {
    END MOBILE OVERRIDES
    ============================================= */
 
-/* Fix image border-radius clipping — the builder CSS sets overflow: visible and
-   height: 100% on .Mobile_imageComponent__QXWk1. The overflow: visible prevents
-   border-radius from clipping corners, and height: 100% makes the container size
-   wrong so the bottom corners don't clip even with overflow: hidden. */
-.Mobile_imageComponent__QXWk1.Mobile_cropMode__cLuJp {
-  overflow: hidden !important;
-  height: auto !important;
-  border-bottom-left-radius: 14px !important;
-  border-bottom-right-radius: 14px !important;
-}
-
 /* Round the bottom edges of the white content area */
 .BackgroundPreview_backgroundComponent__3Dr5e.BackgroundPreview_bgHeight__3dD2e.hasChildren {
   border-bottom-left-radius: 10px !important;
@@ -265,12 +254,21 @@ ul.menu1 > li > button.dropdown-only.expandable:after {
   text-shadow: none;
   content: "\e900";
 }
-ul.menu1 > li > button.dropdown-only:focus {
-  outline: none;
-}
 ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+/* Keyboard focus: tint the whole element in the site's green instead of drawing an outline.
+   Only on devices with a mouse; on touch screens focus lingers after a tap, so nothing is shown. */
+:focus-visible { outline: none; }
+@media (hover: hover) {
+  :focus-visible { background-color: rgba(88, 115, 70, 0.14); box-shadow: 0 0 0 3px rgba(88, 115, 70, 0.14); border-radius: 4px; }
+  ul.menu1 a, ul.menu1 button { transition: background-color 0.15s, box-shadow 0.15s; }
+  ul.menu1 a:focus-visible,
+  ul.menu1 button:focus-visible { background-color: #d3dccb !important; box-shadow: inset 0 -3px 0 #587346; border-radius: 0; }
+  .photo-frame { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .photo-frame:has(button:focus-visible) { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .photo-lightbox button:focus-visible { background-color: rgba(255, 255, 255, 0.15); box-shadow: none; border-radius: 8px; }
 }
 /* Photo component */
 .photo { margin: 0; width: min(100%, var(--photo-width, 100%)); min-width: 0; }
@@ -280,8 +278,8 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 .photo-frame--shadow { box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3); }
 .photo-frame--border { border: 1px solid #a0a0a0; }
 .photo-frame button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
-.photo-frame button:focus-visible { outline: 3px solid #587346; outline-offset: -3px; }
-.photo-frame img { display: block; width: 100% !important; height: auto !important; }
+.photo-frame img,
+.photo-frame video { display: block; width: 100% !important; height: auto !important; }
 .photo-caption { display: flex; flex-direction: column; gap: 2px; margin-top: 10px; padding-left: 10px; border-left: 2px solid #c8b99c; font-family: Roboto, sans-serif; font-size: 14px; line-height: 1.35; color: #333; }
 .photo-caption span + span { color: #777; font-style: italic; font-size: 13px; }
 .photo-row { display: flex; align-items: flex-start; }
@@ -304,7 +302,6 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 .photo-image-area { width: calc(100vw - 80px); height: calc(100dvh - 130px); overflow: hidden; touch-action: none; }
 .photo-lightbox .photo-image-area img { display: block; width: 100% !important; height: 100% !important; max-width: none !important; object-fit: contain; transform-origin: 0 0; user-select: none; }
 .photo-lightbox button { border: 0; background: transparent; font-family: inherit; }
-.photo-lightbox button:focus-visible { outline: 2px solid white; }
 @media (max-width: 600px) {
   .language-links { grid-template-columns: minmax(0, 1fr) !important; }
 }

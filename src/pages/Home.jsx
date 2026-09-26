@@ -88,21 +88,23 @@ export default function Home() {
                               <Photo src="/assets/home-access-path-2026.jpeg" width={680} height={510} caption="Chemin d’accès au gîte" />
 
                               {/* Video */}
-                              <video
-                                preload="metadata"
-                                autoPlay
-                                muted
-                                loop
-                                controls
-                                playsInline
-                                src="/assets/vid--442257519-85d50000-2892-445f-bb11-75d0ce180821-640x360.mp4#t=0.001"
-                                width="640"
-                                height="360"
-                                controlsList="nodownload"
-                              ></video>
-                              <p className="textnormal mobile-undersized-upper" style={{ textAlign: "left", fontSize: "14.4px", lineHeight: 1.17, fontStyle: "italic" }}>
-                                La maison et le gîte vue du ciel
-                              </p>
+                              <figure className="photo" style={{ "--photo-width": "680px", "--photo-radius": "10px" }}>
+                                <div className="photo-frame">
+                                  <video
+                                    preload="metadata"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    controls
+                                    playsInline
+                                    src="/assets/vid--442257519-85d50000-2892-445f-bb11-75d0ce180821-640x360.mp4#t=0.001"
+                                    width="640"
+                                    height="360"
+                                    controlsList="nodownload"
+                                  ></video>
+                                </div>
+                                <figcaption className="photo-caption">La maison et le gîte vue du ciel</figcaption>
+                              </figure>
 
                               {/* Image 2: Large house photo */}
                               <Photo src="/assets/1fb4cef8-f3c4-454f-b1ff-d23bfc02e092.JPG" width={680} height={655} />
