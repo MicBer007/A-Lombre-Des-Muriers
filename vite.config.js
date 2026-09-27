@@ -36,6 +36,11 @@ export default defineConfig({
         "/traductions/english",
         "/traductions/deutsch",
       ],
+      // Auth redirects during rendering must not change the published file path.
+      postProcess(renderedRoute) {
+        renderedRoute.route = renderedRoute.originalRoute;
+        return renderedRoute;
+      },
       renderer: new Renderer({
         headless: true,
         ...(puppeteerExecutablePath
