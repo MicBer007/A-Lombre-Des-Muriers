@@ -288,15 +288,14 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 .availability h1 { margin-bottom: 28px; }
  .menu.menuhorizontal > ul.menu1 { display: flex; width: 100%; }
 .menu.menuhorizontal > ul.menu1 > .nav-account { margin-left: auto; }
-.signin-page { box-sizing: border-box; width: min(1130px, 100%); margin: auto; background: white; padding: 64px 24px 90px; }
-.signin-card { max-width: 390px; margin: auto; line-height: 1.6; }
-.signin-card h1 { margin: 6px 0 24px; }
-.signin-eyebrow { text-transform: uppercase; letter-spacing: .13em; font-size: 12px; color: #65745c; }
-.signin-card form { display: flex; flex-direction: column; gap: 16px; }
-.signin-card label { font-size: 14px; margin-bottom: -10px; }
-.signin-card input { box-sizing: border-box; width: 100%; border: 1px solid #b9c1b2; border-radius: 8px; padding: 14px; font: inherit; }
-.signin-card button { font: inherit; padding: 12px 18px; border-radius: 8px; cursor: pointer; }
-.signin-card small { color: #6b7266; font-size: 13px; }
+.signin-page { box-sizing: border-box; width: min(1130px, 100%); margin: auto; background: white; }
+.signin-content { padding: 70px 20px 90px; line-height: 1.65; }
+.signin-content h1 { margin: 0 0 30px; line-height: 1.17; }
+.signin-content form { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; max-width: 390px; }
+.signin-content label { margin-bottom: -10px; }
+.signin-content input { box-sizing: border-box; width: 100%; border: 1px solid #b9c1b2; border-radius: 3px; padding: 12px; font: inherit; }
+.signin-content button { font: inherit; padding: 10px 22px; border-radius: 3px; cursor: pointer; }
+.signin-content [role="status"] { max-width: 390px; margin-top: 24px; }
 .signin-email { overflow-wrap: anywhere; }
 .account-signout { display: block; margin-top: 24px; background: transparent; border: 0; color: #59644f; text-decoration: underline; }
 .calendar-access { padding: 40px; background: white; }
