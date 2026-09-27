@@ -5,10 +5,10 @@ export const isoDate = (year, month, day) => `${year}-${String(month + 1).padSta
 
 let cached;
 
-export function loadCalendarReservations() {
+export function loadCalendarReservations({ refresh = false } = {}) {
   const now = new Date();
   const today = isoDate(now.getFullYear(), now.getMonth(), now.getDate());
-  if (cached?.today === today && Date.now() < cached.expiresAt) return cached.request;
+  if (!refresh && cached?.today === today && Date.now() < cached.expiresAt) return cached.request;
 
   const end = new Date(Date.UTC(now.getFullYear(), now.getMonth() + monthCount, 1));
   const rangeEnd = isoDate(end.getUTCFullYear(), end.getUTCMonth(), 1);

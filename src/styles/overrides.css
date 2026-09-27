@@ -286,6 +286,52 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 .kitchen-equipment { columns: 2; padding-left: 22px; line-height: 1.7; }
 .kitchen-equipment li { break-inside: avoid; }
 .availability h1 { margin-bottom: 28px; }
+ .menu.menuhorizontal > ul.menu1 { display: flex; width: 100%; }
+.menu.menuhorizontal > ul.menu1 > .nav-account { margin-left: auto; }
+.signin-page { box-sizing: border-box; width: min(1130px, 100%); margin: auto; background: white; padding: 64px 24px 90px; }
+.signin-card { max-width: 390px; margin: auto; line-height: 1.6; }
+.signin-card h1 { margin: 6px 0 24px; }
+.signin-eyebrow { text-transform: uppercase; letter-spacing: .13em; font-size: 12px; color: #65745c; }
+.signin-card form { display: flex; flex-direction: column; gap: 16px; }
+.signin-card label { font-size: 14px; margin-bottom: -10px; }
+.signin-card input { box-sizing: border-box; width: 100%; border: 1px solid #b9c1b2; border-radius: 8px; padding: 14px; font: inherit; }
+.signin-card button { font: inherit; padding: 12px 18px; border-radius: 8px; cursor: pointer; }
+.signin-card small { color: #6b7266; font-size: 13px; }
+.signin-email { overflow-wrap: anywhere; }
+.account-signout { display: block; margin-top: 24px; background: transparent; border: 0; color: #59644f; text-decoration: underline; }
+.calendar-access { padding: 40px; background: white; }
+.calendar-edit-entry { margin-top: 40px; display: flex; justify-content: flex-end; }
+.calendar-edit-link { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; color: #4b6040; text-decoration: none; font-size: 15px; border-bottom: 1px solid #c6cfbf; }
+.calendar-edit-link:hover { border-color: #4b6040; }
+.calendar-edit-link span { font-size: 24px; }
+.calendar-success { color: #4b6040; margin-bottom: 24px; }
+.calendar-edit-help { margin-bottom: 24px; font-size: 14px; line-height: 1.5; }
+.calendar-edit-help p { margin-bottom: 8px; }
+.calendar-edit-help label { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+.calendar-edit-help input { width: 18px; height: 18px; }
+.availability-editing { padding-bottom: 140px; }
+.calendar-is-editing { scroll-padding-bottom: 150px; }
+.calendar-save-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: #fafbf8; border-top: 1px solid #cdd3c6; box-shadow: 0 -3px 14px #0001; padding: 14px 20px max(14px, env(safe-area-inset-bottom)); font: 15px/1.4 Arial, sans-serif; color: #263323; }
+.calendar-save-inner { max-width: 950px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.calendar-save-status { display: flex; flex-direction: column; gap: 3px; }
+.calendar-save-status span { font-size: 13px; }
+.calendar-save-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.calendar-save-actions button { font: inherit; min-height: 44px; padding: 10px 18px; border-radius: 8px; cursor: pointer; }
+.calendar-save { background: #3d5533; color: #fff; border: 1px solid #3d5533; }
+.calendar-discard { background: transparent; color: #46533e; border: 0; text-decoration: underline; }
+.calendar-save-actions button:disabled { opacity: .5; cursor: default; }
+.calendar-editing { user-select: none; }
+.calendar-editing td { padding: 0; }
+.calendar-grid td button { display: block; width: 100%; min-height: 44px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; touch-action: pan-y; }
+.calendar-grid td.calendar-changed { box-shadow: inset 0 0 0 1px #8c713f; }
+.calendar-grid td button:focus-visible { outline: 3px solid #214d91; outline-offset: -4px; }
+@media (max-width: 600px) {
+  .calendar-save-bar { padding-left: 14px; padding-right: 14px; }
+  .calendar-save-inner { flex-wrap: wrap; gap: 8px; }
+  .calendar-save-status { width: 100%; }
+  .calendar-save-actions { width: 100%; justify-content: flex-end; }
+  .calendar-save { flex: 1; }
+}
 .calendar-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
 .calendar-grid table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 2px; font-size: 16px; }
 .calendar-grid caption { text-align: left; font-weight: bold; text-transform: capitalize; padding-bottom: 10px; }

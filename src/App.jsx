@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Navigate } from "react-router-dom";
+import CalendarAdmin from "./components/CalendarAdmin";
 import BaseLayout from "./layouts/BaseLayout";
 import Home from "./pages/Home";
 import Terrasse from "./pages/Terrasse";
@@ -22,16 +23,15 @@ import English from "./pages/traductions/English";
 import Deutsch from "./pages/traductions/Deutsch";
 import NotFound from "./pages/NotFound";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
+const router = createBrowserRouter(createRoutesFromElements(
         <Route element={<BaseLayout />}>
           <Route index element={<Home />} />
           <Route path="terrasse" element={<Terrasse />} />
           <Route path="jardin" element={<Jardin />} />
           <Route path="parking" element={<Parking />} />
           <Route path="photos-region" element={<PhotosRegion />} />
+          <Route path="connexion" element={<CalendarAdmin />} />
+          <Route path="informations/calendrier/modifier" element={<Calendrier editing />} />
           <Route path="contact" element={<Contact />} />
           <Route path="a-visiter" element={<AVisiter />} />
           <Route path="interieur" element={<InterieurIndex />} />
@@ -50,7 +50,8 @@ export default function App() {
           <Route path="traductions/deutsch" element={<Deutsch />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+));
+
+export default function App() {
+  return <RouterProvider router={router} />;
 }

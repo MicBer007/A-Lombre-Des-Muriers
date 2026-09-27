@@ -1,7 +1,9 @@
+import { useAdminSession } from "./AdminSession";
 import { Link, useLocation } from "react-router-dom";
 
 export default function HeaderNav() {
   const location = useLocation();
+  const { session } = useAdminSession();
 
   const isActive = (path) => {
     if (path === "/") return location.pathname === "/";
@@ -475,6 +477,7 @@ export default function HeaderNav() {
                                               <span>Contact</span>
                                             </Link>
                                           </li>
+                                          <li className="nav-account"><Link to="/connexion" className="level-0"><span>{session ? "Mon compte" : "Se connecter"}</span></Link></li>
                                         </ul>
                                       </div>
                                     </div>

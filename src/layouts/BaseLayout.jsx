@@ -1,3 +1,4 @@
+import { AdminSessionProvider } from "../components/AdminSession";
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { loadCalendarReservations } from "../lib/calendar";
@@ -14,7 +15,7 @@ export default function BaseLayout() {
   }, []);
 
   return (
-    <div className="Preview_body__2wDzb bodyBackground desktopV effects">
+    <AdminSessionProvider><div className="Preview_body__2wDzb bodyBackground desktopV effects">
       <div>
         <MobileNav />
       </div>
@@ -28,6 +29,6 @@ export default function BaseLayout() {
         </LightboxProvider>
         <Footer />
       </div>
-    </div>
+    </div></AdminSessionProvider>
   );
 }

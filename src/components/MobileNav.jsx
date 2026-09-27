@@ -1,8 +1,10 @@
+import { useAdminSession } from "./AdminSession";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function MobileNav() {
   const location = useLocation();
+  const { session } = useAdminSession();
   const [isOpen, setIsOpen] = useState(false);
   const [expanded, setExpanded] = useState({});
 
@@ -170,6 +172,7 @@ export default function MobileNav() {
               Contact
             </Link>
           </li>
+          <li><Link to="/connexion" style={isActive("/connexion") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>{session ? "Mon compte" : "Se connecter"}</Link></li>
         </ul>
       </div>
 
