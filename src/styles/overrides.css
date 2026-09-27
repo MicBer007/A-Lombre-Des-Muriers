@@ -406,3 +406,18 @@ ul.menu1 > li > button.dropdown-only::-moz-focus-inner {
 }
 .page-footer p { margin: 0; }
 .page-footer iframe { display: block; }
+
+/* Account access stays on the current page. */
+.account-trigger { display: grid; place-items: center; width: 44px; height: 44px; padding: 6px; border: 0; background: transparent; color: #333; cursor: pointer; flex-shrink: 0; }
+.account-trigger > span { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid #777; border-radius: 50%; }
+.account-trigger svg { width: 20px; height: 20px; }
+.account-trigger:hover > span { background: #f6f6f6; }
+.nav-account { align-self: center; }
+#MobileHeader_container > .account-trigger { margin-left: auto; margin-right: 8px; }
+.account-modal { border: 0; border-radius: 8px; padding: 38px; width: calc(100% - 32px); max-width: 420px; max-height: calc(100dvh - 32px); overflow: auto; box-sizing: border-box; box-shadow: 0 15px 70px #0003; }
+.account-modal::backdrop { background: rgba(0,0,0,.36); }
+.account-modal-close { position: absolute; right: 12px; top: 10px; width: 36px; height: 36px; padding: 0; border: 0; background: transparent; color: #666; font-size: 25px; cursor: pointer; }
+.signin-modal-content .signin-content { padding: 0; }
+.signin-modal-content h1 { font-size: 25px; padding-right: 12px; }
+.account-trigger:focus-visible, .account-modal button:focus-visible { outline: 2px solid #405936; outline-offset: 3px; }
+@media (max-width: 700px) { .account-modal { padding: 34px 24px; } }

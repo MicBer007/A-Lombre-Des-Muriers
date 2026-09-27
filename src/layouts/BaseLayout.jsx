@@ -1,3 +1,4 @@
+import { AccountModalProvider } from "../components/AccountModal";
 import { AdminSessionProvider } from "../components/AdminSession";
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
@@ -15,7 +16,7 @@ export default function BaseLayout() {
   }, []);
 
   return (
-    <AdminSessionProvider><div className="Preview_body__2wDzb bodyBackground desktopV effects">
+    <AdminSessionProvider><AccountModalProvider><div className="Preview_body__2wDzb bodyBackground desktopV effects">
       <div>
         <MobileNav />
       </div>
@@ -29,6 +30,6 @@ export default function BaseLayout() {
         </LightboxProvider>
         <Footer />
       </div>
-    </div></AdminSessionProvider>
+    </div></AccountModalProvider></AdminSessionProvider>
   );
 }

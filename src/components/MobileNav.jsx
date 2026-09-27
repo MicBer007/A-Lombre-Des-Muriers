@@ -1,10 +1,10 @@
-import { useAdminSession } from "./AdminSession";
+import { AccountButton } from "./AccountModal";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function MobileNav() {
   const location = useLocation();
-  const { session } = useAdminSession();
+
   const [isOpen, setIsOpen] = useState(false);
   const [expanded, setExpanded] = useState({});
 
@@ -72,6 +72,7 @@ export default function MobileNav() {
             A l'ombre des Muriers
           </span>
         </div>
+        <AccountButton onOpen={closeMenu} />
         <div
           className={`MobileHeader_menuIconContainer__lc-Zq ${isOpen ? "on" : "off"}`}
           id="MobileHeader_burgerMenuIcon"
@@ -172,7 +173,7 @@ export default function MobileNav() {
               Contact
             </Link>
           </li>
-          <li><Link to="/connexion" style={isActive("/connexion") ? activeMenuItemStyle : menuItemStyle} onClick={closeMenu}>{session ? "Mon compte" : "Se connecter"}</Link></li>
+
         </ul>
       </div>
 
