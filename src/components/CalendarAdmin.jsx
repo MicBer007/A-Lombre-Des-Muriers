@@ -11,7 +11,7 @@ export default function CalendarAdmin({ modal = false, onClose }) {
   async function login(event) {
     event.preventDefault(); setBusy(true); setMessage("");
     try {
-      const { error } = await supabase.auth.signInWithOtp({ email: email.trim(), options: { shouldCreateUser: false, emailRedirectTo: `${window.location.origin}/informations/calendrier` } });
+      const { error } = await supabase.auth.signInWithOtp({ email: email.trim(), options: { shouldCreateUser: false, emailRedirectTo: window.location.origin } });
       setMessage(error ? "Connexion impossible. Réessayez dans un instant." : "Si votre adresse est reconnue, vous recevrez un lien pour vous connecter.");
       setSent(!error);
     } catch { setMessage("Connexion impossible. Réessayez."); }
