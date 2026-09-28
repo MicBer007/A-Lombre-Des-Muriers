@@ -1,6 +1,8 @@
 import Photo from "../../components/Photo";
 import { Link } from "react-router-dom";
 
+const GERMAN_TEXT = { color: "rgb(101, 179, 69)", fontFamily: "Roboto", fontSize: 16 };
+
 export default function Tarifs() {
 
   return (
@@ -26,7 +28,7 @@ export default function Tarifs() {
                                   En Haute saison + vacances scolaires :{" "}
                                 </span>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  78&nbsp;€
+                                  88&nbsp;€
                                 </span>{" "}
                                 <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
                                   par jour pour minimum 1 semaine. Réduction de 10% si plus d'un mois.
@@ -37,7 +39,7 @@ export default function Tarifs() {
                                   En Moyenne saison :{" "}
                                 </span>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  72&nbsp;€
+                                  84&nbsp;€
                                 </span>{" "}
                                 <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
                                   par jour pour minimum 6 nuits. Réduction de 10% si plus d'un mois.
@@ -48,7 +50,7 @@ export default function Tarifs() {
                                   En Basse saison :{" "}
                                 </span>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  70&nbsp;€
+                                  80&nbsp;€
                                 </span>{" "}
                                 <span className="textnormal" style={{ color: "#000000", fontFamily: "Roboto", fontSize: 16 }}>
                                   par jour pour minimum 6 nuits. Réduction de 10% si plus d'un mois.
@@ -95,17 +97,17 @@ export default function Tarifs() {
                               </p>
                               <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  Price for two people In high season + school holidays: 78 € per day for a minimum of 1 week. 10% reduction if more than one month.
+                                  Price for two people In high season + school holidays: 88 € per day for a minimum of 1 week. 10% reduction if more than one month.
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  In Mid season, 72 € per day for minimum 5 nights. 10% reduction if more than one month.
+                                  In Mid season, 84 € per day for minimum 5 nights. 10% reduction if more than one month.
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span className="textnormal" style={{ color: "#9c1b31", fontFamily: "Roboto", fontSize: 16 }}>
-                                  In low season: 70 € per day. for a minimum of 5 nights. 10% reduction if more than one month.
+                                  In low season: 80 € per day. for a minimum of 5 nights. 10% reduction if more than one month.
                                 </span>
                               </p>
                               <p className="textnormal" style={{ textAlign: "left" }}>
@@ -126,6 +128,52 @@ export default function Tarifs() {
                               <p className="textnormal" style={{ textAlign: "left" }}>
                                 <span style={{ color: "rgb(156, 27, 49)", fontFamily: "Roboto", fontSize: 16 }} className="textnormal">
                                   Deposit for booking: 30% of the total amount. (*)Reduction of 10% if more than a month
+                                </span>
+                              </p>
+                              {/* German translations */}
+                              <p className="textnormal" style={{ textAlign: "left", marginTop: 38 }}>
+                                <span style={{ ...GERMAN_TEXT, fontSize: 24 }} className="textnormal mobile-oversized">
+                                  Mehr als 2 Personen
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Pro zusätzlicher Person 10 € Aufpreis pro Tag. Maximal 2 zusätzliche Personen.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Preise für 1 oder 2 Personen – in der Hochsaison + Schulferien: 88 € pro Tag, Mindestaufenthalt 1 Woche. 10 % Rabatt bei mehr als einem Monat.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  In der Zwischensaison: 84 € pro Tag, Mindestaufenthalt 6 Nächte. 10 % Rabatt bei mehr als einem Monat.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  In der Nebensaison: 80 € pro Tag, Mindestaufenthalt 6 Nächte. 10 % Rabatt bei mehr als einem Monat.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Im November, Dezember, Januar und Februar wird ein Heizkostenzuschlag von 20 € pro Woche berechnet.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Endreinigung: 45 €
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Kaution: 150 €, zahlbar am Anreisetag und spätestens 8 Tage nach Ende der Mietzeit zurückerstattet.
+                                </span>
+                              </p>
+                              <p className="textnormal" style={{ textAlign: "left" }}>
+                                <span style={GERMAN_TEXT} className="textnormal">
+                                  Anzahlung bei Buchung: 30 % des Gesamtbetrags.
                                 </span>
                               </p>
                               {/* IMPORTANT section */}
