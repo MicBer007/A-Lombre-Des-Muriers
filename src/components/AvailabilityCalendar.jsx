@@ -115,8 +115,8 @@ export default function AvailabilityCalendar({ editing = false }) {
     } finally { setBusy(false); }
   }
 
-  return <section className={`availability textnormal${editing ? " availability-editing" : ""}`}>
-    <h1 className="textheading3 mobile-oversized">Calendrier des disponibilités</h1>
+  return <section className={`availability${editing ? " availability-editing" : ""}`}>
+    <h1>Calendrier des disponibilités</h1>
     {!editing && location.state?.calendarSaved && <p className="calendar-success" role="status">Modifications enregistrées.</p>}
     {editing && <div className="calendar-edit-help">
       <p>Cliquez sur un jour ou faites glisser : le premier jour inverse le statut de toute la période.</p>

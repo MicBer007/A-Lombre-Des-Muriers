@@ -23,9 +23,12 @@ export function AccountModalProvider({ children }) {
     </dialog>
   </AccountModalContext.Provider>;
 }
-export function AccountButton({ onOpen }) {
-  const open = useContext(AccountModalContext);
-  return <button type="button" className="account-trigger" aria-label="Ouvrir mon compte" title="Mon compte" onClick={() => { onOpen?.(); open(); }}>
+export function useAccountModal() {
+  return useContext(AccountModalContext);
+}
+export function AccountButton() {
+  const open = useAccountModal();
+  return <button type="button" className="account-trigger" aria-label="Ouvrir mon compte" title="Mon compte" onClick={open}>
     <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.2" /><path d="M5.5 19c.3-4 2.6-6 6.5-6s6.2 2 6.5 6" /></svg></span>
   </button>;
 }

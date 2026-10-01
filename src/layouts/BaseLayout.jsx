@@ -16,20 +16,13 @@ export default function BaseLayout() {
   }, []);
 
   return (
-    <AdminSessionProvider><AccountModalProvider><div className="Preview_body__2wDzb bodyBackground desktopV effects">
-      <div>
-        <MobileNav />
-      </div>
-      <div className="template" data-mobile-view="true" style={{ visibility: "visible" }}>
-        <div className="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style={{ minHeight: 197, width: "100%" }} id="shared-header-nav">
-          <HeaderNav />
-        </div>
-        {/* Page content */}
-        <LightboxProvider>
-          <Outlet />
-        </LightboxProvider>
-        <Footer />
-      </div>
-    </div></AccountModalProvider></AdminSessionProvider>
+    <AdminSessionProvider><AccountModalProvider>
+      <MobileNav />
+      <HeaderNav />
+      <LightboxProvider>
+        <Outlet />
+      </LightboxProvider>
+      <Footer />
+    </AccountModalProvider></AdminSessionProvider>
   );
 }

@@ -8,17 +8,14 @@ import Parking from "./pages/Parking";
 import PhotosRegion from "./pages/PhotosRegion";
 import Contact from "./pages/Contact";
 import AVisiter from "./pages/AVisiter";
-import InterieurIndex from "./pages/interieur/Index";
 import Chambre from "./pages/interieur/Chambre";
 import PieceAVivre from "./pages/interieur/PieceAVivre";
 import SalleDeBain from "./pages/interieur/SalleDeBain";
-import InformationsIndex from "./pages/informations/Index";
 import Calendrier from "./pages/informations/Calendrier";
 import Tarifs from "./pages/informations/Tarifs";
 import Contrat from "./pages/informations/Contrat";
 import Commentaires from "./pages/informations/Commentaires";
 import Restauration from "./pages/informations/Restauration";
-import TraductionsIndex from "./pages/traductions/Index";
 import English from "./pages/traductions/English";
 import Deutsch from "./pages/traductions/Deutsch";
 import NotFound from "./pages/NotFound";
@@ -34,18 +31,18 @@ const router = createBrowserRouter(createRoutesFromElements(
           <Route path="informations/calendrier/modifier" element={<Calendrier editing />} />
           <Route path="contact" element={<Contact />} />
           <Route path="a-visiter" element={<AVisiter />} />
-          <Route path="interieur" element={<InterieurIndex />} />
+          <Route path="interieur" element={<Navigate to="/interieur/piece-a-vivre" replace />} />
           <Route path="interieur/chambre" element={<Chambre />} />
           <Route path="interieur/piece-a-vivre" element={<PieceAVivre />} />
           <Route path="interieur/salle-de-bain" element={<SalleDeBain />} />
-          <Route path="informations" element={<InformationsIndex />} />
+          <Route path="informations" element={<Navigate to="/informations/calendrier" replace />} />
           <Route path="informations/calendrier" element={<Calendrier />} />
           <Route path="informations/tarifs" element={<Tarifs />} />
           <Route path="informations/contrat" element={<Contrat />} />
           <Route path="informations/commentaires" element={<Commentaires />} />
           <Route path="informations/producteurs" element={<Navigate to="/informations/restauration" replace />} />
           <Route path="informations/restauration" element={<Restauration />} />
-          <Route path="traductions" element={<TraductionsIndex />} />
+          <Route path="traductions" element={<Navigate to="/traductions/english" replace />} />
           <Route path="traductions/english" element={<English />} />
           <Route path="traductions/deutsch" element={<Deutsch />} />
           <Route path="*" element={<NotFound />} />

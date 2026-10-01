@@ -26,8 +26,8 @@ export default function CalendarAdmin({ modal = false, onClose }) {
     } catch { setMessage("Déconnexion impossible. Réessayez."); }
     finally { setBusy(false); }
   }
-  return <section className={`signin-page textnormal${modal ? " signin-modal-content" : ""}`}><div className="page-main-column"><div className="signin-content">
-    <h1 id={modal ? "account-modal-title" : undefined} className="textheading3">{session ? "Votre compte" : sent ? "Consultez votre messagerie" : "Se connecter"}</h1>
+  return <section className={`signin-page${modal ? " signin-modal-content" : ""}`}><div className="page-main-column"><div className="signin-content">
+    <h1 id={modal ? "account-modal-title" : undefined}>{session ? "Votre compte" : sent ? "Consultez votre messagerie" : "Se connecter"}</h1>
     {!ready ? <p>Vérification de la connexion…</p> : !session && !sent ? <form onSubmit={login}>
       <label htmlFor={modal ? "modal-signin-email" : "signin-email"}>Adresse e-mail</label>
       <input id={modal ? "modal-signin-email" : "signin-email"} type="email" autoComplete="email" placeholder="vous@exemple.fr" required value={email} onChange={e => setEmail(e.target.value)} />
